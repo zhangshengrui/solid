@@ -33,7 +33,7 @@ public class Sentinel  implements Filter {
         //    resp.setDateHeader("Expires", 0);
         //    resp.setHeader("Prama", "no-cache");
         //    //此处设置了访问静态资源类
-        //    resp.sendRedirect(basePath+"/index.html");
+        //    resp.sendRedirect(basePath+"/index.jsp");
         //} else {
         //    // Filter 只是链式处理，请求依然转发到目的地址。
         //    filterChain.doFilter(req, resp);
