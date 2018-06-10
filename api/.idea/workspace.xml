@@ -5,57 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7e3b742-1f45-472b-a884-3c99132b8e07" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/_header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/_menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/_meta.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/article-add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/article-class-edit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/article-class.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/article-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/feedback-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/member-add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/member-del.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/member-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/member-record-browse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/member-record-download.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/member-record-share.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/member-show.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/picture-add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/picture-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/picture-show.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/record-browse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/record-download.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/record-share.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/system-shielding.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/_header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/_menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/article-add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/article-class-edit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/article-class.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/article-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/picture-add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/picture-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/picture-show.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/welcome.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/js/H-ui.admin.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/js/H-ui.admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.html" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/h-ui.admin/js/H-ui.admin.js" afterPath="$PROJECT_DIR$/target/classes/static/h-ui.admin/js/H-ui.admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/h-ui/css/H-ui.css" afterPath="$PROJECT_DIR$/target/classes/static/h-ui/css/H-ui.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/404.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/404.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -411,16 +361,15 @@
       <workItem from="1528570889841" duration="119000" />
       <workItem from="1528573603613" duration="378000" />
       <workItem from="1528590383526" duration="94000" />
-      <workItem from="1528590723171" duration="10667000" />
+      <workItem from="1528590723171" duration="10817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16647000" />
+    <option name="totallyTimeSpent" value="16797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996584" sideWeight="0.5016077" order="12" side_tool="true" content_ui="tabs" />
@@ -441,7 +390,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32877883" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32877883" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18327974" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
