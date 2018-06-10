@@ -5,48 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7e3b742-1f45-472b-a884-3c99132b8e07" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Index.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/_header.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/_menu.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/_meta.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/feedback-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/member-add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/member-del.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/member-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/member-record-browse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/member-record-download.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/member-record-share.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/member-show.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/product-brand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/product-category-add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/product-category.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/product-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/record-browse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/record-download.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/record-share.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/system-shielding.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/welcome.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zsr/solid/controller/Index.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zsr/solid/controller/Hello.class" afterPath="$PROJECT_DIR$/target/classes/com/zsr/solid/controller/Hello.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/SolidApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/SolidApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/additional-methods.js" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/additional-methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/common/common.jsp" afterPath="$PROJECT_DIR$/target/classes/static/common/common.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product-brand.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product-category-add.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product-category-add.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product-category.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product-list.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receive.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,18 +22,23 @@
       <file leaf-file-name="base-supplier.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="75" column="26" lean-forward="false" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+            <state relative-caret-position="690">
+              <caret line="80" column="33" lean-forward="false" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1528645061230" expanded="true" signature="3270:3290" ph="..." />
-                <marker date="1528645061230" expanded="true" signature="3381:3401" ph="..." />
-                <marker date="1528645061230" expanded="true" signature="3535:3543" ph="&amp;##xe6df;" />
-                <marker date="1528645061230" expanded="true" signature="3562:3582" ph="..." />
-                <marker date="1528645061230" expanded="true" signature="3690:3698" ph="&amp;##xe6e2;" />
+                <marker date="1528649799132" expanded="true" signature="3671:3691" ph="..." />
+                <marker date="1528649799132" expanded="true" signature="3815:3835" ph="..." />
+                <marker date="1528649799132" expanded="true" signature="3969:3977" ph="&amp;##xe6df;" />
+                <marker date="1528649799132" expanded="true" signature="4029:4049" ph="..." />
+                <marker date="1528649799132" expanded="true" signature="4157:4165" ph="&amp;##xe6e2;" />
+                <marker date="1528649799132" expanded="true" signature="4309:4329" ph="..." />
+                <marker date="1528649799132" expanded="true" signature="4453:4473" ph="..." />
+                <marker date="1528649799132" expanded="true" signature="4607:4615" ph="&amp;##xe6df;" />
+                <marker date="1528649799132" expanded="true" signature="4667:4687" ph="..." />
+                <marker date="1528649799132" expanded="true" signature="4795:4803" ph="&amp;##xe6e2;" />
               </folding>
             </state>
           </provider>
@@ -158,8 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lib/jquery/1.9.1/jquery.min.js</find>
-      <find>member_add</find>
       <find>record-br</find>
       <find>welcon</find>
       <find>product-brand</find>
@@ -188,6 +151,8 @@
       <find>$('#s_name').val()</find>
       <find>s_name</find>
       <find>搜索</find>
+      <find>label-success</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -425,23 +390,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -621,16 +569,15 @@
       <workItem from="1528570889841" duration="119000" />
       <workItem from="1528573603613" duration="378000" />
       <workItem from="1528590383526" duration="94000" />
-      <workItem from="1528590723171" duration="25255000" />
+      <workItem from="1528590723171" duration="26514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31235000" />
+    <option name="totallyTimeSpent" value="32494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996584" sideWeight="0.5016077" order="12" side_tool="true" content_ui="tabs" />
@@ -651,8 +598,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32877883" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24075563" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32877883" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24075563" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -678,7 +625,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3996584" sideWeight="0.49839228" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996584" sideWeight="0.49839228" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -689,7 +636,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32877883" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32877883" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24075563" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -716,22 +663,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user-password-edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-724">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/member-del.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1134,20 +1065,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="946" column="0" lean-forward="false" selection-start-line="946" selection-start-column="0" selection-end-line="946" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1528636850306" expanded="true" signature="8078:8102" ph="{...}" />
+            <marker date="1528636850306" expanded="true" signature="8564:8661" ph="{...}" />
+            <marker date="1528636850306" expanded="true" signature="36947:36986" ph="{...}" />
+            <marker date="1528636850306" expanded="true" signature="37036:37083" ph="{...}" />
+            <marker date="1528636850306" expanded="true" signature="77459:77501" ph="{...}" />
+            <marker date="1528636850306" expanded="true" signature="160125:160200" ph="{...}" />
+            <marker date="1528636850306" expanded="true" signature="160217:160293" ph="{...}" />
+            <marker date="1528636850306" expanded="true" signature="165458:165532" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="75" column="26" lean-forward="false" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+        <state relative-caret-position="690">
+          <caret line="80" column="33" lean-forward="false" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1528645061230" expanded="true" signature="3270:3290" ph="..." />
-            <marker date="1528645061230" expanded="true" signature="3381:3401" ph="..." />
-            <marker date="1528645061230" expanded="true" signature="3535:3543" ph="&amp;##xe6df;" />
-            <marker date="1528645061230" expanded="true" signature="3562:3582" ph="..." />
-            <marker date="1528645061230" expanded="true" signature="3690:3698" ph="&amp;##xe6e2;" />
+            <marker date="1528649799132" expanded="true" signature="3671:3691" ph="..." />
+            <marker date="1528649799132" expanded="true" signature="3815:3835" ph="..." />
+            <marker date="1528649799132" expanded="true" signature="3969:3977" ph="&amp;##xe6df;" />
+            <marker date="1528649799132" expanded="true" signature="4029:4049" ph="..." />
+            <marker date="1528649799132" expanded="true" signature="4157:4165" ph="&amp;##xe6e2;" />
+            <marker date="1528649799132" expanded="true" signature="4309:4329" ph="..." />
+            <marker date="1528649799132" expanded="true" signature="4453:4473" ph="..." />
+            <marker date="1528649799132" expanded="true" signature="4607:4615" ph="&amp;##xe6df;" />
+            <marker date="1528649799132" expanded="true" signature="4667:4687" ph="..." />
+            <marker date="1528649799132" expanded="true" signature="4795:4803" ph="&amp;##xe6e2;" />
           </folding>
         </state>
       </provider>

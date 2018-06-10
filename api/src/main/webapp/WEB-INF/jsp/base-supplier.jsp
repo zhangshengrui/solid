@@ -63,9 +63,26 @@
                 { "data": "supplierAddress",defaultContent:''},
                 { "data": "memo",defaultContent:''},
                 { "data": "indate" ,defaultContent:''},
-                { "data": "status" ,defaultContent:''},
-                { "data": "","render":function(data,type,full,collback){
-                    return '<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_shenhe(this,\'10001\')" href="javascript:;" title="审核">审核</a> <a style="text-decoration:none" class="ml-5" onClick="article_edit(\'资讯编辑\',\'article-add.html\',\'10001\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,\'10001\')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
+                { "data": "status" ,defaultContent:'',"render":function (data,type,full,collback) {
+                    if(data == '1'){
+                        return '<span class="label label-danger radius">已关闭</span>';
+                    }else{
+                        return '<span class="label label-success radius">已发布</span>';
+                    }
+                }},
+                { "data": "status","render":function(data,type,full,collback){
+                    if(data == '1'){
+                        return '<td class="f-14 td-manage">' +
+                            '<a style="text-decoration:none" onClick="article_shenhe(this,\'10001\')" href="javascript:;" title="开启">开启</a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="article_edit(\'资讯编辑\',\'article-add.html\',\'10001\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="article_del(this,\'10001\')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
+                    }else{
+                        return '<td class="f-14 td-manage">' +
+                            '<a style="text-decoration:none" onClick="article_shenhe(this,\'10001\')" href="javascript:;" title="审核">关闭</a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="article_edit(\'资讯编辑\',\'article-add.html\',\'10001\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="article_del(this,\'10001\')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
+                    }
+
                 } }
             ],
             "aaSorting": [[ 1, "desc" ]],//默认第几个排序
