@@ -3,6 +3,9 @@ package com.zsr.solid.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 @Controller
 @RequestMapping("base")
 public class BaseInfoController {
@@ -11,6 +14,20 @@ public class BaseInfoController {
     public String supplier(){
         return "base-supplier";
     }
+    @RequestMapping("base-supplier-add")
+    public String base_supplier_add(Integer id, HttpServletRequest request){
+        try {
+            if(id == null){
+                return "404";
+            }
+            HttpSession session = request.getSession();
+            session.setAttribute("id",id);
+            return "base-supplier-add";
+        }catch (Exception e){
+            return  "404";
+        }
+    }
+
 
     @RequestMapping("base-goods")
     public String goods(){

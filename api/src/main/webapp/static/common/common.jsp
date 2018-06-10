@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../../lib/Hui-iconfont/1.0.8/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="../h-ui.admin/skin/default/skin.css" id="skin" />
     <link rel="stylesheet" type="text/css" href="../h-ui.admin/css/style.css" />
+    <link rel="stylesheet" href="../../lib/zTree/v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
     <!--[if IE 6]>
     <script type="text/javascript" src="../../lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
@@ -43,7 +44,10 @@
     <script type="text/javascript" src="../../lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../../lib/laypage/1.2/laypage.js"></script>
 
-    <link rel="stylesheet" href="../../lib/zTree/v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="../../lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../lib/jquery.validation/1.14.0/validate-methods.js"></script>
+    <script type="text/javascript" src="../../lib/jquery.validation/1.14.0/messages_zh.js"></script>
 
     <%
         String path = request.getContextPath();
@@ -51,6 +55,14 @@
     %>
     <script type="text/javascript">
         var _basePath = "<%=basePath%>";
+
+        function check(flag){
+            if(flag == '' || flag == undefined || flag == null){
+                return true;
+            }else{
+                return false;
+            }
+        }
     </script>
 </head>
 <body>

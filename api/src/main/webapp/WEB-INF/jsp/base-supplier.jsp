@@ -9,7 +9,7 @@
     </style>
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 基本信息管理 <span class="c-gray en">&gt;</span>供货商信息管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 基本信息管理 <span class="c-gray en">&gt;</span>供货商信息管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:;" onclick="initTable()" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
 	<div class="page-container">
         <div class="text-c">
@@ -18,7 +18,7 @@
             <input type="text" id="s_add"  placeholder="供货商地址" style="width:250px" class="input-text">
 			<button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
 		</div>
-		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="product_add('添加产品','product-add.html')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加供货商</a></span> </div>
+		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加供货商','base-supplier-add?id=-1','','540')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加供货商</a></span> </div>
 		<div class="mt-20">
 			<table class="table table-border table-bordered table-bg table-sort">
                 <thead>
@@ -49,7 +49,7 @@
 
     function initTable(){
         $('.table-sort').dataTable({
-            "ajax":_basePath +"base/querySupplierList",
+            "ajax":_basePath +"base/supplier/querySupplierList",
             "columns": [
                 { "data": "",
                     "render":function(data, type, full, callback){
@@ -67,19 +67,19 @@
                     if(data == '1'){
                         return '<span class="label label-danger radius">已关闭</span>';
                     }else{
-                        return '<span class="label label-success radius">已发布</span>';
+                        return '<span class="label label-success radius">已开启</span>';
                     }
                 }},
                 { "data": "status","render":function(data,type,full,collback){
                     if(data == '1'){
                         return '<td class="f-14 td-manage">' +
-                            '<a style="text-decoration:none" onClick="article_shenhe(this,\'10001\')" href="javascript:;" title="开启">开启</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="article_edit(\'资讯编辑\',\'article-add.html\',\'10001\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" onClick="operate('+full.id+',0)" href="#" >开启</a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改供货商信息\',\'base-supplier-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="article_del(this,\'10001\')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }else{
                         return '<td class="f-14 td-manage">' +
-                            '<a style="text-decoration:none" onClick="article_shenhe(this,\'10001\')" href="javascript:;" title="审核">关闭</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="article_edit(\'资讯编辑\',\'article-add.html\',\'10001\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" onClick="operate('+full.id+',1)" href="#">关闭</a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改供货商信息\',\'base-supplier-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="article_del(this,\'10001\')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }
 
@@ -108,6 +108,34 @@
                 );
             }
         });
+    }
+
+    function operate(id,type){
+        $.ajax({
+            url:_basePath + "base/supplier/operate",
+            data:{id:id,status:type},
+            success:function(data){
+                var message = "开启";
+                if(type == 1){
+                    message = "关闭";
+                }
+                if(data == "success"){
+                    initTable();
+                    layer.msg(message+'成功!',{icon:1,time:1000});
+                }else{
+                    layer.msg(message+'失败!',{icon:2,time:1000});
+                }
+            },
+            error:function () {
+                layer.msg('系统异常!',{icon:2,time:1000});
+            }
+        })
+    }
+
+    function layerResult(m,index){
+        initTable();
+        layer.msg(m+'操作成功!',{icon:1,time:1500});
+        layer.close(index);
     }
 </script>
 </body>

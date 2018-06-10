@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("base")
+@RequestMapping("base/supplier")
 public class BaseSupplierController {
     @Autowired
     private BaseSupplierBusiness baseSupplierBusinessImpl;
@@ -16,6 +16,16 @@ public class BaseSupplierController {
     @RequestMapping("querySupplierList")
     public String querySupplierList(BaseSupplier baseSupplier){
         return JSON.toJSONString(baseSupplierBusinessImpl.querySupplierList(baseSupplier));
+    }
+
+    @RequestMapping("operate")
+    public String operate(BaseSupplier baseSupplier){
+        return baseSupplierBusinessImpl.operate(baseSupplier);
+    }
+
+    @RequestMapping("editSupplier")
+    public String editSupplier(BaseSupplier baseSupplier){
+        return baseSupplierBusinessImpl.editSupplier(baseSupplier);
     }
 
 }
