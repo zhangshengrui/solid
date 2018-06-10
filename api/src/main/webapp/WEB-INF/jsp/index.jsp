@@ -1,26 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="Bookmark" href="/favicon.ico" >
-    <link rel="Shortcut Icon" href="/favicon.ico" />
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="lib/html5shiv.js"></script>
-    <script type="text/javascript" src="lib/respond.min.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
-    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
-    <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
-    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
-    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
-    <!--[if IE 6]>
-    <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
-    <script>DD_belatedPNG.fix('*');</script>
-    <![endif]-->
+    <%@ include file="../../static/common/common.jsp" %>
     <title>GOVERNOR v1.1</title>
 </head>
 <body>
@@ -58,12 +39,13 @@
 <aside class="Hui-aside">
     <div class="menu_dropdown bk_2">
         <dl id="menu-product">
-            <dt><i class="Hui-iconfont">&#xe620;</i> 产品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dt><i class="Hui-iconfont">&#xe620;</i>基本信息管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="product-brand.html" data-title="品牌管理" href="javascript:void(0)">品牌管理</a></li>
-                    <li><a data-href="product-category.html" data-title="分类管理" href="javascript:void(0)">分类管理</a></li>
-                    <li><a data-href="product-list.html" data-title="产品管理" href="javascript:void(0)">产品管理</a></li>
+                    <li><a data-href="base/base-supplier" data-title="供货商基本信息管理" href="javascript:void(0)">供货商基本信息管理</a></li>
+                    <li><a data-href="base/base-goods" data-title="货物基本信息管理" href="javascript:void(0)">货物基本信息管理</a></li>
+                    <li><a data-href="base/base-fleet" data-title="车队基本管理" href="javascript:void(0)">车队基本管理</a></li>
+                    <li><a data-href="base/base-receive" data-title="收货方基本信息管理" href="javascript:void(0)">收货方基本信息管理</a></li>
                 </ul>
             </dd>
         </dl>
@@ -110,7 +92,7 @@
         <div class="Hui-tabNav-wp">
             <ul id="min_title_list" class="acrossTab cl">
                 <li class="active">
-                    <span title="我的桌面" data-href="welcome.jsp">我的桌面</span>
+                    <span title="我的桌面" data-href="welcome">我的桌面</span>
                     <em></em></li>
             </ul>
         </div>
@@ -119,7 +101,7 @@
     <div id="iframe_box" class="Hui-article">
         <div class="show_iframe">
             <div style="display:none" class="loading"></div>
-            <iframe scrolling="yes" frameborder="0" src="welcome.html"></iframe>
+            <iframe scrolling="yes" frameborder="0" src="welcome"></iframe>
         </div>
     </div>
 </section>
@@ -130,14 +112,7 @@
         <li id="closeall">关闭全部 </li>
     </ul>
 </div>
-<!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
-<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
 
-<!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="lib/jquery.contextmenu/jquery.contextmenu.r2.js"></script>
 <script type="text/javascript">
     /*个人信息*/
     function myselfinfo(){
