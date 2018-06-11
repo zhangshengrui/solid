@@ -45,7 +45,7 @@
                     <li><a data-href="base/base-supplier" data-title="供货商基本信息管理" href="javascript:void(0)">供货商基本信息管理</a></li>
                     <li><a data-href="base/base-goods" data-title="货物基本信息管理" href="javascript:void(0)">货物基本信息管理</a></li>
                     <li><a data-href="base/base-fleet" data-title="车队基本管理" href="javascript:void(0)">车队基本管理</a></li>
-                    <li><a data-href="base/base-receive" data-title="收货方基本信息管理" href="javascript:void(0)">收货方基本信息管理</a></li>
+                    <li><a data-href="base/base-receiver" data-title="收货方基本信息管理" href="javascript:void(0)">收货方基本信息管理</a></li>
                 </ul>
             </dd>
         </dl>
