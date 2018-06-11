@@ -57,4 +57,18 @@ public class BaseInfoController {
             return  "404";
         }
     }
+
+    @RequestMapping("base-fleet-add")
+    public String base_fleet_add(Integer id, HttpServletRequest request){
+        try {
+            if(id == null){
+                return "404";
+            }
+            HttpSession session = request.getSession();
+            session.setAttribute("id",id);
+            return "base-fleet-add";
+        }catch (Exception e){
+            return  "404";
+        }
+    }
 }
