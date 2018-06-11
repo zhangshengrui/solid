@@ -15,14 +15,19 @@ public class Hello {
         return "hello world!!";
     }
 
-    @RequestMapping("/login")
-    public String login(){
+    @RequestMapping("/index")
+    public String index(){
         return "index";
     }
 
     @RequestMapping("/welcome")
     public String welcome(){
         return "welcome";
+    }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
     }
 
 }
