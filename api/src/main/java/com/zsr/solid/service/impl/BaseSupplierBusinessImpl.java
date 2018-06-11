@@ -1,9 +1,11 @@
 package com.zsr.solid.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.zsr.solid.entity.BaseSupplier;
 import com.zsr.solid.entity.ResponseTable;
 import com.zsr.solid.mapper.BaseSupplierDao;
 import com.zsr.solid.service.BaseSupplierBusiness;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -76,4 +78,26 @@ public class BaseSupplierBusinessImpl implements BaseSupplierBusiness{
             return "fail";
         }
     }
+
+    @Override
+    public String delete(String password, String ids) {
+        try {
+            if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){
+                return  "password or ids is null";
+            }
+            if(!"123456".equals(password)){
+                return "wrong";
+            }
+            if(!ids.contains("[") && !ids.contains("]")){
+                    ids = "[" + ids + "]";
+            }
+            List<Integer> list = JSON.parseObject(ids,new ArrayList().getClass());
+            String idstr = "( "+StringUtils.join(list,",")+" )";
+            return baseSupplierDao.delete(idstr)>0?"success":"false";
+        }catch (Exception e){
+            e.printStackTrace();
+            return "fail";
+        }
+    }
+
 }

@@ -19,7 +19,7 @@ public class BaseSupplierController {
     }
 
     @RequestMapping("operate")
-    public String operate(BaseSupplier baseSupplier){
+    public String operate(BaseSupplier baseSupplier) {
         return baseSupplierBusinessImpl.operate(baseSupplier);
     }
 
@@ -28,4 +28,8 @@ public class BaseSupplierController {
         return baseSupplierBusinessImpl.editSupplier(baseSupplier);
     }
 
+     @RequestMapping("delete")
+    public String delete(String password,String ids){
+        return baseSupplierBusinessImpl.delete(password,ids);
+    }
 }
