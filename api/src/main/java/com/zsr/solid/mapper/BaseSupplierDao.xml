@@ -10,8 +10,8 @@
         <if test="supplierName != null and supplierName !=''" >
             AND supplier_name like CONCAT('%','${supplierName}','%' )
         </if>
-        <if test="telephone != '' and telephone != null" >
-            AND telephone like CONCAT('%','${telephone}','%' )
+        <if test="supplierOfficial != '' and supplierOfficial != null" >
+            AND supplier_official like CONCAT('%','${supplierOfficial}','%' )
         </if>
         <if test="supplierAddress != null and supplierAddress != ''" >
             AND supplier_address like CONCAT('%','${supplierAddress}','%' )

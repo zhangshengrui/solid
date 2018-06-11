@@ -650,3 +650,259 @@
 2018-06-12 02:03:32 [INFO]-[com.zsr.solid.SolidApplication] Started SolidApplication in 2.343 seconds (JVM running for 2.761)
 2018-06-12 02:03:32 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'dispatcherServlet': initialization started
 2018-06-12 02:03:32 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-12 02:09:19 [INFO]-[com.zsr.solid.SolidApplication] Starting SolidApplication on DESKTOP-EBJVN3A with PID 9128 (F:\github\solid\api\target\classes started by kevin in F:\github\solid\api)
+2018-06-12 02:09:19 [INFO]-[com.zsr.solid.SolidApplication] The following profiles are active: dev
+2018-06-12 02:09:19 [INFO]-[org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e34f7d8: startup date [Tue Jun 12 02:09:19 CST 2018]; root of context hierarchy
+2018-06-12 02:09:19 [INFO]-[org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 5.3.6.Final
+2018-06-12 02:09:20 [INFO]-[org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] Tomcat initialized with port(s): 8090 (http)
+2018-06-12 02:09:20 [INFO]-[org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 1119 ms
+2018-06-12 02:09:20 [INFO]-[org.springframework.boot.web.servlet.ServletRegistrationBean] Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-12 02:09:20 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-12 02:09:20 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-12 02:09:20 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-12 02:09:20 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-12 02:09:20 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'loginFilter' to urls: [/*]
+2018-06-12 02:09:20 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'sentinel' to: [/*]
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e34f7d8: startup date [Tue Jun 12 02:09:19 CST 2018]; root of context hierarchy
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/fleet/delete]}" onto public java.lang.String com.zsr.solid.controller.BaseFleetController.delete(java.lang.String,java.lang.String)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/fleet/operate]}" onto public java.lang.String com.zsr.solid.controller.BaseFleetController.operate(com.zsr.solid.entity.BaseFleet)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/fleet/editSupplier]}" onto public java.lang.String com.zsr.solid.controller.BaseFleetController.editSupplier(com.zsr.solid.entity.BaseFleet)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/fleet/querySupplierList]}" onto public java.lang.String com.zsr.solid.controller.BaseFleetController.querySupplierList(com.zsr.solid.entity.BaseFleet)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/goods/delete]}" onto public java.lang.String com.zsr.solid.controller.BaseGoodsController.delete(java.lang.String,java.lang.String)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/goods/operate]}" onto public java.lang.String com.zsr.solid.controller.BaseGoodsController.operate(com.zsr.solid.entity.BaseGoods)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/goods/editSupplier]}" onto public java.lang.String com.zsr.solid.controller.BaseGoodsController.editSupplier(com.zsr.solid.entity.BaseGoods)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/goods/querySupplierList]}" onto public java.lang.String com.zsr.solid.controller.BaseGoodsController.querySupplierList(com.zsr.solid.entity.BaseGoods)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-fleet]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.fleet()
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-goods]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.goods()
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-supplier]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.supplier()
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-receive]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.receive()
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-goods-add]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.base_goods_add(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-fleet-add]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.base_fleet_add(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-supplier-add]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.base_supplier_add(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/supplier/delete]}" onto public java.lang.String com.zsr.solid.controller.BaseSupplierController.delete(java.lang.String,java.lang.String)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/supplier/operate]}" onto public java.lang.String com.zsr.solid.controller.BaseSupplierController.operate(com.zsr.solid.entity.BaseSupplier)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/supplier/editSupplier]}" onto public java.lang.String com.zsr.solid.controller.BaseSupplierController.editSupplier(com.zsr.solid.entity.BaseSupplier)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/supplier/querySupplierList]}" onto public java.lang.String com.zsr.solid.controller.BaseSupplierController.querySupplierList(com.zsr.solid.entity.BaseSupplier)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/index]}" onto public java.lang.String com.zsr.solid.controller.Hello.index()
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/]}" onto public java.lang.String com.zsr.solid.controller.Hello.home()
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/login]}" onto public java.lang.String com.zsr.solid.controller.Hello.login()
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/welcome]}" onto public java.lang.String com.zsr.solid.controller.Hello.welcome()
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-12 02:09:21 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-12 02:09:21 [INFO]-[org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+2018-06-12 02:09:21 [INFO]-[org.springframework.jmx.export.annotation.AnnotationMBeanExporter] Registering beans for JMX exposure on startup
+2018-06-12 02:09:21 [INFO]-[org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] Tomcat started on port(s): 8090 (http)
+2018-06-12 02:09:21 [INFO]-[com.zsr.solid.SolidApplication] Started SolidApplication in 2.345 seconds (JVM running for 2.764)
+2018-06-12 02:09:43 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-12 02:09:43 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-12 02:31:33 [INFO]-[com.zsr.solid.SolidApplication] Starting SolidApplication on DESKTOP-EBJVN3A with PID 4820 (F:\github\solid\api\target\classes started by kevin in F:\github\solid\api)
+2018-06-12 02:31:33 [INFO]-[com.zsr.solid.SolidApplication] The following profiles are active: dev
+2018-06-12 02:31:33 [INFO]-[org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e966ca0: startup date [Tue Jun 12 02:31:33 CST 2018]; root of context hierarchy
+2018-06-12 02:31:33 [INFO]-[org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 5.3.6.Final
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] Tomcat initialized with port(s): 8090 (http)
+2018-06-12 02:31:34 [INFO]-[org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 1088 ms
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.web.servlet.ServletRegistrationBean] Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'loginFilter' to urls: [/*]
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'sentinel' to: [/*]
+2018-06-12 02:31:34 [ERROR]-[org.mybatis.spring.mapper.MapperFactoryBean] Error while adding the mapper 'interface com.zsr.solid.mapper.BaseReceiverDao' to configuration.
+org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:169)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:120)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:706)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:81)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.zsr.solid.SolidApplication.main(SolidApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+	at org.apache.ibatis.builder.MapperBuilderAssistant.setCurrentNamespace(MapperBuilderAssistant.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:112)
+	... 56 more
+2018-06-12 02:31:34 [WARN]-[org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseReceiverController': Unsatisfied dependency expressed through field 'baseReceiverBusinessImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseReceiverBusinessImpl': Unsatisfied dependency expressed through field 'baseReceiverDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseReceiverDao' defined in file [F:\github\solid\api\target\classes\com\zsr\solid\mapper\BaseReceiverDao.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+2018-06-12 02:31:34 [INFO]-[org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-06-12 02:31:34 [ERROR]-[org.springframework.boot.SpringApplication] Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseReceiverController': Unsatisfied dependency expressed through field 'baseReceiverBusinessImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseReceiverBusinessImpl': Unsatisfied dependency expressed through field 'baseReceiverDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseReceiverDao' defined in file [F:\github\solid\api\target\classes\com\zsr\solid\mapper\BaseReceiverDao.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.zsr.solid.SolidApplication.main(SolidApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseReceiverBusinessImpl': Unsatisfied dependency expressed through field 'baseReceiverDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseReceiverDao' defined in file [F:\github\solid\api\target\classes\com\zsr\solid\mapper\BaseReceiverDao.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseReceiverDao' defined in file [F:\github\solid\api\target\classes\com\zsr\solid\mapper\BaseReceiverDao.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 37 more
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:84)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 47 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:169)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:120)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:706)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:81)
+	... 50 more
+Caused by: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.zsr.solid.mapper.BaseReceiverDao' but found 'com.zsr.solid.mapper.BaseSupplierDao'.
+	at org.apache.ibatis.builder.MapperBuilderAssistant.setCurrentNamespace(MapperBuilderAssistant.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:112)
+	... 56 more
+2018-06-12 02:32:28 [INFO]-[com.zsr.solid.SolidApplication] Starting SolidApplication on DESKTOP-EBJVN3A with PID 6328 (F:\github\solid\api\target\classes started by kevin in F:\github\solid\api)
+2018-06-12 02:32:28 [INFO]-[com.zsr.solid.SolidApplication] The following profiles are active: dev
+2018-06-12 02:32:28 [INFO]-[org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@422b37d4: startup date [Tue Jun 12 02:32:28 CST 2018]; root of context hierarchy
+2018-06-12 02:32:29 [INFO]-[org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 5.3.6.Final
+2018-06-12 02:32:29 [INFO]-[org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] Tomcat initialized with port(s): 8090 (http)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 1100 ms
+2018-06-12 02:32:30 [INFO]-[org.springframework.boot.web.servlet.ServletRegistrationBean] Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-12 02:32:30 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-12 02:32:30 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-12 02:32:30 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-12 02:32:30 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-12 02:32:30 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'loginFilter' to urls: [/*]
+2018-06-12 02:32:30 [INFO]-[org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'sentinel' to: [/*]
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@422b37d4: startup date [Tue Jun 12 02:32:28 CST 2018]; root of context hierarchy
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/fleet/delete]}" onto public java.lang.String com.zsr.solid.controller.BaseFleetController.delete(java.lang.String,java.lang.String)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/fleet/operate]}" onto public java.lang.String com.zsr.solid.controller.BaseFleetController.operate(com.zsr.solid.entity.BaseFleet)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/fleet/querySupplierList]}" onto public java.lang.String com.zsr.solid.controller.BaseFleetController.querySupplierList(com.zsr.solid.entity.BaseFleet)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/fleet/editSupplier]}" onto public java.lang.String com.zsr.solid.controller.BaseFleetController.editSupplier(com.zsr.solid.entity.BaseFleet)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/goods/delete]}" onto public java.lang.String com.zsr.solid.controller.BaseGoodsController.delete(java.lang.String,java.lang.String)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/goods/operate]}" onto public java.lang.String com.zsr.solid.controller.BaseGoodsController.operate(com.zsr.solid.entity.BaseGoods)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/goods/querySupplierList]}" onto public java.lang.String com.zsr.solid.controller.BaseGoodsController.querySupplierList(com.zsr.solid.entity.BaseGoods)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/goods/editSupplier]}" onto public java.lang.String com.zsr.solid.controller.BaseGoodsController.editSupplier(com.zsr.solid.entity.BaseGoods)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-receiver-add]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.base_receiver_add(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-supplier-add]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.base_supplier_add(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-fleet-add]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.base_fleet_add(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-supplier]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.supplier()
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-fleet]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.fleet()
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-goods-add]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.base_goods_add(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-goods]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.goods()
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/base-receiver]}" onto public java.lang.String com.zsr.solid.controller.BaseInfoController.receive()
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/receiver/delete]}" onto public java.lang.String com.zsr.solid.controller.BaseReceiverController.delete(java.lang.String,java.lang.String)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/receiver/operate]}" onto public java.lang.String com.zsr.solid.controller.BaseReceiverController.operate(com.zsr.solid.entity.BaseReceiver)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/receiver/querySupplierList]}" onto public java.lang.String com.zsr.solid.controller.BaseReceiverController.querySupplierList(com.zsr.solid.entity.BaseReceiver)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/receiver/editSupplier]}" onto public java.lang.String com.zsr.solid.controller.BaseReceiverController.editSupplier(com.zsr.solid.entity.BaseReceiver)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/supplier/delete]}" onto public java.lang.String com.zsr.solid.controller.BaseSupplierController.delete(java.lang.String,java.lang.String)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/supplier/operate]}" onto public java.lang.String com.zsr.solid.controller.BaseSupplierController.operate(com.zsr.solid.entity.BaseSupplier)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/supplier/querySupplierList]}" onto public java.lang.String com.zsr.solid.controller.BaseSupplierController.querySupplierList(com.zsr.solid.entity.BaseSupplier)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/base/supplier/editSupplier]}" onto public java.lang.String com.zsr.solid.controller.BaseSupplierController.editSupplier(com.zsr.solid.entity.BaseSupplier)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/index]}" onto public java.lang.String com.zsr.solid.controller.Hello.index()
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/]}" onto public java.lang.String com.zsr.solid.controller.Hello.home()
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/welcome]}" onto public java.lang.String com.zsr.solid.controller.Hello.welcome()
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/login]}" onto public java.lang.String com.zsr.solid.controller.Hello.login()
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-12 02:32:30 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-12 02:32:30 [INFO]-[org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+2018-06-12 02:32:31 [INFO]-[org.springframework.jmx.export.annotation.AnnotationMBeanExporter] Registering beans for JMX exposure on startup
+2018-06-12 02:32:31 [INFO]-[org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] Tomcat started on port(s): 8090 (http)
+2018-06-12 02:32:31 [INFO]-[com.zsr.solid.SolidApplication] Started SolidApplication in 2.302 seconds (JVM running for 2.773)
+2018-06-12 02:32:36 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-12 02:32:36 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms

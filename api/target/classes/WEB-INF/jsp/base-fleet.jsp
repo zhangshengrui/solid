@@ -18,7 +18,7 @@
             <input type="text" id="s_add"  placeholder="车队负责人" style="width:250px" class="input-text">
             <button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
         </div>
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加车队','base-supplier-add?id=-1','','540')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加车队</a></span> </div>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加车队','base-fleet-add?id=-1','','540')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加车队</a></span> </div>
         <div class="mt-20">
             <table class="table table-border table-bordered table-bg table-sort">
                 <thead>
@@ -74,12 +74,12 @@
                     if(data == '1'){
                         return '<td class="f-14 td-manage">' +
                             '<a style="text-decoration:none" onClick="operate('+full.id+',0)" href="#" >开启</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改车队信息\',\'base-supplier-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改车队信息\',\'base-fleet-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="base_supplier_delete('+full.id+')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }else{
                         return '<td class="f-14 td-manage">' +
                             '<a style="text-decoration:none" onClick="operate('+full.id+',1)" href="#">关闭</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改车队信息\',\'base-supplier-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改车队信息\',\'base-fleet-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="base_supplier_delete('+full.id+')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }
 

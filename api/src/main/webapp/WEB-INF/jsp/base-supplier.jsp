@@ -14,7 +14,7 @@
 	<div class="page-container">
         <div class="text-c">
             <input type="text" id="s_name" placeholder="供货商名称" style="width:250px" class="input-text">&nbsp;&nbsp;
-            <input type="text" id="s_tel"  placeholder="供货商电话" style="width:250px" class="input-text">&nbsp;&nbsp;
+            <input type="text" id="s_tel"  placeholder="供货商负责人" style="width:250px" class="input-text">&nbsp;&nbsp;
             <input type="text" id="s_add"  placeholder="供货商地址" style="width:250px" class="input-text">
 			<button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
 		</div>
@@ -98,7 +98,7 @@
                         value: $('#s_name').val()
                     },
                     {
-                        name: "telephone",
+                        name: "supplierOfficial",
                         value: $('#s_tel').val()
                     },
                     {

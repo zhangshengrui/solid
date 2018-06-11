@@ -9,13 +9,13 @@
 	<form action="supplier/editSupplier" method="post" class="form form-horizontal" id="form-member-add">
         <input type="hidden"  value="-1" name="id" id="f_id">
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>供应商名称：</label>
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>供货商名称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="supplierName" name="supplierName">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>是否开启：</label>
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>是否开启：</label>
 			<div class="formControls col-xs-8 col-sm-9 skin-minimal">
 				<div class="radio-box">
 					<input name="status" type="radio" id="sex-1" value = '0' checked>
@@ -96,7 +96,7 @@ $(function(){
                     var index = parent.layer.getFrameIndex(window.name);
                     parent.layerResult(data,index);
                 }else if(data == 'repeat'){
-                    layer.msg('当前仓库名称已存在!',{icon:2,time:2000});
+                    layer.msg('当前供货商名称已存在!',{icon:2,time:2000});
                 }else{
                     layer.msg('操作失败!',{icon:2,time:2000});
                 }

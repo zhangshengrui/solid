@@ -25,9 +25,9 @@ public class BaseInfoController {
         return "base-fleet";
     }
 
-    @RequestMapping("base-receive")
+    @RequestMapping("base-receiver")
     public String receive(){
-        return "base-receive";
+        return "base-receiver";
     }
 
     @RequestMapping("base-supplier-add")
@@ -67,6 +67,20 @@ public class BaseInfoController {
             HttpSession session = request.getSession();
             session.setAttribute("id",id);
             return "base-fleet-add";
+        }catch (Exception e){
+            return  "404";
+        }
+    }
+
+    @RequestMapping("base-receiver-add")
+    public String base_receiver_add(Integer id, HttpServletRequest request){
+        try {
+            if(id == null){
+                return "404";
+            }
+            HttpSession session = request.getSession();
+            session.setAttribute("id",id);
+            return "base-receiver-add";
         }catch (Exception e){
             return  "404";
         }

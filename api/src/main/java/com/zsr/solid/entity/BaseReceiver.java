@@ -1,11 +1,11 @@
 package com.zsr.solid.entity;
 
-public class BaseFleet {
+public class BaseReceiver {
     private Integer id;                 //主键ID
-    private String number;              //编号
-    private String license;             //车牌号
-    private String official;            //负责人
-    private String telephone;           //电话
+    private String supplierName;        //收货商名称
+    private String supplierAddress;     //收货商地址
+    private String supplierOfficial;    //收应商负责人
+    private String telephone;           //收应商电话
     private Integer status;             //当前状态（0：正常 1：关闭 -1：删除）
     private String memo;                //备注
     private String indate;              //添加日期
@@ -18,28 +18,28 @@ public class BaseFleet {
         this.id = id;
     }
 
-    public String getNumber() {
-        return number;
+    public String getSupplierName() {
+        return supplierName;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
+    public void setSupplierName(String supplierName) {
+        this.supplierName = supplierName;
     }
 
-    public String getLicense() {
-        return license;
+    public String getSupplierAddress() {
+        return supplierAddress;
     }
 
-    public void setLicense(String license) {
-        this.license = license;
+    public void setSupplierAddress(String supplierAddress) {
+        this.supplierAddress = supplierAddress;
     }
 
-    public String getOfficial() {
-        return official;
+    public String getSupplierOfficial() {
+        return supplierOfficial;
     }
 
-    public void setOfficial(String official) {
-        this.official = official;
+    public void setSupplierOfficial(String supplierOfficial) {
+        this.supplierOfficial = supplierOfficial;
     }
 
     public String getTelephone() {
