@@ -14,20 +14,6 @@ public class BaseInfoController {
     public String supplier(){
         return "base-supplier";
     }
-    @RequestMapping("base-supplier-add")
-    public String base_supplier_add(Integer id, HttpServletRequest request){
-        try {
-            if(id == null){
-                return "404";
-            }
-            HttpSession session = request.getSession();
-            session.setAttribute("id",id);
-            return "base-supplier-add";
-        }catch (Exception e){
-            return  "404";
-        }
-    }
-
 
     @RequestMapping("base-goods")
     public String goods(){
@@ -42,5 +28,33 @@ public class BaseInfoController {
     @RequestMapping("base-receive")
     public String receive(){
         return "base-receive";
+    }
+
+    @RequestMapping("base-supplier-add")
+    public String base_supplier_add(Integer id, HttpServletRequest request){
+        try {
+            if(id == null){
+                return "404";
+            }
+            HttpSession session = request.getSession();
+            session.setAttribute("id",id);
+            return "base-supplier-add";
+        }catch (Exception e){
+            return  "404";
+        }
+    }
+
+    @RequestMapping("base-goods-add")
+    public String base_goods_add(Integer id, HttpServletRequest request){
+        try {
+            if(id == null){
+                return "404";
+            }
+            HttpSession session = request.getSession();
+            session.setAttribute("id",id);
+            return "base-goods-add";
+        }catch (Exception e){
+            return  "404";
+        }
     }
 }

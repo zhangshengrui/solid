@@ -98,7 +98,7 @@ $(function(){
                 }else if(data == 'repeat'){
                     layer.msg('当前仓库名称已存在!',{icon:2,time:2000});
                 }else{
-                    layer.msg(m+'操作成功!',{icon:2,time:2000});
+                    layer.msg('操作失败!',{icon:2,time:2000});
                 }
             });
 		}

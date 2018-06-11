@@ -6,16 +6,16 @@
 </head>
 <body>
 <article class="page-container">
-	<form action="supplier/editSupplier" method="post" class="form form-horizontal" id="form-member-add">
+	<form action="goods/editSupplier" method="post" class="form form-horizontal" id="form-member-add">
         <input type="hidden"  value="-1" name="id" id="f_id">
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>供应商名称：</label>
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>货物名称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="supplierName" name="supplierName">
+				<input type="text" class="input-text" value="" placeholder="" id="name" name="name">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>是否开启：</label>
+			<label class="form-label col-xs-4 col-sm-3">是否开启：</label>
 			<div class="formControls col-xs-8 col-sm-9 skin-minimal">
 				<div class="radio-box">
 					<input name="status" type="radio" id="sex-1" value = '0' checked>
@@ -28,24 +28,23 @@
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>供货商负责人：</label>
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>货物编号：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" placeholder="" name="supplierOfficial" id="supplierOfficial">
+				<input type="text" class="input-text" placeholder="" name="number" id="number">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>负责人手机：</label>
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>货物价格：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="telephone" name="telephone">
+				<input type="text" class="input-text" placeholder="" name="price" id="price">
 			</div>
 		</div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3">供货商地址：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <textarea name="supplierAddress" id="supplierAddress" cols="" rows="" class="textarea"  placeholder=""></textarea>
-                <p class="textarea-numberbar"></p>
-            </div>
-        </div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>供货商名称：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="address" name="address">
+			</div>
+		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">备注：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -70,23 +69,25 @@ $(function(){
 	
 	$("#form-member-add").validate({
 		rules:{
-            supplierName:{
+            name:{
 				required:true,
 				minlength:1,
 				maxlength:50
 			},
-            status:{
-				required:true
-			},
-            supplierOfficial:{
-                required:false,
+            number:{
+                required:true,
                 minlength:1,
-                maxlength:4
+                maxlength:50
             },
-            telephone:{
-				required:false,
-				isMobile:true,
-			}
+            address:{
+                required:true,
+                minlength:1,
+                maxlength:50
+            },
+            price:{
+                required:true,
+                isNumber:true,
+            },
 		},
 		focusCleanup:true,
 		success:"valid",
@@ -96,7 +97,7 @@ $(function(){
                     var index = parent.layer.getFrameIndex(window.name);
                     parent.layerResult(data,index);
                 }else if(data == 'repeat'){
-                    layer.msg('当前仓库名称已存在!',{icon:2,time:2000});
+                    layer.msg('当前货物名称已存在!',{icon:2,time:2000});
                 }else{
                     layer.msg('操作失败!',{icon:2,time:2000});
                 }
@@ -111,26 +112,23 @@ $(function(){
         }
         $('#f_id').val("-1");
         $("#memo").val("");
-        $('#supplierName').val("");
-        $('#supplierOfficial').val("");
-        $("#supplierAddress").val()
-        $('#telephone').val("");
         $("#sex-1").attr("checked","checked");
+        $('#name').val("");
+        $('#number').val("");
+        $("#address").val();
+        $('#price').val("");
         if(id != -1){
             $.ajax({
-                url:_basePath +"base/supplier/querySupplierList",
+                url:_basePath +"base/goods/querySupplierList",
                 data:{id:id},
                 success:function(data){
                     var json = JSON.parse(data).data[0];
-                    $('#f_id').val(json.id)
-                    $("#memo").val(json.memo)
-                    $('#supplierName').val(json.supplierName)
-                    $('#supplierOfficial').val(json.supplierOfficial)
-                    $('#telephone').val(json.telephone)
-                    $('#supplierAddress').val(json.supplierAddress)
-                    if(json.status == 1){
-                        $("#sex-2").attr("checked","checked");
-                    }
+                    $('#f_id').val(json.id);
+                    $("#memo").val(json.memo);
+                    $('#name').val(json.name);
+                    $('#number').val(json.number);
+                    $("#address").val(json.address);
+                    $('#price').val(json.price);
                 },
                 error:function () {
                     layer.msg('系统异常!',{icon:2,time:1000});

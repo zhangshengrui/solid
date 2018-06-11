@@ -6,15 +6,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7e3b742-1f45-472b-a884-3c99132b8e07" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zsr/solid/controller/Hello.class" afterPath="$PROJECT_DIR$/target/classes/com/zsr/solid/controller/Hello.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zsr/solid/controller/BaseInfoController.class" afterPath="$PROJECT_DIR$/target/classes/com/zsr/solid/controller/BaseInfoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/H-ui.login.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/H-ui.login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseInfoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-fleet.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-fleet.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receive.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receive.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier-add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/base-fleet.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/base-fleet.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/base-goods.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/base-goods.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/base-receive.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/base-receive.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/h-ui.admin/css/H-ui.login.css" afterPath="$PROJECT_DIR$/target/classes/static/h-ui.admin/css/H-ui.login.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../logs/print.log" afterPath="$PROJECT_DIR$/../logs/print.log" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,41 +35,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <file leaf-file-name="BaseGoodsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseGoodsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="552">
+              <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java">
+      <file leaf-file-name="BaseGoodsBusinessImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="229">
+              <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
+      <file leaf-file-name="BaseGoodsDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="203">
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="H-ui.login.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/H-ui.login.css">
+      <file leaf-file-name="BaseGoodsDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="755">
+              <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <folding>
+                <marker date="1528738716168" expanded="true" signature="963:1037" ph="SELECT COUNT... goods" />
+                <marker date="1528738716168" expanded="true" signature="1132:1190" ph="UPDATE suppl... " />
+                <marker date="1528738716168" expanded="true" signature="1291:1441" ph="INSERT INTO `goods`... " />
+                <marker date="1528738716168" expanded="true" signature="1543:1685" ph="UPDATE `good... " />
+                <marker date="1528738716168" expanded="true" signature="1754:1807" ph="UPDATE `good... " />
+                <marker date="1528738716168" expanded="true" signature="1767:1807" ph="UPDATE `supp... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base-goods-add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods-add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -76,30 +108,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>../../lib</find>
-      <find>lib</find>
-      <find>cn.gif</find>
-      <find>welc</find>
-      <find>treeDemo</find>
-      <find>品牌管理</find>
-      <find>WdatePicker.js</find>
-      <find>table-sort</find>
-      <find>table</find>
-      <find>div</find>
-      <find>当前数据中检索</find>
-      <find>logmin</find>
-      <find>entity</find>
-      <find>dataTable</find>
-      <find>aDataSort</find>
-      <find>my_class</find>
-      <find>myClass</find>
       <find>memo</find>
       <find>$('#s_name').val()</find>
       <find>s_name</find>
@@ -113,10 +128,40 @@
       <find>Copyright 你的公司名称 by H-ui.admin v3.1</find>
       <find>footer</find>
       <find>header</find>
+      <find>baseSupplier</find>
+      <find>BaseSupplier baseSupplier</find>
+      <find>com.zsr.solid.entity.BaseSupplier</find>
+      <find>`supplier`</find>
+      <find>base-supplier-add</find>
+      <find>'base-supplier-add</find>
+      <find>'base/supplier/base-supplier-add</find>
+      <find>'supplier/base-supplier-add</find>
+      <find>base/supplier/</find>
+      <find>供货商</find>
+      <find>operate</find>
+      <find>supplier</find>
+      <find>520</find>
+      <find>name</find>
+      <find>*</find>
+      <find>m</find>
+      <find>editSupplier</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>baseGoods</replace>
+      <replace>BaseGoods baseGoods</replace>
+      <replace>goods</replace>
+      <replace>com.zsr.solid.entity.BaseGoods</replace>
+      <replace>`goods`</replace>
       <replace>time:2000</replace>
+      <replace>'base/base-supplier-add</replace>
+      <replace>'base/supplier/base-supplier-add</replace>
+      <replace>'supplier/base-supplier-add</replace>
+      <replace>'base-supplier-add</replace>
+      <replace>base/goods/</replace>
+      <replace>货物</replace>
+      <replace>520</replace>
+      <replace>500</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -145,27 +190,36 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/_menu.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/ResponseTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseSupplier.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/SolidApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-fleet.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/common/common.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseSupplier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseSupplierController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseSupplierBusiness.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseSupplierDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseSupplierDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/H-ui.login.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receive.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-fleet.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseGoodsBusiness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseSupplierController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseGoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseGoods.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java" />
       </list>
     </option>
   </component>
@@ -188,21 +242,18 @@
             <id />
           </State>
           <State>
-            <id>CodeSpring CoreSpring</id>
+            <id>General</id>
           </State>
           <State>
-            <id>Spring</id>
+            <id>Plugin DevKit</id>
           </State>
           <State>
-            <id>Spring CoreSpring</id>
-          </State>
-          <State>
-            <id>XMLSpring CoreSpring</id>
+            <id>RegExp</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>SpringJavaAutowiringInspection</id>
+            <id>Duplicates</id>
           </State>
         </selected-state>
       </profile-state>
@@ -295,7 +346,22 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zsr" type="462c0819:PsiDirectoryNode" />
+              <item name="solid" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zsr" type="462c0819:PsiDirectoryNode" />
+              <item name="solid" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
@@ -303,62 +369,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="acrossTab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
@@ -409,11 +419,17 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\github\solid\api\src\main\webapp\static\h-ui.admin\images\acrossTab" />
       <recent name="F:\github\solid\api\src\main\webapp\WEB-INF\jsp" />
+      <recent name="F:\github\solid\api\src\main\java\com\zsr\solid\mapper" />
+      <recent name="F:\github\solid\api\src\main\webapp\static\h-ui.admin\images\acrossTab" />
       <recent name="F:\kevin\solid\api\src\main\java\com\zsr\solid\entity" />
       <recent name="F:\kevin\solid\api\src\main\webapp\WEB-INF\jsp" />
-      <recent name="F:\kevin\solid\api\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zsr.solid.mapper" />
+      <recent name="com.zsr.solid.service.impl" />
+      <recent name="com.zsr.solid.service" />
+      <recent name="com.zsr.solid.controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\github\solid\api\src\main\webapp\static\h-ui.admin\images" />
@@ -548,47 +564,47 @@
       <workItem from="1528573603613" duration="378000" />
       <workItem from="1528590383526" duration="94000" />
       <workItem from="1528590723171" duration="26514000" />
-      <workItem from="1528728484815" duration="6064000" />
+      <workItem from="1528728484815" duration="10369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38558000" />
+    <option name="totallyTimeSpent" value="42863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996584" sideWeight="0.5016077" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996584" sideWeight="0.49839228" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3996584" sideWeight="0.49839228" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998392" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998392" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31390676" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23472668" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -605,7 +621,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996584" sideWeight="0.49839228" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3996584" sideWeight="0.49839228" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -618,7 +634,7 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998392" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31390676" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23472668" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -639,40 +655,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="28" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/DD_belatedPNG_0.0.8a-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/_header.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/_menu.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/_meta.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/record-browse.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/record-download.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/record-share.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/filter/Sentinel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1306">
-          <caret line="164" column="24" lean-forward="false" selection-start-line="164" selection-start-column="24" selection-end-line="164" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Index.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/admin-login-bg.jpg">
       <provider selected="true" editor-type-id="images">
@@ -703,14 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-493">
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="39" column="79" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,34 +752,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-fleet.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseSupplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#609#610#0" expanded="false" />
-            <element signature="e#644#645#0" expanded="false" />
-            <element signature="e#1613#1614#0" expanded="false" />
-            <element signature="e#1642#1643#0" expanded="false" />
-            <element signature="e#1686#1687#0" expanded="false" />
-            <element signature="e#1722#1723#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,22 +768,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -878,25 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3244">
-          <caret line="177" column="55" lean-forward="false" selection-start-line="177" selection-start-column="55" selection-end-line="177" selection-end-column="55" />
-          <folding>
-            <marker date="1528731373995" expanded="true" signature="3700:3720" ph="..." />
-            <marker date="1528731373995" expanded="true" signature="3815:3835" ph="..." />
-            <marker date="1528731373995" expanded="true" signature="3989:3997" ph="&amp;##xe6df;" />
-            <marker date="1528731373995" expanded="true" signature="4049:4069" ph="..." />
-            <marker date="1528731373995" expanded="true" signature="4183:4191" ph="&amp;##xe6e2;" />
-            <marker date="1528731373995" expanded="true" signature="4335:4355" ph="..." />
-            <marker date="1528731373995" expanded="true" signature="4449:4469" ph="..." />
-            <marker date="1528731373995" expanded="true" signature="4623:4631" ph="&amp;##xe6df;" />
-            <marker date="1528731373995" expanded="true" signature="4683:4703" ph="..." />
-            <marker date="1528731373995" expanded="true" signature="4817:4825" ph="&amp;##xe6e2;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseSupplierDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -924,29 +845,6 @@
         <state relative-caret-position="116">
           <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseSupplierController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2843">
-          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -999,9 +897,225 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
+        <state relative-caret-position="841">
           <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-fleet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="184" column="7" lean-forward="false" selection-start-line="184" selection-start-column="7" selection-end-line="184" selection-end-column="7" />
+          <folding>
+            <marker date="1528734702685" expanded="true" signature="3763:3783" ph="..." />
+            <marker date="1528734702685" expanded="true" signature="3878:3898" ph="..." />
+            <marker date="1528734702685" expanded="true" signature="4052:4060" ph="&amp;##xe6df;" />
+            <marker date="1528734702685" expanded="true" signature="4112:4132" ph="..." />
+            <marker date="1528734702685" expanded="true" signature="4246:4254" ph="&amp;##xe6e2;" />
+            <marker date="1528734702685" expanded="true" signature="4398:4418" ph="..." />
+            <marker date="1528734702685" expanded="true" signature="4512:4532" ph="..." />
+            <marker date="1528734702685" expanded="true" signature="4686:4694" ph="&amp;##xe6df;" />
+            <marker date="1528734702685" expanded="true" signature="4746:4766" ph="..." />
+            <marker date="1528734702685" expanded="true" signature="4880:4888" ph="&amp;##xe6e2;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receive.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="184" column="7" lean-forward="false" selection-start-line="184" selection-start-column="7" selection-end-line="184" selection-end-column="7" />
+          <folding>
+            <marker date="1528734702746" expanded="true" signature="3445:3465" ph="..." />
+            <marker date="1528734702746" expanded="true" signature="3560:3580" ph="..." />
+            <marker date="1528734702746" expanded="true" signature="3734:3742" ph="&amp;##xe6df;" />
+            <marker date="1528734702746" expanded="true" signature="3794:3814" ph="..." />
+            <marker date="1528734702746" expanded="true" signature="3928:3936" ph="&amp;##xe6e2;" />
+            <marker date="1528734702746" expanded="true" signature="4080:4100" ph="..." />
+            <marker date="1528734702746" expanded="true" signature="4194:4214" ph="..." />
+            <marker date="1528734702746" expanded="true" signature="4368:4376" ph="&amp;##xe6df;" />
+            <marker date="1528734702746" expanded="true" signature="4428:4448" ph="..." />
+            <marker date="1528734702746" expanded="true" signature="4562:4570" ph="&amp;##xe6e2;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseSupplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseSupplierController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2189">
+          <caret line="81" column="134" lean-forward="false" selection-start-line="81" selection-start-column="134" selection-end-line="81" selection-end-column="134" />
+          <folding>
+            <marker date="1528736443123" expanded="true" signature="3700:3720" ph="..." />
+            <marker date="1528736443123" expanded="true" signature="3815:3835" ph="..." />
+            <marker date="1528736443123" expanded="true" signature="3989:3997" ph="&amp;##xe6df;" />
+            <marker date="1528736443123" expanded="true" signature="4049:4069" ph="..." />
+            <marker date="1528736443123" expanded="true" signature="4183:4191" ph="&amp;##xe6e2;" />
+            <marker date="1528736443123" expanded="true" signature="4335:4355" ph="..." />
+            <marker date="1528736443123" expanded="true" signature="4449:4469" ph="..." />
+            <marker date="1528736443123" expanded="true" signature="4623:4631" ph="&amp;##xe6df;" />
+            <marker date="1528736443123" expanded="true" signature="4683:4703" ph="..." />
+            <marker date="1528736443123" expanded="true" signature="4817:4825" ph="&amp;##xe6e2;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseGoodsBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseGoods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <folding>
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1119#1120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseGoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1388">
+          <caret line="81" column="149" lean-forward="false" selection-start-line="81" selection-start-column="149" selection-end-line="81" selection-end-column="149" />
+          <folding>
+            <marker date="1528737839289" expanded="true" signature="3400:3420" ph="..." />
+            <marker date="1528737839289" expanded="true" signature="3515:3535" ph="..." />
+            <marker date="1528737839289" expanded="true" signature="3685:3693" ph="&amp;##xe6df;" />
+            <marker date="1528737839289" expanded="true" signature="3745:3765" ph="..." />
+            <marker date="1528737839289" expanded="true" signature="3879:3887" ph="&amp;##xe6e2;" />
+            <marker date="1528737839289" expanded="true" signature="4031:4051" ph="..." />
+            <marker date="1528737839289" expanded="true" signature="4145:4165" ph="..." />
+            <marker date="1528737839289" expanded="true" signature="4315:4323" ph="&amp;##xe6df;" />
+            <marker date="1528737839289" expanded="true" signature="4375:4395" ph="..." />
+            <marker date="1528737839289" expanded="true" signature="4509:4517" ph="&amp;##xe6e2;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product-category-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="100" column="35" lean-forward="false" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/validate-methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="89" column="40" lean-forward="false" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <marker date="1528738716168" expanded="true" signature="963:1037" ph="SELECT COUNT... goods" />
+            <marker date="1528738716168" expanded="true" signature="1132:1190" ph="UPDATE suppl... " />
+            <marker date="1528738716168" expanded="true" signature="1291:1441" ph="INSERT INTO `goods`... " />
+            <marker date="1528738716168" expanded="true" signature="1543:1685" ph="UPDATE `good... " />
+            <marker date="1528738716168" expanded="true" signature="1754:1807" ph="UPDATE `good... " />
+            <marker date="1528738716168" expanded="true" signature="1767:1807" ph="UPDATE `supp... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
