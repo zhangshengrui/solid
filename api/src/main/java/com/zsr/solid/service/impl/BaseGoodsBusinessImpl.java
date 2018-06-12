@@ -6,9 +6,9 @@ import com.zsr.solid.entity.ResponseTable;
 import com.zsr.solid.mapper.BaseGoodsDao;
 import com.zsr.solid.service.BaseGoodsBusiness;
 import org.apache.commons.lang3.StringUtils;
-import org.omg.DynamicAny._DynAnyFactoryStub;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -40,6 +40,7 @@ public class BaseGoodsBusinessImpl implements BaseGoodsBusiness{
     }
 
     @Override
+    @Transactional
     public String operate(BaseGoods baseGoods) {
         String message = "false";
         try {
@@ -58,6 +59,7 @@ public class BaseGoodsBusinessImpl implements BaseGoodsBusiness{
     }
 
     @Override
+    @Transactional
     public String editSupplier(BaseGoods baseGoods) {
         try {
             if(baseGoods.getId() == null){
@@ -79,6 +81,7 @@ public class BaseGoodsBusinessImpl implements BaseGoodsBusiness{
     }
 
     @Override
+    @Transactional
     public String delete(String password, String ids) {
         try {
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){

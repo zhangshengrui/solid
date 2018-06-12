@@ -28,7 +28,7 @@
     </insert>
 
     <update id="editSupplier" parameterType="com.zsr.solid.entity.User">
-        UPDATE `user` SET account=#{account},`name`=#{name},`role`=role,`status`=#{status},password=#{password},memo=#{memo} WHERE  id=#{id}
+        UPDATE `user` SET account=#{account},`name`=#{name},`role`=#{role},`status`=#{status},memo=#{memo} WHERE  id=#{id}
     </update>
 
     <delete id="delete" parameterType="Map">

@@ -8,6 +8,7 @@ import com.zsr.solid.service.BaseSupplierBusiness;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -38,6 +39,7 @@ public class BaseSupplierBusinessImpl implements BaseSupplierBusiness{
     }
 
     @Override
+    @Transactional
     public String operate(BaseSupplier baseSupplier) {
         String message = "false";
         try {
@@ -56,6 +58,7 @@ public class BaseSupplierBusinessImpl implements BaseSupplierBusiness{
     }
 
     @Override
+    @Transactional
     public String editSupplier(BaseSupplier baseSupplier) {
         try {
             if(baseSupplier.getId() == null){
@@ -80,6 +83,7 @@ public class BaseSupplierBusinessImpl implements BaseSupplierBusiness{
     }
 
     @Override
+    @Transactional
     public String delete(String password, String ids) {
         try {
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){

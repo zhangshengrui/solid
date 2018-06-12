@@ -12,16 +12,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("admin/user")
+@RequestMapping("admin")
 public class AdminUserController {
     @Autowired
     private AdminUserBusiness adminUserBusinessImpl;
 
-    @RequestMapping("/")
+    @RequestMapping("/user")
     public String index() {
         return "admin-role";
     }
-    @RequestMapping("user-add")
+    @RequestMapping("admin-role-add")
     public String user_add(Integer id, HttpServletRequest request){
         try {
             if(id == null){
@@ -29,7 +29,7 @@ public class AdminUserController {
             }
             HttpSession session = request.getSession();
             session.setAttribute("id",id);
-            return "user-add";
+            return "admin-role-add";
         }catch (Exception e){
             return  "404";
         }

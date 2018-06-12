@@ -9,6 +9,7 @@ import com.zsr.solid.service.OrderBusiness;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -39,6 +40,7 @@ public class OrderBusinessImpl implements OrderBusiness{
     }
 
     @Override
+    @Transactional
     public String operate(Order order) {
         String message = "false";
         try {
@@ -57,6 +59,7 @@ public class OrderBusinessImpl implements OrderBusiness{
     }
 
     @Override
+    @Transactional
     public String editSupplier(Order order) {
         try {
             if(order.getId() == null){
@@ -86,6 +89,7 @@ public class OrderBusinessImpl implements OrderBusiness{
     }
 
     @Override
+    @Transactional
     public String delete(String password, String ids) {
         try {
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){

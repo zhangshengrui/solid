@@ -1,16 +1,15 @@
 package com.zsr.solid.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.zsr.solid.entity.BaseSupplier;
 import com.zsr.solid.entity.ResponseTable;
 import com.zsr.solid.entity.User;
 import com.zsr.solid.mapper.AdminUserDao;
-import com.zsr.solid.mapper.BaseSupplierDao;
 import com.zsr.solid.service.AdminUserBusiness;
-import com.zsr.solid.service.BaseSupplierBusiness;
+import com.zsr.solid.util.MD5;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -41,6 +40,7 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
     }
 
     @Override
+    @Transactional
     public String operate(User user) {
         String message = "false";
         try {
@@ -59,6 +59,7 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
     }
 
     @Override
+    @Transactional
     public String editSupplier(User user) {
         try {
             if(user.getId() == null){
@@ -70,6 +71,8 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
                if(count> 0){
                    return "repeat";
                }
+               String password = MD5.stringToMD5("admin");
+               user.setPassword(password);
                user.setIndate(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
                result = adminUserDao.addSupplier(user)>0?"新增":"false";
             } else{//修改
@@ -83,6 +86,7 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
     }
 
     @Override
+    @Transactional
     public String delete(String password, String ids) {
         try {
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){

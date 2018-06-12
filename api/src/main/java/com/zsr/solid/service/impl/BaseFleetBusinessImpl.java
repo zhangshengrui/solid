@@ -5,12 +5,11 @@ import com.zsr.solid.entity.BaseFleet;
 import com.zsr.solid.entity.BaseSupplier;
 import com.zsr.solid.entity.ResponseTable;
 import com.zsr.solid.mapper.BaseFleetDao;
-import com.zsr.solid.mapper.BaseSupplierDao;
 import com.zsr.solid.service.BaseFleetBusiness;
-import com.zsr.solid.service.BaseSupplierBusiness;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -41,6 +40,7 @@ public class BaseFleetBusinessImpl implements BaseFleetBusiness {
     }
 
     @Override
+    @Transactional
     public String operate(BaseFleet baseFleet) {
         String message = "false";
         try {
@@ -59,6 +59,7 @@ public class BaseFleetBusinessImpl implements BaseFleetBusiness {
     }
 
     @Override
+    @Transactional
     public String editSupplier(BaseFleet baseFleet) {
         try {
             if(baseFleet.getId() == null){
@@ -83,6 +84,7 @@ public class BaseFleetBusinessImpl implements BaseFleetBusiness {
     }
 
     @Override
+    @Transactional
     public String delete(String password, String ids) {
         try {
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){

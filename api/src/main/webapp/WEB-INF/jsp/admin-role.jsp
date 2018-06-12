@@ -24,7 +24,7 @@
 			</span>
             <button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
         </div>
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加用户','user/user-add?id=-1','','540')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加用户</a></span> </div>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加用户','admin-role-add?id=-1','','540')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加用户</a></span> </div>
         <div class="mt-20">
             <table class="table table-border table-bordered table-bg table-sort">
                 <thead>
@@ -52,7 +52,7 @@
 
     function initTable(){
         $('.table-sort').dataTable({
-            "ajax":_basePath +"admin/user/querySupplierList",
+            "ajax":_basePath +"admin/querySupplierList",
             "columns": [
                 { "data": "",
                     "render":function(data, type, full, callback){
@@ -62,7 +62,15 @@
                 { "data": "id",defaultContent:''},
                 { "data": "name",defaultContent:''},
                 { "data": "account",defaultContent:''},
-                { "data": "role",defaultContent:''},
+                { "data": "role",defaultContent:'',"render":function (data,type,full,collback) {
+                    if(data == '0'){
+                        return '基本信息管理员';
+                    }else if(data == '1'){
+                        return '订单管理员';
+                    }else{
+                        return '超级管理员';
+                    }
+                }},
                 { "data": "memo",defaultContent:''},
                 { "data": "indate" ,defaultContent:''},
                 { "data": "status" ,defaultContent:'',"render":function (data,type,full,collback) {
@@ -76,12 +84,12 @@
                     if(data == '1'){
                         return '<td class="f-14 td-manage">' +
                             '<a style="text-decoration:none" onClick="operate('+full.id+',0)" href="#" >开启</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改用户信息\',\'user/user-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改用户信息\',\'admin-role-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="base_supplier_delete('+full.id+')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }else{
                         return '<td class="f-14 td-manage">' +
                             '<a style="text-decoration:none" onClick="operate('+full.id+',1)" href="#">关闭</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改用户信息\',\'user/user-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改用户信息\',\'admin-role-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="base_supplier_delete('+full.id+')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }
 
@@ -110,7 +118,7 @@
 
     function operate(id,type){
         $.ajax({
-            url:_basePath + "admin/user/operate",
+            url:_basePath + "admin/operate",
             data:{id:id,status:type},
             success:function(data){
                 var message = "开启";
@@ -143,7 +151,7 @@
             title: '请输入密码:',
         }, function(value, index, elem){
             $.ajax({
-                url:_basePath + "admin/user/delete",
+                url:_basePath + "admin/delete",
                 data:{password:value,ids:id},
                 success:function(data){
                     layer.close(index);

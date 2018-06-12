@@ -5,11 +5,19 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseSupplierBusiness.java" description="String editSupplier(BaseSupplier baseSupplier);   ..." line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7e3b742-1f45-472b-a884-3c99132b8e07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseSupplierDao.xml" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseSupplierDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+    <list default="true" id="a7e3b742-1f45-472b-a884-3c99132b8e07" name="Default" comment="调整样式">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/AdminUserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/AdminUserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.xml" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../logs/print.log" afterPath="$PROJECT_DIR$/../logs/print.log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role-add.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,45 +33,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="AdminUserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminUserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/AdminUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="706">
+              <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java">
+      <file leaf-file-name="BaseFleetBusinessImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="2088">
+              <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user-add.jsp">
+      <file leaf-file-name="BaseGoodsBusinessImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="48" />
+            <state relative-caret-position="842">
+              <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminUserBusinessImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java">
+      <file leaf-file-name="BaseReceiverBusinessImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="291">
+              <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseSupplierBusinessImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1044">
+              <caret line="85" column="18" lean-forward="false" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderBusinessImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2205">
+              <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -82,15 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>录入订单</find>
-      <find>supplier</find>
-      <find>order_add</find>
-      <find>div</find>
-      <find>缩略图</find>
-      <find>hr</find>
-      <find>日期</find>
-      <find>isnum</find>
-      <find>goodsMoney</find>
       <find>，</find>
       <find>supplier_certify</find>
       <find>layerResult</find>
@@ -98,7 +119,6 @@
       <find>json</find>
       <find>receiverCount</find>
       <find>company</find>
-      <find>editSupplier</find>
       <find>baseSupplierBusinessImpl</find>
       <find>BaseSupplier baseSupplie</find>
       <find>userr</find>
@@ -112,11 +132,18 @@
       <find>s_name</find>
       <find>s_sole</find>
       <find>operate</find>
+      <find>user-add</find>
+      <find>user/user-add</find>
+      <find>admin-role-add</find>
+      <find>admin/user/</find>
+      <find>密码</find>
+      <find>// 匹配密码，以字母开头，长度在6-16之间，只能包含字符、数字和下划线。</find>
+      <find>editSupplier</find>
+      <find>addSupplier</find>
+      <find>password</find>
+      <find>user</find>
     </findStrings>
     <replaceStrings>
-      <replace>com.zsr.solid.entity.BaseFleet</replace>
-      <replace>`fleet`</replace>
-      <replace>base/fleet/</replace>
       <replace>车队</replace>
       <replace>base-fleet-add</replace>
       <replace>510</replace>
@@ -144,6 +171,9 @@
       <replace>`user`</replace>
       <replace>admin/user</replace>
       <replace>用户</replace>
+      <replace>admin-role-add</replace>
+      <replace>user/admin-role-add</replace>
+      <replace>admin/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -160,17 +190,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseSupplierController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseGoodsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseGoods.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusiness.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseFleetController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseFleetBusiness.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseFleetDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseFleetDao.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-fleet.jsp" />
@@ -182,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseReceiverController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseReceiverBusiness.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseReceiverDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseReceiverDao.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receiver.jsp" />
@@ -197,20 +221,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/Order.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/AdminUserBusiness.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseSupplierDao.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/AdminUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/util/MD5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java" />
       </list>
     </option>
   </component>
@@ -708,28 +738,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zsr" type="462c0819:PsiDirectoryNode" />
               <item name="solid" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zsr" type="462c0819:PsiDirectoryNode" />
-              <item name="solid" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zsr" type="462c0819:PsiDirectoryNode" />
-              <item name="solid" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -749,87 +757,18 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zsr" type="462c0819:PsiDirectoryNode" />
+              <item name="solid" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -868,11 +807,11 @@
       <recent name="F:\kevin\solid\api\src\main\webapp\WEB-INF\jsp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zsr.solid.util" />
       <recent name="com.zsr.solid.mapper" />
       <recent name="com.zsr.solid.controller" />
       <recent name="com.zsr.solid.service.impl" />
       <recent name="com.zsr.solid.service" />
-      <recent name="com.zsr.solid.entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\github\solid\api\src\main\webapp\static\h-ui.admin\images" />
@@ -1009,7 +948,7 @@
       <workItem from="1528590723171" duration="26514000" />
       <workItem from="1528728484815" duration="14915000" />
       <workItem from="1528768035526" duration="17878000" />
-      <workItem from="1528803067584" duration="6736000" />
+      <workItem from="1528803067584" duration="10549000" />
     </task>
     <task id="LOCAL-00001" summary="调整样式">
       <created>1528769967040</created>
@@ -1022,7 +961,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72023000" />
+    <option name="totallyTimeSpent" value="75836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
@@ -1078,7 +1017,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6148591" sideWeight="0.49568966" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6148591" sideWeight="0.49568966" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1091,7 +1030,7 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998392" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.261254" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.261254" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1115,7 +1054,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
@@ -1124,41 +1063,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseGoods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseReceiverBusiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1711">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseReceiverDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseReceiverDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1179,14 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3646">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receiver-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="59" lean-forward="false" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -1230,21 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/validate-methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="89" column="40" lean-forward="false" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3973">
@@ -1266,7 +1147,7 @@
         <state relative-caret-position="377">
           <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1333,16 +1214,6 @@
             <marker date="1528805082572" expanded="true" signature="1645:2183" ph="INSERT INTO `order`... " />
             <marker date="1528805082572" expanded="true" signature="2281:2796" ph="UPDATE `orde... " />
             <marker date="1528805082572" expanded="true" signature="2865:2918" ph="UPDATE `orde... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1422,7 +1293,7 @@
         <state relative-caret-position="261">
           <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1432,30 +1303,7 @@
         <state relative-caret-position="203">
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="64" column="48" lean-forward="false" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <marker date="1528809211825" expanded="true" signature="773:840" ph="SELECT COUNT... user" />
-            <marker date="1528809211825" expanded="true" signature="930:987" ph="UPDATE `user... " />
-            <marker date="1528809211825" expanded="true" signature="1083:1221" ph="INSERT INTO `user`... " />
-            <marker date="1528809211825" expanded="true" signature="1318:1450" ph="UPDATE `user... " />
-            <marker date="1528809211825" expanded="true" signature="1519:1571" ph="UPDATE `user... " />
-            <marker date="1528809211825" expanded="true" signature="1529:1571" ph="UPDATE `supp... " />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1471,22 +1319,6 @@
             <marker date="1528809211851" expanded="true" signature="1752:1969" ph="UPDATE `supp... " />
             <marker date="1528809211851" expanded="true" signature="2038:2094" ph="UPDATE `supp... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="88" column="25" lean-forward="true" selection-start-line="84" selection-start-column="16" selection-end-line="88" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1508,30 +1340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1560,10 +1368,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseReceiverController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseFleetController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="61" />
+        <state relative-caret-position="174">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1576,43 +1384,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseFleetController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseReceiverController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        <state relative-caret-position="319">
+          <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1374#1375#0" expanded="false" />
+            <element signature="e#1434#1435#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1044">
-          <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="52" />
+        <state relative-caret-position="873">
+          <caret line="91" column="107" lean-forward="false" selection-start-line="91" selection-start-column="107" selection-end-line="91" selection-end-column="107" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1528809626186" expanded="true" signature="3630:3650" ph="..." />
-            <marker date="1528809626186" expanded="true" signature="3745:3765" ph="..." />
-            <marker date="1528809626186" expanded="true" signature="3914:3922" ph="&amp;##xe6df;" />
-            <marker date="1528809626186" expanded="true" signature="3974:3994" ph="..." />
-            <marker date="1528809626186" expanded="true" signature="4108:4116" ph="&amp;##xe6e2;" />
-            <marker date="1528809626186" expanded="true" signature="4260:4280" ph="..." />
-            <marker date="1528809626186" expanded="true" signature="4374:4394" ph="..." />
-            <marker date="1528809626186" expanded="true" signature="4543:4551" ph="&amp;##xe6df;" />
-            <marker date="1528809626186" expanded="true" signature="4603:4623" ph="..." />
-            <marker date="1528809626186" expanded="true" signature="4737:4745" ph="&amp;##xe6e2;" />
+            <marker date="1528814877749" expanded="true" signature="3941:3961" ph="..." />
+            <marker date="1528814877749" expanded="true" signature="4056:4076" ph="..." />
+            <marker date="1528814877749" expanded="true" signature="4226:4234" ph="&amp;##xe6df;" />
+            <marker date="1528814877749" expanded="true" signature="4286:4306" ph="..." />
+            <marker date="1528814877749" expanded="true" signature="4420:4428" ph="&amp;##xe6e2;" />
+            <marker date="1528814877749" expanded="true" signature="4572:4592" ph="..." />
+            <marker date="1528814877749" expanded="true" signature="4686:4706" ph="..." />
+            <marker date="1528814877749" expanded="true" signature="4856:4864" ph="&amp;##xe6df;" />
+            <marker date="1528814877749" expanded="true" signature="4916:4936" ph="..." />
+            <marker date="1528814877749" expanded="true" signature="5050:5058" ph="&amp;##xe6e2;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="64" column="48" lean-forward="false" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receiver-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="87" column="19" lean-forward="true" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/util/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/validate-methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="155" column="32" lean-forward="false" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <marker date="1528817095212" expanded="true" signature="773:840" ph="SELECT COUNT... user" />
+            <marker date="1528817095212" expanded="true" signature="930:987" ph="UPDATE `user... " />
+            <marker date="1528817095212" expanded="true" signature="1083:1221" ph="INSERT INTO `user`... " />
+            <marker date="1528817095212" expanded="true" signature="1318:1432" ph="UPDATE `user... " />
+            <marker date="1528817095212" expanded="true" signature="1501:1553" ph="UPDATE `user... " />
+            <marker date="1528817095212" expanded="true" signature="1511:1553" ph="UPDATE `supp... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1043">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/AdminUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="706">
+          <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="842">
+          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="85" column="18" lean-forward="false" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2205">
+          <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
