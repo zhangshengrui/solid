@@ -62,8 +62,8 @@
             <dt><i class="Hui-iconfont">&#xe62e;</i>系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="admin/user" data-title="管理员列表" href="javascript:void(0)">用户管理列表</a></li>
-                    <li><a data-href="admin-list.html" data-title="密码管理" href="javascript:void(0)">密码管理</a></li>
+                    <li><a data-href="admin/user" data-title="用户信息管理" href="javascript:void(0)">用户信息管理</a></li>
+                    <li><a data-href="password/index" data-title="密码管理" href="javascript:void(0)">密码管理</a></li>
                     <li><a data-href="admin-list.html" data-title="日志查询" href="javascript:void(0)">日志查询</a></li>
                 </ul>
             </dd>
