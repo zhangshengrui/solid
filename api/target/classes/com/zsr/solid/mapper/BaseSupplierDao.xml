@@ -23,7 +23,7 @@
     </select>
 
     <update id="operate" parameterType="com.zsr.solid.entity.BaseSupplier">
-      UPDATE  supplier set `status` = #{status} WHERE  id = #{id}
+      UPDATE  `supplier` set `status` = #{status} WHERE  id = #{id}
     </update>
 
     <insert id="addSupplier" parameterType="com.zsr.solid.entity.BaseSupplier">

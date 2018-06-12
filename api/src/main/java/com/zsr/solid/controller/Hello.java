@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @EnableAutoConfiguration
 public class Hello {
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     @ResponseBody
     public String home(){
         return "hello world!!";
@@ -25,7 +25,7 @@ public class Hello {
         return "welcome";
     }
 
-    @RequestMapping("/login")
+    @RequestMapping("/")
     public String login(){
         return "login";
     }

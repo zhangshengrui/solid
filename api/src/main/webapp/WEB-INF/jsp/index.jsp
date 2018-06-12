@@ -54,7 +54,7 @@
             <dd>
                 <ul>
                     <li><a data-href="order/index" data-title="订单详情" href="javascript:void(0)">订单详情</a></li>
-                    <li><a data-href="base/base-supplier" data-title="汇总订单详情" href="javascript:void(0)">汇总订单详情</a></li>
+                    <li><a data-href="order/summary" data-title="汇总订单详情" href="javascript:void(0)">汇总订单详情</a></li>
                 </ul>
             </dd>
         </dl>
@@ -62,7 +62,7 @@
             <dt><i class="Hui-iconfont">&#xe62e;</i>系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="admin-list.html" data-title="管理员列表" href="javascript:void(0)">管理员列表</a></li>
+                    <li><a data-href="admin/user" data-title="管理员列表" href="javascript:void(0)">用户管理列表</a></li>
                     <li><a data-href="admin-list.html" data-title="密码管理" href="javascript:void(0)">密码管理</a></li>
                     <li><a data-href="admin-list.html" data-title="日志查询" href="javascript:void(0)">日志查询</a></li>
                 </ul>
