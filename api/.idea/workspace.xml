@@ -5,12 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseSupplierBusiness.java" description="String editSupplier(BaseSupplier baseSupplier);   ..." line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7e3b742-1f45-472b-a884-3c99132b8e07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.xml" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order.jsp" />
-    </list>
+    <list default="true" id="a7e3b742-1f45-472b-a884-3c99132b8e07" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1001,7 +996,7 @@
       <workItem from="1528590383526" duration="94000" />
       <workItem from="1528590723171" duration="26514000" />
       <workItem from="1528728484815" duration="14915000" />
-      <workItem from="1528768035526" duration="17424000" />
+      <workItem from="1528768035526" duration="17878000" />
     </task>
     <task id="LOCAL-00001" summary="调整样式">
       <created>1528769967040</created>
@@ -1014,7 +1009,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64833000" />
+    <option name="totallyTimeSpent" value="65287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />

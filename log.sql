@@ -81,11 +81,11 @@ CREATE TABLE `order` (
   `indate` date DEFAULT NULL COMMENT '增加日期',
   `status` int(255) DEFAULT '0' COMMENT '状态(0:正常  -1删除 )',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8093 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=8098 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 /*Data for the table `order` */
 
-insert  into `order`(`id`,`date`,`fleet_number`,`fleet_license`,`goods_name`,`supplier_name`,`supplier_certify`,`goods_count`,`goods_price`,`goods_money`,`receiver_name`,`receiver_certify`,`receiver_count`,`receiver_price`,`receiver_money`,`profit`,`memo`,`indate`,`status`) values (8090,'2018-06-12','HK02','07068','石','后坑','009123',34.50,100.00,3450.00,'宝丽华','023445534',52.55,35.99,130.00,4678.11,'测试添加一条数据','2018-06-12',0),(8091,'2018-06-15','HK02','07068','石','后坑','009123',0.00,0.00,0.00,'宝丽华','023445531',0.00,0.00,0.00,0.00,'sss','2018-06-12',0),(8092,'2018-06-11','HK02','07068','石','后坑','009123',0.00,0.00,0.00,'宝丽华','2',0.00,0.00,0.00,0.00,NULL,'2018-06-12',0);
+insert  into `order`(`id`,`date`,`fleet_number`,`fleet_license`,`goods_name`,`supplier_name`,`supplier_certify`,`goods_count`,`goods_price`,`goods_money`,`receiver_name`,`receiver_certify`,`receiver_count`,`receiver_price`,`receiver_money`,`profit`,`memo`,`indate`,`status`) values (8090,'2018-06-12','HK02','07068','石','后坑','009123',34.50,100.00,3450.00,'宝丽华','023445534',52.55,35.99,130.00,4678.11,'测试添加一条数据','2018-06-12',-1),(8091,'2018-06-15','1','07068','1','1','009123',0.00,0.00,11.00,'1','023445531',0.00,0.00,0.00,0.00,'sss','2018-06-12',0),(8092,'2018-06-11','1','07068','1','1','009123',0.00,0.00,0.00,'1','2',0.00,0.00,0.00,0.00,'sss','2018-06-12',0),(8093,'2018-06-12','1','1','1','1','1231',11.00,2.00,2.00,'1','2',11.00,1.00,1.00,1.00,'1','2018-06-12',0),(8094,'2018-06-12','1','1','1','1','13',12.00,3.00,1.00,'1','1',3.00,12.00,123.00,123.00,'123','2018-06-12',0),(8095,'2018-06-12','1','1','1','1','13',12.00,3.00,1.00,'1','1',3.00,12.00,123.00,123.00,'123','2018-06-12',0),(8096,'2018-06-04','1','s1','1','1','2',313.00,13.00,13.00,'1','123',132.00,123.00,123.00,13.00,'13','2018-06-12',0),(8097,'2018-06-07','1','aa','1','1','asd',111.00,23.00,3.00,'1','123',3.00,3.00,3.00,3.00,'3','2018-06-12',0);
 
 /*Table structure for table `receiver` */
 
