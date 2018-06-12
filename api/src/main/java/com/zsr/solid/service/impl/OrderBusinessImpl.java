@@ -63,8 +63,16 @@ public class OrderBusinessImpl implements OrderBusiness{
                     return "false";
             }
             String result;
+            order.setGoodsCount(new Double(order.getGoodsCount()).toString());
+            order.setGoodsPrice(new Double(order.getGoodsPrice()).toString());
+            order.setGoodsMoney(new Double(order.getGoodsMoney()).toString());
+            order.setReceiverCount(new Double(order.getReceiverCount()).toString());
+            order.setReceiverPrice(new Double(order.getReceiverPrice()).toString());
+            order.setReceiverMoney(new Double(order.getReceiverMoney()).toString());
+            order.setProfit(new Double(order.getProfit()).toString());
             if(order.getId() == -1){ //新增
                order.setIndate(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+               order.setStatus(0);
                result = orderDao.addSupplier(order)>0?"新增":"false";
             } else{//修改
                result = orderDao.editSupplier(order)>0?"修改":"false";
