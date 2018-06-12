@@ -70,6 +70,7 @@ public class OrderBusinessImpl implements OrderBusiness{
             order.setReceiverPrice(new Double(order.getReceiverPrice()).toString());
             order.setReceiverMoney(new Double(order.getReceiverMoney()).toString());
             order.setProfit(new Double(order.getProfit()).toString());
+            order.setCompany(new Double(order.getCompany()).toString());
             if(order.getId() == -1){ //新增
                order.setIndate(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
                order.setStatus(0);

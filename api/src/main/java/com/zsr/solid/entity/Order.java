@@ -16,6 +16,7 @@ public class Order {
     private String receiverCount;   //收货方数量
     private String receiverPrice;   //收货方单价
     private String receiverMoney;   //收货方金额
+    private String company;         //吨位/方数
     private String profit;          //利润
     private String memo;            //备注
     private String indate;          //增加日期
@@ -191,5 +192,13 @@ public class Order {
 
     public void setEndTime(String endTime) {
         this.endTime = endTime;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 }
