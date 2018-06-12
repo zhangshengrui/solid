@@ -50,11 +50,11 @@
             </dd>
         </dl>
         <dl id="menu-tongji">
-            <dt><i class="Hui-iconfont">&#xe61a;</i>订单统计<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dt><i class="Hui-iconfont">&#xe61a;</i>订单管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="base/base-supplier" data-title="所有订单详情" href="javascript:void(0)">所有订单详情</a></li>
-                    <li><a data-href="base/base-supplier" data-title="每月汇总订单详情" href="javascript:void(0)">每月汇总订单详情</a></li>
+                    <li><a data-href="order/index" data-title="订单详情" href="javascript:void(0)">订单详情</a></li>
+                    <li><a data-href="base/base-supplier" data-title="汇总订单详情" href="javascript:void(0)">汇总订单详情</a></li>
                 </ul>
             </dd>
         </dl>
