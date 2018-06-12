@@ -8,4 +8,5 @@ public interface AdminUserBusiness {
     String operate(User user);                      //更改状态
     String editSupplier(User user);                 //新增修改
     String delete(String password, String ids);      //删除ID
+    String reset(String password, String ids);      //重置密码
 }

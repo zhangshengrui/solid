@@ -47,6 +47,12 @@ public class AdminUserController {
         return adminUserBusinessImpl.operate(user);
     }
 
+    @RequestMapping("reset")
+    @ResponseBody
+    public String reset(String password,String ids) {
+        return adminUserBusinessImpl.reset(password,ids);
+    }
+
     @RequestMapping("editSupplier")
     @ResponseBody
     public String editSupplier(User user){

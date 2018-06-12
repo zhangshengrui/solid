@@ -58,6 +58,7 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
         }
     }
 
+
     @Override
     @Transactional
     public String editSupplier(User user) {
@@ -101,6 +102,24 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
             List<Integer> list = JSON.parseObject(ids,new ArrayList().getClass());
             String idstr = "( "+StringUtils.join(list,",")+" )";
             return adminUserDao.delete(idstr)>0?"success":"false";
+        }catch (Exception e){
+            e.printStackTrace();
+            return "fail";
+        }
+    }
+
+    @Override
+    @Transactional
+    public String reset(String password, String ids) {
+        try {
+            if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){
+                return  "password or ids is null";
+            }
+            if(!"123456".equals(password)){
+                return "wrong";
+            }
+            String md5 = MD5.stringToMD5("admin");
+            return adminUserDao.reset(md5,ids)>0?"success":"false";
         }catch (Exception e){
             e.printStackTrace();
             return "fail";
