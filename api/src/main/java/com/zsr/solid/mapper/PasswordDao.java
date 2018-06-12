@@ -8,4 +8,5 @@ import java.util.List;
 public interface PasswordDao {
     List<BaseSupplier> querySupplierList(Password password);        //查询
     Integer reset(String md5,String id);        //重置密码
+    Integer update(Password password);         //修改密码
 }

@@ -43,11 +43,11 @@
                 { "data": "status","render":function(data,type,full,collback){
                     if(data == '1'){
                         return '<td class="f-14 td-manage">' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改供货商信息\',\'base-supplier-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="replace('+full.id+')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a></td>'+
                             '<a style="text-decoration:none" class="ml-5" onClick="reset('+full.id+')" href="javascript:;" title="重置密码"><i class="Hui-iconfont">&#xe63f;</i></a></td>'
                     }else{
                         return '<td class="f-14 td-manage">' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改供货商信息\',\'base-supplier-add?id='+full.id+'\',\'\',\'540\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="replace('+full.id+')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a></td>'+
                             '<a style="text-decoration:none" class="ml-5" onClick="reset('+full.id+')" href="javascript:;" title="重置密码"><i class="Hui-iconfont">&#xe63f;</i></a></td>'
                     }
 
@@ -60,9 +60,7 @@
             ],
             bDestroy:true,
             "bProcessing": true,
-            "fnServerParams": function (aoData) {
-                aoData.push();
-            }
+
         });
     }
 
@@ -84,6 +82,31 @@
             })
         });
     }
+
+    //删除用户信息
+    function replace(id) {
+        layer.prompt({
+            title: '请输入新密码:',
+        }, function(value, index, elem){
+            $.ajax({
+                url:_basePath + "password/update",
+                data:{password:value,id:id},
+                success:function(data){
+                    layer.close(index);
+                    if(data == "success"){
+                        layer.msg('修改成功!',{icon:1,time:2000});
+                    } else{
+                        layer.msg('修改失败!',{icon:2,time:2000});
+                    }
+                },
+                error:function () {
+                    layer.msg('系统异常!',{icon:2,time:2000});
+                }
+            })
+        });
+    }
+
+
 </script>
 </body>
 </html>

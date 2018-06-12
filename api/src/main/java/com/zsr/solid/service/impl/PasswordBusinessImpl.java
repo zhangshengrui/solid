@@ -52,5 +52,13 @@ public class PasswordBusinessImpl implements PasswordBusiness{
         }
     }
 
+    @Override
+    public String update(Password password) {
+        if(password.getId() == null || StringUtils.isBlank(password.getPassword())){
+            return "id or password is null";
 
+        }
+        password.setPassword(MD5.stringToMD5(password.getPassword()));
+        return passwordDao.update(password)>0?"success":"false";
+    }
 }

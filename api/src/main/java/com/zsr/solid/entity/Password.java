@@ -3,7 +3,7 @@ package com.zsr.solid.entity;
 public class Password {
     private Integer id;     //主键
     private String node;    //节点名称
-    private String possword;//密码
+    private String password;//密码
     private String memo;    //描述
 
     public Integer getId() {
@@ -22,12 +22,12 @@ public class Password {
         this.node = node;
     }
 
-    public String getPossword() {
-        return possword;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPossword(String possword) {
-        this.possword = possword;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getMemo() {

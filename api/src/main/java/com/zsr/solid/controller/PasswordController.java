@@ -32,4 +32,10 @@ public class PasswordController {
         return passwordBusinessImpl.reset(id);
     }
 
+    @RequestMapping("update")
+    @ResponseBody
+    public String update(Password p) {
+        return passwordBusinessImpl.update(p);
+    }
+
 }
