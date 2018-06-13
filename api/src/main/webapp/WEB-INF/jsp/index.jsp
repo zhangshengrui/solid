@@ -64,7 +64,7 @@
                 <ul>
                     <li><a data-href="admin/user" data-title="用户信息管理" href="javascript:void(0)">用户信息管理</a></li>
                     <li><a data-href="password/index" data-title="密码管理" href="javascript:void(0)">密码管理</a></li>
-                    <li><a data-href="admin-list.html" data-title="日志查询" href="javascript:void(0)">日志查询</a></li>
+                    <li><a data-href="journal/index" data-title="日志查询" href="javascript:void(0)">日志查询</a></li>
                 </ul>
             </dd>
         </dl>
