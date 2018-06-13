@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface JournalDao {
     List<BaseSupplier> querySupplierList(Journal journal);        //查询
+    Integer insertLog(Journal journal);                           //记录日志
 }

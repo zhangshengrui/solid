@@ -12,7 +12,7 @@ MySQL - 5.5.28 : Database - solid
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`solid` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_bin */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`solid` /*!40100 DEFAULT CHARACTER SET gb2312 */;
 
 USE `solid`;
 
@@ -55,6 +55,23 @@ CREATE TABLE `goods` (
 /*Data for the table `goods` */
 
 insert  into `goods`(`id`,`number`,`name`,`address`,`price`,`indate`,`status`,`memo`) values (1,'SS01','沙','四十米场',12.12,'2018-06-12',0,'四十米场'),(2,'TW01','沙','桃围场',80.00,'2018-06-12',0,'四十米场'),(3,'XD01','沙','星都场',0.00,'2018-06-12',0,'星都场');
+
+/*Table structure for table `journal` */
+
+DROP TABLE IF EXISTS `journal`;
+
+CREATE TABLE `journal` (
+  `id` int(255) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `person` varchar(256) DEFAULT NULL COMMENT '操作人',
+  `time` datetime DEFAULT NULL COMMENT '操作时间',
+  `type` varchar(256) DEFAULT NULL COMMENT '操作类型',
+  `content` text COMMENT '操作详情',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gb2312;
+
+/*Data for the table `journal` */
+
+insert  into `journal`(`id`,`person`,`time`,`type`,`content`) values (1,'admin','2018-06-13 17:49:18','新增订单','11<br>22'),(2,'aaa','2019-06-13 17:59:11','操作','黄航哈哈哈'),(3,'bbb','2017-06-13 17:59:11','jia','a');
 
 /*Table structure for table `order` */
 

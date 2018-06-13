@@ -201,4 +201,27 @@ public class Order {
     public void setCompany(String company) {
         this.company = company;
     }
+
+    @Override
+    public String toString() {
+        return
+                "订单ID:" + id +
+                ", 订单日期:'" + date + '\'' +
+                ", 车队编码:'" + fleetNumber + '\'' +
+                ", 车队车牌号:'" + fleetLicense + '\'' +
+                ", 货物名称:'" + goodsName + '\'' +
+                ", 供货单位名称:'" + supplierName + '\'' +
+                ", 供货单号:'" + supplierCertify + '\'' +
+                ", 计费数量:'" + goodsCount + '\'' +
+                ", 货物单价:'" + goodsPrice + '\'' +
+                ", 货物金额:'" + goodsMoney + '\'' +
+                ", 收货单位:'" + receiverName + '\'' +
+                ", 收货方单号:'" + receiverCertify + '\'' +
+                ", 收货方数量:'" + receiverCount + '\'' +
+                ", 收货方单价:'" + receiverPrice + '\'' +
+                ", 收货方金额:'" + receiverMoney + '\'' +
+                ", 吨位/方数:'" + company + '\'' +
+                ", 利润:'" + profit + '\'' +
+                ", 备注:'" + memo + '\'' ;
+    }
 }

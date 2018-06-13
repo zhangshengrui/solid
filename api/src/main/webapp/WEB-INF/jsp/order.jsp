@@ -186,6 +186,9 @@
 
     //删除订单信息
     function base_supplier_delete(id) {
+        if(!id.toString().includes('[')){
+            id =  "[\""+id+"\"]";
+        }
         layer.prompt({
             formType: 1,
             title: '请输入密码:',

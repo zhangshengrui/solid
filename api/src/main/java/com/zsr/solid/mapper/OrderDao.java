@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface OrderDao {
-    List<BaseSupplier> querySupplierList(Order order);        //查询
+    List<Order> querySupplierList(Order order);        //查询
     Integer operate(Order order);                             //更改状态
     Integer querySupplierListByName(String name);                           //判断是否重复
     Integer addSupplier(Order order);                         //新增供货商
