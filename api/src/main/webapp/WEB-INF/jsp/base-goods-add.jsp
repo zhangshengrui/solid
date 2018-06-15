@@ -42,7 +42,11 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>供货商名称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="address" name="address">
+				<%--<input type="text" class="input-text" value="" placeholder="" id="address" name="address">--%>
+                <span class="select-box">
+                    <select class="select" name="address" id="address">
+                    </select>
+				</span>
 			</div>
 		</div>
 		<div class="row cl">
@@ -104,39 +108,61 @@ $(function(){
             });
 		}
 	});
-
-	$(function(){
-        var id = <%=session.getAttribute("id")%>
-        if(check(id)){
-            id = -1
-        }
-        $('#f_id').val("-1");
-        $("#memo").val("");
-        $("#sex-1").attr("checked","checked");
-        $('#name').val("");
-        $('#number').val("");
-        $("#address").val();
-        $('#price').val("");
-        if(id != -1){
-            $.ajax({
-                url:_basePath +"base/goods/querySupplierList",
-                data:{id:id},
-                success:function(data){
-                    var json = JSON.parse(data).data[0];
-                    $('#f_id').val(json.id);
-                    $("#memo").val(json.memo);
-                    $('#name').val(json.name);
-                    $('#number').val(json.number);
-                    $("#address").val(json.address);
-                    $('#price').val(json.price);
-                },
-                error:function () {
-                    layer.msg('系统异常!',{icon:2,time:1000});
-                }
-            })
-        }
-    })
 });
+$(function(){
+    InitCombobox();
+    InitValue();
+})
+
+function InitCombobox(){
+  $.ajax({
+      url:_basePath+"base/supplier/querySupplierList",
+      async:false,
+      success:function(data){
+          var json = JSON.parse(data);
+          $.each(json.data,function(index,value){
+              $("#address").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+          })
+      }
+  })
+}
+
+function InitValue(){
+    var id = <%=session.getAttribute("id")%>
+    if(check(id)){
+        id = -1
+    }
+    $('#f_id').val("-1");
+    $("#memo").val("");
+    $("#sex-1").attr("checked","checked");
+    $('#name').val("");
+    $('#number').val("");
+    $("#address").val();
+    $('#price').val("");
+    if(id != -1){
+        $.ajax({
+            url:_basePath +"base/goods/querySupplierList",
+            data:{id:id},
+            success:function(data){
+                var json = JSON.parse(data).data[0];
+                $('#f_id').val(json.id);
+                $("#memo").val(json.memo);
+                $('#name').val(json.name);
+                $('#number').val(json.number);
+                $('#price').val(json.price);
+                var arr = document.getElementById('address').children
+                $.each(arr,function(index,value){
+                    if(value.text == json.address){
+                        this.selected = true;
+                    }
+                })
+            },
+            error:function () {
+                layer.msg('系统异常!',{icon:2,time:1000});
+            }
+        })
+    }
+}
 </script> 
 <!--/请在上方写此页面业务相关的脚本-->
 </body>
