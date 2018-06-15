@@ -54,7 +54,7 @@ CREATE TABLE `goods` (
 
 /*Data for the table `goods` */
 
-insert  into `goods`(`id`,`number`,`name`,`address`,`price`,`indate`,`status`,`memo`) values (1,'SS01','沙','四十米场',12.12,'2018-06-12',0,'四十米场'),(2,'TW01','沙','桃围场',80.00,'2018-06-12',0,'四十米场'),(3,'XD01','沙','星都场',0.00,'2018-06-12',0,'星都场');
+insert  into `goods`(`id`,`number`,`name`,`address`,`price`,`indate`,`status`,`memo`) values (1,'SS01','沙','四十米场',12.12,'2018-06-12',0,'四十米场'),(2,'TW01','沙','桃尾场',80.00,'2018-06-12',0,'四十米场'),(3,'XD01','沙','星都场',0.00,'2018-06-12',0,'星都场');
 
 /*Table structure for table `journal` */
 
@@ -155,11 +155,11 @@ CREATE TABLE `supplier` (
   `memo` text COLLATE utf8_bin COMMENT '备注',
   `indate` date DEFAULT NULL COMMENT '添加日期',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 /*Data for the table `supplier` */
 
-insert  into `supplier`(`id`,`supplier_name`,`supplier_address`,`supplier_official`,`telephone`,`status`,`memo`,`indate`) values (1,'四十米场','北京三里屯','张三','18201016030',0,'第一个供货商','2018-06-12'),(2,'桃尾场','上海厂商','李四','18209110713',0,'沙','2018-06-12'),(3,'铁炉','广州','王五','18201016030',0,'备注一下','2018-06-12');
+insert  into `supplier`(`id`,`supplier_name`,`supplier_address`,`supplier_official`,`telephone`,`status`,`memo`,`indate`) values (1,'四十米场','北京三里屯','张三','18201016030',0,'第一个供货商','2018-06-12'),(2,'桃尾场','上海厂商','李四','18209110713',0,'沙','2018-06-12'),(3,'铁炉','广州','王五','18201016030',0,'备注一下','2018-06-12'),(4,'星都场	','test','aa','18109876754',0,'1','2018-06-15');
 
 /*Table structure for table `user` */
 
