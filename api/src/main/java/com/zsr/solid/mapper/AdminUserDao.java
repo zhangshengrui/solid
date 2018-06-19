@@ -2,7 +2,6 @@ package com.zsr.solid.mapper;
 
 import com.zsr.solid.entity.User;
 import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
 public interface AdminUserDao {
@@ -13,4 +12,6 @@ public interface AdminUserDao {
     Integer editSupplier(User user);                        //修改供货商
     Integer delete(@Param("idstr") String idstr) ;          //批量删除
     Integer reset(String password,String id) ;              //重置密码
+
+    User queryUserByName(String userId);                      //根据名称查找用户
 }
