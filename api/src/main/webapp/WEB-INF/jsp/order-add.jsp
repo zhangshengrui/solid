@@ -17,14 +17,10 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>车队编码：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select class="select" name="fleetNumber" id="fleetNumber">
-					<option value="1">GXT101</option>
-					<option value="2">GXT102</option>
-					<option value="3">GXT103</option>
-					<option value="4">GXT104</option>
-					<option value="5">GXT105</option>
+				<select class="select" name="fleetNumber" id="fleetNumber" >
 				</select>
-				</span> </div>
+				</span>
+            </div>
         </div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>车队车牌号：</label>
@@ -36,23 +32,17 @@
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>货物名称：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select class="select" name="goodsName" id="goodsName">
-					<option value="1">砂</option>
-					<option value="2">土</option>
-					<option value="3">石</option>
 				</select>
-				</span> </div>
+				</span>
+            </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>供货名称：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select class="select" name="supplierName" id="supplierName">
-					<option value="1">1店</option>
-					<option value="2">2店</option>
-					<option value="3">3店</option>
-					<option value="4">4店</option>
-					<option value="5">5店</option>
 				</select>
-				</span> </div>
+				</span>
+            </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>供货单号：</label>
@@ -83,9 +73,6 @@
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>收货单位：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select class="select" name="receiverName" id="receiverName">
-					<option value="1">北京</option>
-					<option value="2">上海</option>
-					<option value="3">石家庄</option>
 				</select>
 				</span> </div>
         </div>
@@ -220,6 +207,65 @@ $(function(){
 	});
 
 	$(function(){
+	    initCombobox();
+        initTable();
+    })
+
+    function fleetChange() {
+        alert(111)
+    }
+
+    function initCombobox(){
+	    //车队编码初始化
+        $.ajax({
+            url:_basePath+"base/fleet/querySupplierList",
+            async:false,
+            success:function(data){
+                var json = JSON.parse(data);
+                $.each(json.data,function(index,value){
+                    $("#fleetNumber").append("<option value='"+value.number+"'>"+value.number+"</option>");
+                })
+            }
+        });
+
+        //货物名称初始化
+        $.ajax({
+            url:_basePath+"base/goods/querySupplierList",
+            async:false,
+            success:function(data){
+                var json = JSON.parse(data);
+                $.each(json.data,function(index,value){
+                    $("#goodsName").append("<option value='"+value.name+"'>"+value.name+"</option>");
+                })
+            }
+        });
+
+        //供货名称初始化
+        $.ajax({
+            url:_basePath+"base/supplier/querySupplierList",
+            async:false,
+            success:function(data){
+                var json = JSON.parse(data);
+                $.each(json.data,function(index,value){
+                    $("#supplierName").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+                })
+            }
+        });
+
+        //收货单位初始化
+        $.ajax({
+            url:_basePath+"base/receiver/querySupplierList",
+            async:false,
+            success:function(data){
+                var json = JSON.parse(data);
+                $.each(json.data,function(index,value){
+                    $("#receiverName").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+                })
+            }
+        });
+    }
+
+	function　initTable(){
         var id = <%=session.getAttribute("id")%>
         if(check(id)){
             id = -1
@@ -273,7 +319,7 @@ $(function(){
                 }
             })
         }
-    })
+    }
 });
 </script> 
 <!--/请在上方写此页面业务相关的脚本-->
