@@ -42,4 +42,8 @@
     <select id="queryUserByName" parameterType="String">
         SELECT * FROM `user` WHERE id=#{0}
     </select>
+
+    <select id="login" parameterType="com.zsr.solid.entity.User" parameterMap="com.zsr.solid.entity.User">
+        SELECT * FROM `user` WHERE account=#{account} and password =#{password} and `status` = -1
+    </select>
 </mapper>

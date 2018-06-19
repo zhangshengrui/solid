@@ -14,4 +14,5 @@ public interface AdminUserDao {
     Integer reset(String password,String id) ;              //重置密码
 
     User queryUserByName(String userId);                      //根据名称查找用户
+    User login(User user);
 }
