@@ -17,7 +17,7 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>车队编码：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select class="select" name="fleetNumber" id="fleetNumber" >
+				<select class="select" name="fleetNumber" id="fleetNumber">
 				</select>
 				</span>
             </div>
@@ -130,6 +130,42 @@ $(function(){
 		radioClass: 'iradio-blue',
 		increaseArea: '20%'
 	});
+
+    $("#fleetNumber").change(function(){
+        var fleetNumber = $('#fleetNumber').val();
+        $('#fleetLicense').val('');
+        $.ajax({
+            url:_basePath+"base/fleet/querySupplierList",
+            async:false,
+            data:{number: fleetNumber},
+            success:function(data){
+                var json = JSON.parse(data).data
+                for(var i in json){
+                    if(json[i].number == fleetNumber){
+                       $('#fleetLicense').val(json[i].license)
+                    }
+                }
+            }
+        });
+    });
+
+    $("#goodsName").change(function(){
+        var name = $('#goodsName').val();
+        $('#goodsName').val('');
+        $.ajax({
+            url:_basePath+"base/goods/querySupplierList",
+            async:false,
+            data:{name: name},
+            success:function(data){
+                var json = JSON.parse(data).data
+                for(var i in json){
+                    if(json[i].name == name){
+                        $('#supplierName').val(json[i].address)
+                    }
+                }
+            }
+        });
+    });
 	
 	$("#form-member-add").validate({
 		rules:{
@@ -211,10 +247,6 @@ $(function(){
         initTable();
     })
 
-    function fleetChange() {
-        alert(111)
-    }
-
     function initCombobox(){
 	    //车队编码初始化
         $.ajax({
@@ -293,7 +325,6 @@ $(function(){
                 url:_basePath +"order/querySupplierList",
                 data:{id:id},
                 success:function(data){
-                     console.log(1)
                     var json = JSON.parse(data).data[0];
                     $('#f_id').val(json.id)
                     $('#date').val(json.date)

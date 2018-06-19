@@ -13,7 +13,7 @@
 <div class="page-container">
     <div class="page-container">
         <div class="text-c">
-            <input type="text" id="s_name" placeholder="车队编号" style="width:250px" class="input-text">&nbsp;&nbsp;
+            <input type="text" id="s_name" placeholder="车队编码" style="width:250px" class="input-text">&nbsp;&nbsp;
             <input type="text" id="s_tel"  placeholder="车队车牌号" style="width:250px" class="input-text">&nbsp;&nbsp;
             <input type="text" id="s_add"  placeholder="车队负责人" style="width:250px" class="input-text">
             <button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
@@ -25,7 +25,7 @@
                 <tr class="text-c">
                     <th width="1%"><input type="checkbox"></th>
                     <th width="5%">ID</th>
-                    <th width="10%">车队编号</th>
+                    <th width="10%">车队编码</th>
                     <th width="10%">车队车牌号</th>
                     <th width="10%">车队负责人</th>
                     <th width="15%">负责人电话</th>
