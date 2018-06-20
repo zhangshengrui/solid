@@ -162,6 +162,24 @@ $(function(){
         });
     });
 
+    $("#receiverName").change(function(){
+        var receiverName = $('#receiverName').val();
+        $('#receiverPrice').val('');
+        $.ajax({
+            url:_basePath+"base/receiver/querySupplierList",
+            async:false,
+            data:{supplierName: receiverName},
+            success:function(data){
+                var json = JSON.parse(data).data
+                for(var i in json){
+                    if(json[i].supplierName == receiverName){
+                       $('#receiverPrice').val(json[i].price)
+                    }
+                }
+            }
+        });
+    });
+
     $('#tonnage').blur(function(){
         var tonnage = $('#tonnage').val();  //单位
         var conversion =$('#conversion').val();//换算单位
