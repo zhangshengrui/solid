@@ -4,6 +4,8 @@ public class BaseSupplier {
     private Integer id;                 //主键ID
     private String supplierName;       //供货商名称
     private String supplierAddress;    //供货商地址
+    private String tonnage;            //吨位/方数
+    private String conversion;          //换算单位
     private String supplierOfficial;   //供应商负责人
     private String telephone;           //供应商电话
     private Integer status;             //当前状态（0：正常 1：关闭 -1：删除）
@@ -72,5 +74,21 @@ public class BaseSupplier {
 
     public void setIndate(String indate) {
         this.indate = indate;
+    }
+
+    public String getTonnage() {
+        return tonnage;
+    }
+
+    public void setTonnage(String tonnage) {
+        this.tonnage = tonnage;
+    }
+
+    public String getConversion() {
+        return conversion;
+    }
+
+    public void setConversion(String conversion) {
+        this.conversion = conversion;
     }
 }

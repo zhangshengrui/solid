@@ -65,13 +65,15 @@ public class Sentinel  implements Filter {
                 user = this.adminUserDao.queryUserByName(userId);
                 if(user != null){
                     filterChain.doFilter(req, resp);
+                    return;
                 }
             }
             //没有登录 直接返回首页
-            resp.sendRedirect(basePath);
+            resp.sendRedirect("login.jsp");
             return;
         } else {
             filterChain.doFilter(req, resp);
+            return;
         }
     }
 
