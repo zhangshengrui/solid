@@ -15,10 +15,6 @@ public class Hello {
         return "hello world!!";
     }
 
-    @RequestMapping("/login")
-    public String index(){
-        return "index";
-    }
 
     @RequestMapping("/welcome")
     public String welcome(){
