@@ -63,7 +63,7 @@ public class OrderBusinessImpl implements OrderBusiness{
 
     @Override
     @Transactional
-    public String editSupplier(Order order) {
+    public String editSupplier(String name,Order order) {
         try {
             if(order.getId() == null){
                     return "false";
@@ -87,7 +87,7 @@ public class OrderBusinessImpl implements OrderBusiness{
                String content = order.toString();
                Journal j = new Journal();
                j.setContent(content);
-               j.setPerson("name");
+               j.setPerson(name);
                j.setTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
                j.setType("新增订单");
                journalDao.insertLog(j);
@@ -99,7 +99,7 @@ public class OrderBusinessImpl implements OrderBusiness{
                    String content = "旧订单:" + l.get(0).toString() + "<br><br>" + "新订单:" + order.toString();
                    Journal j = new Journal();
                    j.setContent(content);
-                   j.setPerson("name");
+                   j.setPerson(name);
                    j.setTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
                    j.setType("修改订单");
                    journalDao.insertLog(j);
@@ -115,7 +115,7 @@ public class OrderBusinessImpl implements OrderBusiness{
 
     @Override
     @Transactional
-    public String delete(String password, String ids) {
+    public String delete(String name,String password, String ids) {
         try {
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){
                 return  "password or ids is null";
@@ -135,7 +135,7 @@ public class OrderBusinessImpl implements OrderBusiness{
                     String content = l.get(0).toString();
                     Journal j = new Journal();
                     j.setContent(content);
-                    j.setPerson("name");
+                    j.setPerson(name);
                     j.setTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
                     j.setType("删除订单");
                     journalDao.insertLog(j);

@@ -32,7 +32,22 @@ public class LoginController {
             if (null != realUser) {
                 session.setAttribute("auth","");
                 session.setAttribute("user", realUser);
+
+                String role;
+                if(realUser.getRole() == 1){
+                    role = "订单管理员";
+                }else if(realUser.getRole() == 2){
+                    role = "超级管理员";
+                }else{
+                    role = "基本信息管理员";
+                }
+                session.setAttribute("role",role);
+                session.setAttribute("account",realUser.getAccount());
+                session.setAttribute("name",realUser.getName());
                 CookieUtils.setCookie(response, "userId", realUser.getId()+"", COOKIE_TIME);
+                CookieUtils.setCookie(response, "role", role, COOKIE_TIME);
+                CookieUtils.setCookie(response, "account", realUser.getAccount(), COOKIE_TIME);
+                CookieUtils.setCookie(response, "name", realUser.getName(), COOKIE_TIME);
                 return "index";
             }
 
@@ -64,6 +79,6 @@ public class LoginController {
                 response.addCookie(cookie);
             }
         }
-        return "redirect:/";
+        return "login";
     }
 }

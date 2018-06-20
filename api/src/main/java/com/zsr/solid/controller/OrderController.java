@@ -5,6 +5,7 @@ import com.zsr.solid.entity.Order;
 import com.zsr.solid.service.OrderBusiness;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -45,13 +46,13 @@ public class OrderController {
 
     @RequestMapping("editSupplier")
     @ResponseBody
-    public String editSupplier(Order order){
-        return orderBusinessImpl.editSupplier(order);
+    public String editSupplier(@CookieValue("account")String account, Order order){
+        return orderBusinessImpl.editSupplier(account,order);
     }
 
      @RequestMapping("delete")
      @ResponseBody
-    public String delete(String password,String ids){
-        return orderBusinessImpl.delete(password,ids);
+    public String delete(@CookieValue("account")String account,String password,String ids){
+        return orderBusinessImpl.delete(account,password,ids);
     }
 }

@@ -12,13 +12,12 @@
             <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
             <nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
                 <ul class="cl">
-                    <li>超级管理员</li>
+                    <li><%=session.getAttribute("role")%></li>
                     <li class="dropDown dropDown_hover">
-                        <a href="#" class="dropDown_A">admin <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <a href="#" class="dropDown_A"><%=session.getAttribute("name")%><i class="Hui-iconfont">&#xe6d5;</i></a>
                         <ul class="dropDown-menu menu radius box-shadow">
-                            <li><a href="javascript:;" onClick="myselfinfo()">个人信息</a></li>
                             <li><a href="#">更改密码</a></li>
-                            <li><a href="#">退出</a></li>
+                            <li><a href="#" onclick="logout()">退出</a></li>
                         </ul>
                     </li>
                     <li id="Hui-skin" class="dropDown right dropDown_hover"> <a href="javascript:;" class="dropDown_A" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
@@ -99,19 +98,12 @@
 </div>
 
 <script type="text/javascript">
-    /*个人信息*/
-    function myselfinfo(){
-        layer.open({
-            type: 1,
-            area: ['300px','200px'],
-            fix: false, //不固定
-            maxmin: true,
-            shade:0.4,
-            title: '查看信息',
-            content: '<div>管理员信息</div>'
+    function logout(){
+        layer.confirm('确定退出本系统??', {icon: 3, title:'提示'}, function(index){
+            window.location.href=_basePath+'/logout'
+            layer.close(index);
         });
     }
-
 </script>
 
 

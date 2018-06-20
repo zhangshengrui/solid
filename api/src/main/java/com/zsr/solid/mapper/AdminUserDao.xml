@@ -44,6 +44,6 @@
     </select>
 
     <select id="login" parameterType="com.zsr.solid.entity.User" resultType="com.zsr.solid.entity.User">
-        SELECT * FROM `user` WHERE account=#{account} and password =#{password} and `status` != -1
+        SELECT * FROM `user` WHERE account=#{account} and password =#{password} and `status`  = 0
     </select>
 </mapper>
