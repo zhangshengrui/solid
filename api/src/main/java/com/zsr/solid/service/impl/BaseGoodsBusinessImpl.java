@@ -65,6 +65,7 @@ public class BaseGoodsBusinessImpl implements BaseGoodsBusiness{
             if(baseGoods.getId() == null){
                     return "false";
             }
+            baseGoods.setConversion(new Float(baseGoods.getConversion()).toString());
             baseGoods.setPrice(new Float(baseGoods.getPrice()).toString());
             String result;
             if(baseGoods.getId() == -1){ //新增

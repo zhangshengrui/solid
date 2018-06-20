@@ -42,13 +42,18 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>供货商名称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<%--<input type="text" class="input-text" value="" placeholder="" id="address" name="address">--%>
                 <span class="select-box">
                     <select class="select" name="address" id="address">
                     </select>
 				</span>
 			</div>
 		</div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>换算价格：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" placeholder="" name="conversion" id="conversion">
+            </div>
+        </div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">备注：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -92,6 +97,10 @@ $(function(){
                 required:true,
                 isNumber:true,
             },
+            conversion:{
+                required:true,
+                isFloatGtZero:true
+            }
 		},
 		focusCleanup:true,
 		success:"valid",
@@ -108,6 +117,24 @@ $(function(){
             });
 		}
 	});
+
+    $("#address").change(function(){
+        var address = $('#address').val();
+        $('#address').val('');
+        $.ajax({
+            url:_basePath+"base/supplier/querySupplierList",
+            async:false,
+            data:{supplierName: address},
+            success:function(data){
+                var json = JSON.parse(data).data
+                for(var i in json){
+                    if(json[i].supplierName == address && json[i].status === 0){
+                        $('#conversion').val(json[i].conversion)
+                    }
+                }
+            }
+        });
+    });
 });
 $(function(){
     InitCombobox();
@@ -121,7 +148,9 @@ function InitCombobox(){
       success:function(data){
           var json = JSON.parse(data);
           $.each(json.data,function(index,value){
-              $("#address").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+              if(value.status === 0){
+                  $("#address").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+              }
           })
       }
   })
@@ -150,6 +179,7 @@ function InitValue(){
                 $('#name').val(json.name);
                 $('#number').val(json.number);
                 $('#price').val(json.price);
+                $('#conversion').val(json.conversion)
                 var arr = document.getElementById('address').children
                 $.each(arr,function(index,value){
                     if(value.text == json.address){

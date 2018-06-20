@@ -27,11 +27,11 @@
     </update>
 
     <insert id="addSupplier" parameterType="com.zsr.solid.entity.BaseGoods">
-        INSERT INTO `goods` SET `number` =#{number},`name` = #{name},`address` =#{address},price=#{price},status =#{status},memo = #{memo} , indate =#{indate}
+        INSERT INTO `goods` SET `number` =#{number},`name` = #{name},`address` =#{address},price=#{price},status =#{status},memo = #{memo} , indate =#{indate} ,conversion=#{conversion}
     </insert>
 
     <update id="editSupplier" parameterType="com.zsr.solid.entity.BaseGoods">
-        UPDATE `goods` SET `number` =#{number},`name` = #{name},`address` =#{address},price=#{price},status =#{status},memo = #{memo}  WHERE  id=#{id}
+        UPDATE `goods` SET `number` =#{number},`name` = #{name},`address` =#{address},price=#{price},status =#{status},memo = #{memo} ,conversion=#{conversion} WHERE  id=#{id}
     </update>
 
     <delete id="delete" parameterType="Map">

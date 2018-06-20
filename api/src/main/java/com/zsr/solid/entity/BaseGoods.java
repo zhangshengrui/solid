@@ -5,6 +5,7 @@ public class BaseGoods {
     private String number;              //编号
     private String name;                //商品名称
     private String address;             //供货商地址
+    private String conversion;          //换算单位
     private String price;                //价格
     private Integer status;             //当前状态（0：正常 1：关闭 -1：删除）
     private String memo;                //备注
@@ -72,5 +73,13 @@ public class BaseGoods {
 
     public void setIndate(String indate) {
         this.indate = indate;
+    }
+
+    public String getConversion() {
+        return conversion;
+    }
+
+    public void setConversion(String conversion) {
+        this.conversion = conversion;
     }
 }

@@ -18,7 +18,7 @@
 			<input type="text" id="s_add"  placeholder="供货商名称" style="width:250px" class="input-text">
 			<button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
 		</div>
-		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加货物','base-goods-add?id=-1','','500')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加货物</a></span> </div>
+		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加货物','base-goods-add?id=-1','','520')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加货物</a></span> </div>
 		<div class="mt-20">
 			<table class="table table-border table-bordered table-bg table-sort">
 				<thead>
@@ -29,8 +29,8 @@
 					<th width="10%">货物名称</th>
 					<th width="10%">货物价格</th>
 					<th width="15%">供货商名称</th>
+					<th width="10%">换算单位</th>
 					<th width="20%">备注信息</th>
-					<th width="10%">添加日期</th>
 					<th width="10%">当前状态</th>
 					<th width="10%">操作</th>
 				</tr>
@@ -61,8 +61,8 @@
                 { "data": "name",defaultContent:''},
                 { "data": "price",defaultContent:''},
                 { "data": "address",defaultContent:''},
+                { "data": "conversion",defaultContent:''},
                 { "data": "memo",defaultContent:''},
-                { "data": "indate" ,defaultContent:''},
                 { "data": "status" ,defaultContent:'',"render":function (data,type,full,collback) {
                     if(data == '1'){
                         return '<span class="label label-danger radius">已关闭</span>';
@@ -74,12 +74,12 @@
                     if(data == '1'){
                         return '<td class="f-14 td-manage">' +
                             '<a style="text-decoration:none" onClick="operate('+full.id+',0)" href="#" >开启</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改货物信息\',\'base-goods-add?id='+full.id+'\',\'\',\'500\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改货物信息\',\'base-goods-add?id='+full.id+'\',\'\',\'520\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="base_supplier_delete('+full.id+')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }else{
                         return '<td class="f-14 td-manage">' +
                             '<a style="text-decoration:none" onClick="operate('+full.id+',1)" href="#">关闭</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改货物信息\',\'base-goods-add?id='+full.id+'\',\'\',\'500\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改货物信息\',\'base-goods-add?id='+full.id+'\',\'\',\'520\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="base_supplier_delete('+full.id+')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }
 
@@ -134,7 +134,7 @@
 
     function layerResult(m,index){
         initTable();
-        layer.msg(m+'操作成功!',{icon:1,time:1500});
+        layer.msg(m+'操作成功!',{icon:1,time:1520});
         layer.close(index);
     }
 
