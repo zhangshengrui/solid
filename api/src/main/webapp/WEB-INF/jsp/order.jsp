@@ -26,7 +26,7 @@
 		</div>
 		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> </span> </div>
 		<div class="mt-20">
-			<table class="table table-border table-bordered table-bg table-sort">
+			<table class="table table-border table-bordered table-bg table-sort table-hover ">
                 <thead>
                 <tr>
                     <th style="text-align: center" colspan="12">采购明细</th>

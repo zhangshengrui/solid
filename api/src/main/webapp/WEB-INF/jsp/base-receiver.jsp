@@ -20,7 +20,7 @@
 		</div>
 		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加收货方','base-receiver-add?id=-1','','590')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加收货方</a></span> </div>
 		<div class="mt-20">
-			<table class="table table-border table-bordered table-bg table-sort">
+			<table class="table table-border table-bordered table-bg table-sort table-hover ">
 				<thead>
 				<tr class="text-c">
 					<th width="1%"><input type="checkbox"></th>

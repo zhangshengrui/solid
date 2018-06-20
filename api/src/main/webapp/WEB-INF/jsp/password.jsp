@@ -88,6 +88,7 @@
     //删除用户信息
     function replace(id) {
         layer.prompt({
+            formType: 1,
             title: '请输入新密码:',
         }, function(value, index, elem){
             $.ajax({
