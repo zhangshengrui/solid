@@ -53,13 +53,15 @@
 
                 } }
             ],
-            "aaSorting": [[ 0, "asc" ]],//默认第几个排序
+            "order": [[ 0, "asc" ]],//默认第几个排序
             "bStateSave": true,//状态保存
             "columnDefs": [
                 {"orderable":false,"aTargets":[0,1,2,3]}// 制定列不参与排序
             ],
+            searching:false,
+            paging:false,
             bDestroy:true,
-            "bProcessing": true,
+            "processing": true,
 
         });
     }
