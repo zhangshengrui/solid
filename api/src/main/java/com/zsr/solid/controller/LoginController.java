@@ -48,7 +48,14 @@ public class LoginController {
                 CookieUtils.setCookie(response, "role", role, COOKIE_TIME);
                 CookieUtils.setCookie(response, "account", realUser.getAccount(), COOKIE_TIME);
                 CookieUtils.setCookie(response, "name", realUser.getName(), COOKIE_TIME);
-                return "index";
+
+                if(realUser.getRole() == 1){
+                    return "index2";
+                }else if(realUser.getRole() == 2){
+                    return "index";
+                }else{
+                    return "index1";
+                }
             }
 
             session.setAttribute("auth","wrong");

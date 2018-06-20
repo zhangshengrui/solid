@@ -13,6 +13,7 @@ public interface AdminUserDao {
     Integer delete(@Param("idstr") String idstr) ;          //批量删除
     Integer reset(String password,String id) ;              //重置密码
 
-    User queryUserByName(String userId);                      //根据名称查找用户
-    User login(User user);
+    User queryUserByName(String userId);                     //根据id查找用户
+    User login(User user);                                   //判断登陆用户
+    Integer changeOld(String password,String userId);                //更改密码
 }

@@ -48,26 +48,6 @@
                 </ul>
             </dd>
         </dl>
-        <dl id="menu-tongji">
-            <dt><i class="Hui-iconfont">&#xe61a;</i>订单管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-            <dd>
-                <ul>
-                    <li><a data-href="order/index" data-title="订单详情" href="javascript:void(0)">订单详情</a></li>
-                    <li><a data-href="order/order-add?id=-1" data-title="添加订单" href="javascript:void(0)">添加订单</a></li>
-                    <li><a data-href="order/summary" data-title="汇总订单详情" href="javascript:void(0)">汇总订单详情</a></li>
-                </ul>
-            </dd>
-        </dl>
-        <dl id="menu-system">
-            <dt><i class="Hui-iconfont">&#xe62e;</i>系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-            <dd>
-                <ul>
-                    <li><a data-href="admin/user" data-title="用户信息管理" href="javascript:void(0)">用户信息管理</a></li>
-                    <li><a data-href="password/index" data-title="密码管理" href="javascript:void(0)">密码管理</a></li>
-                    <li><a data-href="journal/index" data-title="日志查询" href="javascript:void(0)">日志查询</a></li>
-                </ul>
-            </dd>
-        </dl>
     </div>
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>

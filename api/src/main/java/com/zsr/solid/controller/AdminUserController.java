@@ -5,6 +5,7 @@ import com.zsr.solid.entity.User;
 import com.zsr.solid.service.AdminUserBusiness;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -21,6 +22,12 @@ public class AdminUserController {
     public String index() {
         return "admin-role";
     }
+
+    @RequestMapping("/change")
+    public String change() {
+        return "change";
+    }
+
     @RequestMapping("admin-role-add")
     public String user_add(Integer id, HttpServletRequest request){
         try {
@@ -63,5 +70,11 @@ public class AdminUserController {
      @ResponseBody
      public String delete(String password,String ids){
         return adminUserBusinessImpl.delete(password,ids);
+    }
+
+    @RequestMapping("changeOld")
+    @ResponseBody
+    public String changeOld(String old, String password, @CookieValue("userId")String userId){
+        return adminUserBusinessImpl.changeOld(old,password,userId);
     }
 }

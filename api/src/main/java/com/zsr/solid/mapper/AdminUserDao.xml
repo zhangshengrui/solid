@@ -46,4 +46,8 @@
     <select id="login" parameterType="com.zsr.solid.entity.User" resultType="com.zsr.solid.entity.User">
         SELECT * FROM `user` WHERE account=#{account} and password =#{password} and `status`  = 0
     </select>
+
+    <update id="changeOld" parameterType="String">
+        UPDATE `user` SET `password`=#{0} where id = #{1}
+    </update>
 </mapper>

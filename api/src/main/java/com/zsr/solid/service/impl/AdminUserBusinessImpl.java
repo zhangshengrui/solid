@@ -126,4 +126,25 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
         }
     }
 
+    @Override
+    @Transactional
+    public String changeOld(String old, String password,String userId) {
+        try {
+            if(StringUtils.isBlank(old) || StringUtils.isBlank(password) || StringUtils.isBlank(userId)){
+                return "fail";
+            }
+            User user = this.adminUserDao.queryUserByName(userId);
+            if(user==null || StringUtils.isBlank(user.getPassword())){
+                return "fail";
+            }
+            if(!user.getPassword().equals(MD5.stringToMD5(old))){
+                return "wrong";
+            }
+            return adminUserDao.changeOld(MD5.stringToMD5(password),userId)>0?"success":"false";
+        }catch (Exception e){
+            e.printStackTrace();
+            return "fail";
+        }
+
+    }
 }
