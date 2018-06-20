@@ -65,6 +65,7 @@ public class BaseReceiverBusinessImpl implements BaseReceiverBusiness{
             if(baseReceiver.getId() == null){
                     return "false";
             }
+            baseReceiver.setPrice(new Float(baseReceiver.getPrice()).toString());
             String result;
             if(baseReceiver.getId() == -1){ //新增
                Integer count =  baseReceiverDao.querySupplierListByName(baseReceiver.getSupplierName()); //判断是否有重复的

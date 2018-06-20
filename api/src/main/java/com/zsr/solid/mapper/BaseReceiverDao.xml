@@ -28,12 +28,12 @@
 
     <insert id="addSupplier" parameterType="com.zsr.solid.entity.BaseReceiver">
         INSERT INTO `receiver` SET supplier_name = #{supplierName} , supplier_address = #{supplierAddress} ,supplier_official =#{supplierOfficial},
-        telephone = #{telephone} ,status =#{status},memo = #{memo} , indate =#{indate}
+        telephone = #{telephone} ,status =#{status},memo = #{memo} , indate =#{indate} ,price=#{price}
     </insert>
 
     <update id="editSupplier" parameterType="com.zsr.solid.entity.BaseReceiver">
         UPDATE `receiver` SET supplier_name = #{supplierName} , supplier_address = #{supplierAddress} ,supplier_official =#{supplierOfficial},
-        telephone = #{telephone} ,status =#{status},memo = #{memo} WHERE  id=#{id}
+        telephone = #{telephone} ,status =#{status},memo = #{memo} ,price=#{price} WHERE  id=#{id}
     </update>
 
     <delete id="delete" parameterType="Map">

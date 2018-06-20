@@ -95,7 +95,7 @@ $(function(){
             },
             price:{
                 required:true,
-                isNumber:true,
+                isFloat:true,
             },
             conversion:{
                 required:true,

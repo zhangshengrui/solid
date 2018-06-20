@@ -34,6 +34,12 @@
 			</div>
 		</div>
 		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>收货单价：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" placeholder="" name="price" id="price">
+			</div>
+		</div>
+		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>负责人手机：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="telephone" name="telephone">
@@ -81,12 +87,16 @@ $(function(){
             supplierOfficial:{
                 required:false,
                 minlength:1,
-                maxlength:4
+                maxlength:8
             },
             telephone:{
 				required:false,
 				isMobile:true,
-			}
+			},
+            price:{
+                required:true,
+                isFloat:true
+            }
 		},
 		focusCleanup:true,
 		success:"valid",
@@ -128,6 +138,7 @@ $(function(){
                     $('#supplierOfficial').val(json.supplierOfficial)
                     $('#telephone').val(json.telephone)
                     $('#supplierAddress').val(json.supplierAddress)
+                    $('#price').val(json.price)
                     if(json.status == 1){
                         $("#sex-2").attr("checked","checked");
                     }

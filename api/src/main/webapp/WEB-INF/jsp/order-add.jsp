@@ -319,16 +319,16 @@ $(function(){
             },
             receiverCount:{
                 required:true,
-                isNumber:true
+                isFloat:true
             },receiverPrice:{
                 required:true,
-                isNumber:true
+                isFloat:true
             },receiverMoney:{
                 required:true,
-                isNumber:true
+                isFloat:true
             },profit:{
                 required:true,
-                isNumber:true
+                isFloat:true
             }
 		},
 		focusCleanup:true,
