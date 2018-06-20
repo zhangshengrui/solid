@@ -28,11 +28,11 @@
                     <th width="7%">供货名称</th>
                     <th width="7%">吨位/方数</th>
                     <th width="7%">换算单位</th>
-                    <th width="10%">供货商负责人</th>
-                    <th width="10%">供货商电话</th>
-                    <th width="15%">供货商地址</th>
-                    <th width="20%">备注信息</th>
-                    <th width="10%">当前状态</th>
+                    <th width="7%">负责人</th>
+                    <th width="10%">电话</th>
+                    <th width="15%">地址</th>
+                    <th width="20%">备注</th>
+                    <th width="10%">状态</th>
                     <th width="10%">操作</th>
                 </tr>
                 </thead>
