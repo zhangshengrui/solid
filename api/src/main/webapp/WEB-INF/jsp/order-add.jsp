@@ -15,6 +15,12 @@
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>供货单号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="" id="supplierCertify" name="supplierCertify">
+            </div>
+        </div>
+        <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>车队编码：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select class="select" name="fleetNumber" id="fleetNumber">
@@ -45,9 +51,15 @@
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>供货单号：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>吨位/方数：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="supplierCertify" name="supplierCertify">
+                <input type="text" class="input-text" value="" placeholder="" id="tonnage" name="tonnage" >
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>转换比例：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="" id="conversion" name="conversion">
             </div>
         </div>
         <div class="row cl">
@@ -83,7 +95,7 @@
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>顿位/方数：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>吨位/方数：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="company" name="company">
             </div>
@@ -118,9 +130,10 @@
 				<textarea id="memo" name="memo" cols="" rows="" class="textarea"  placeholder="说点什么...最少输入1个字符"  ></textarea>
 			</div>
 		</div>
-		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2" style="padding-top: 10px">
+        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2" style="padding-top: 10px">
+            <input class="btn btn-warning radius" type="reset" value="&nbsp;&nbsp;清空&nbsp;&nbsp;">
             <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
-		</div>
+        </div>
 	</form>
 </article>
 <script>
@@ -149,9 +162,90 @@ $(function(){
         });
     });
 
+    $('#tonnage').blur(function(){
+        var tonnage = $('#tonnage').val();  //单位
+        var conversion =$('#conversion').val();//换算单位
+        var reg = /^[0-9]+([.]{1}[0-9]+){0,1}$/;
+        if(!reg.test(tonnage)  || !reg.test(conversion)){ //校验
+            console.log("is wrong number")
+            return;
+        }
+        tonnage = parseFloat(tonnage);
+        conversion = parseFloat(conversion);
+        if(isNaN(tonnage) ||isNaN(conversion)||conversion===0||conversion==0){
+            console.log("is NaN")
+            return
+        }
+
+        var num = tonnage / conversion;
+        var count = num.toFixed(2);
+        console.log("count"+count)
+        $('#goodsCount').val(count)
+
+        var goodsPrice= $('#goodsPrice').val(); //单价
+        if(!reg.test(goodsPrice) || !reg.test(count)){
+            return;
+        }
+        goodsPrice = parseFloat(goodsPrice);
+        if(isNaN(goodsPrice) || isNaN(count)){
+            return;
+        }
+        var money = goodsPrice * count;
+        console.log("money"+money)
+        $('#goodsMoney').val(money.toFixed(2))
+    })
+
+    $('#company').blur(function(){
+        var company = $('#company').val();  //单位
+        var conversion =$('#conversion').val();//换算单位
+        var reg = /^[0-9]+([.]{1}[0-9]+){0,1}$/;
+        if(!reg.test(company)  || !reg.test(conversion)){ //校验
+            console.log("is wrong number")
+            return;
+        }
+        company = parseFloat(company);
+        conversion = parseFloat(conversion);
+        if(isNaN(company) ||isNaN(conversion)||conversion===0||conversion==0){
+            console.log("is NaN")
+            return
+        }
+
+        var num = company / conversion;
+        var count = num.toFixed(2);
+        console.log("count"+count)
+        $('#receiverCount').val(count)
+
+        var receiverPrice= $('#receiverPrice').val(); //收获单价
+        if(!reg.test(receiverPrice) || !reg.test(count)){
+            return;
+        }
+        receiverPrice = parseFloat(receiverPrice);
+        if(isNaN(receiverPrice) || isNaN(count)){
+            return;
+        }
+        var money = receiverPrice * count;
+        console.log("money"+money)
+        money = money.toFixed(2)
+        $('#receiverMoney').val(money)
+
+        var a = $('#goodsMoney').val()
+        if(!reg.test(a) ){
+            return;
+        }
+        a = parseFloat(a);
+        if(isNaN(a)){
+            return
+        }
+        var profit = (money - a).toFixed(2);
+        console.log(profit)
+        $('#profit').val(profit);
+    })
+
     $("#goodsName").change(function(){
         var name = $('#goodsName').val();
-        $('#goodsName').val('');
+        $('#supplierName').val('');
+        $('#conversion').val('');
+        $('#goodsPrice').val('');
         $.ajax({
             url:_basePath+"base/goods/querySupplierList",
             async:false,
@@ -161,6 +255,8 @@ $(function(){
                 for(var i in json){
                     if(json[i].name == name){
                         $('#supplierName').val(json[i].address)
+                        $('#conversion').val(json[i].conversion)
+                        $('#goodsPrice').val(json[i].price)
                     }
                 }
             }
@@ -195,13 +291,19 @@ $(function(){
                 maxlength:50
             },goodsCount:{
                 required:true,
-                isNumber:true
+                isFloat:true
+            },tonnage:{
+                required:true,
+                isFloat:true
+            },conversion:{
+                required:true,
+                isFloatGtZero:true
             },goodsPrice:{
                 required:true,
-                isNumber:true
+                isFloat:true
             },goodsMoney:{
                 required:true,
-                isNumber:true
+                isFloat:true
             },receiverName:{
                 required:true,
                 minlength:0,
@@ -255,7 +357,9 @@ $(function(){
             success:function(data){
                 var json = JSON.parse(data);
                 $.each(json.data,function(index,value){
-                    $("#fleetNumber").append("<option value='"+value.number+"'>"+value.number+"</option>");
+                    if(value.status ===0){
+                        $("#fleetNumber").append("<option value='"+value.number+"'>"+value.number+"</option>");
+                    }
                 })
             }
         });
@@ -267,7 +371,9 @@ $(function(){
             success:function(data){
                 var json = JSON.parse(data);
                 $.each(json.data,function(index,value){
-                    $("#goodsName").append("<option value='"+value.name+"'>"+value.name+"</option>");
+                    if(value.status ===0){
+                        $("#goodsName").append("<option value='"+value.name+"'>"+value.name+"</option>");
+                    }
                 })
             }
         });
@@ -279,7 +385,9 @@ $(function(){
             success:function(data){
                 var json = JSON.parse(data);
                 $.each(json.data,function(index,value){
-                    $("#supplierName").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+                    if(value.status ===0){
+                        $("#supplierName").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+                    }
                 })
             }
         });
@@ -291,7 +399,9 @@ $(function(){
             success:function(data){
                 var json = JSON.parse(data);
                 $.each(json.data,function(index,value){
-                    $("#receiverName").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+                    if(value.status ===0){
+                        $("#receiverName").append("<option value='"+value.supplierName+"'>"+value.supplierName+"</option>");
+                    }
                 })
             }
         });
@@ -342,6 +452,8 @@ $(function(){
                     $('#receiverCount').val(json.receiverCount)
                     $('#receiverPrice').val(json.receiverPrice)
                     $('#receiverMoney').val(json.receiverMoney)
+                    $('#conversion').val(json.conversion)
+                    $('#tonnage').val(json.tonnage)
                     $('#profit').val(json.profit)
                     $('#memo').val(json.memo)
                 },

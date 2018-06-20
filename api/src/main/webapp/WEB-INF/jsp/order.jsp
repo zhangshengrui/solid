@@ -24,23 +24,24 @@
             <input type="text" id="s_receiver_certify"  placeholder="收货单号" style="width:120px" class="input-text">&nbsp;&nbsp;
 			<button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
 		</div>
-		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="order_add('添加订单','order-add?id=-1')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 录入订单</a></span> </div>
+		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> </span> </div>
 		<div class="mt-20">
 			<table class="table table-border table-bordered table-bg table-sort">
                 <thead>
                 <tr>
-                    <th style="text-align: center" colspan="11">采购明细</th>
+                    <th style="text-align: center" colspan="12">采购明细</th>
                     <th style="text-align: center"  colspan="9">销售明细</th>
                 </tr>
                 <tr class="text-c">
                     <th width="1%"><input type="checkbox"></th>
-                    <th width="5%">ID</th>
                     <th width="5%">日期</th>
+                    <th width="7%">供货单号</th>
                     <th width="5%">编码</th>
                     <th width="5%">车号</th>
                     <th width="5%">品名</th>
                     <th width="5%">供货单位</th>
-                    <th width="7%">供货单号</th>
+                    <th width="5%">转换比例</th>
+                    <th width="5%">吨位/方数</th>
                     <th width="5%">计费数量</th>
                     <th width="5%">货物单价</th>
                     <th width="7%">货物金额</th>
@@ -51,7 +52,7 @@
                     <th width="5%">收货方单价</th>
                     <th width="5%">收货方金额</th>
                     <th width="5%">利润</th>
-                    <th width="15%">备注信息</th>
+                    <th width="10%">备注信息</th>
                     <th width="10%">操作</th>
                 </tr>
                 </thead>
@@ -110,15 +111,16 @@
                         return '<input type="checkbox"  value='+full.id+' name="data_checkbox"/>';
                     }
                 },
-                { "data": "id",defaultContent:''},
                 { "data": "date",defaultContent:'','render':function(data,type,full,collback){
                     return new Date(data).format("MM/dd");
                 }},
+                { "data": "supplierCertify",defaultContent:''},
                 { "data": "fleetNumber",defaultContent:''},
                 { "data": "fleetLicense",defaultContent:''},
                 { "data": "goodsName",defaultContent:''},
                 { "data": "supplierName",defaultContent:''},
-                { "data": "supplierCertify",defaultContent:''},
+                { "data": "conversion",defaultContent:''},
+                { "data": "tonnage",defaultContent:''},
                 { "data": "goodsCount",defaultContent:''},
                 { "data": "goodsPrice",defaultContent:''},
                 { "data": "goodsMoney",defaultContent:''},
@@ -140,7 +142,7 @@
             "aaSorting": [[ 1, "desc" ]],//默认第几个排序
             "bStateSave": true,//状态保存
             "columnDefs": [
-                {"orderable":false,"aTargets":[0,17,18]}// 制定列不参与排序
+                {"orderable":false,"aTargets":[0,19,20]}// 制定列不参与排序
             ],
             bDestroy:true,
             "bProcessing": true,

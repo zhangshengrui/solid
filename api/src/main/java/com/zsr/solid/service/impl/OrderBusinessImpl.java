@@ -69,14 +69,16 @@ public class OrderBusinessImpl implements OrderBusiness{
                     return "false";
             }
             String result;
-            order.setGoodsCount(new Double(order.getGoodsCount()).toString());
-            order.setGoodsPrice(new Double(order.getGoodsPrice()).toString());
-            order.setGoodsMoney(new Double(order.getGoodsMoney()).toString());
-            order.setReceiverCount(new Double(order.getReceiverCount()).toString());
-            order.setReceiverPrice(new Double(order.getReceiverPrice()).toString());
-            order.setReceiverMoney(new Double(order.getReceiverMoney()).toString());
-            order.setProfit(new Double(order.getProfit()).toString());
-            order.setCompany(new Double(order.getCompany()).toString());
+            order.setGoodsCount(new Float(order.getGoodsCount()).toString());
+            order.setGoodsPrice(new Float(order.getGoodsPrice()).toString());
+            order.setGoodsMoney(new Float(order.getGoodsMoney()).toString());
+            order.setReceiverCount(new Float(order.getReceiverCount()).toString());
+            order.setReceiverPrice(new Float(order.getReceiverPrice()).toString());
+            order.setReceiverMoney(new Float(order.getReceiverMoney()).toString());
+            order.setProfit(new Float(order.getProfit()).toString());
+            order.setCompany(new Float(order.getCompany()).toString());
+            order.setTonnage(new Float(order.getTonnage()).toString());
+            order.setConversion(new Float(order.getConversion()).toString());
             if(order.getId() == -1){ //新增
                order.setIndate(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
                order.setStatus(0);

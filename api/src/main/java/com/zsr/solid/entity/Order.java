@@ -8,6 +8,8 @@ public class Order {
     private String goodsName;       //货物名称
     private String supplierName;    //供货商名称
     private String supplierCertify; //供货单号
+    private String conversion;      //转换比例
+    private String tonnage;         //收货单位(吨位/方数)
     private String goodsCount;      //计费数量
     private String goodsPrice;      //货物单价
     private String goodsMoney;      //货物金额
@@ -202,6 +204,23 @@ public class Order {
         this.company = company;
     }
 
+    public String getTonnage() {
+        return tonnage;
+    }
+
+    public void setTonnage(String tonnage) {
+        this.tonnage = tonnage;
+    }
+
+    public String getConversion() {
+
+        return conversion;
+    }
+
+    public void setConversion(String conversion) {
+        this.conversion = conversion;
+    }
+
     @Override
     public String toString() {
         return
@@ -212,15 +231,17 @@ public class Order {
                 ", 货物名称:'" + goodsName + '\'' +
                 ", 供货单位名称:'" + supplierName + '\'' +
                 ", 供货单号:'" + supplierCertify + '\'' +
+                ", 供货吨位/方数:"+ tonnage+'\''+
+                ", 换算单位:"+ conversion+'\''+
                 ", 计费数量:'" + goodsCount + '\'' +
                 ", 货物单价:'" + goodsPrice + '\'' +
                 ", 货物金额:'" + goodsMoney + '\'' +
                 ", 收货单位:'" + receiverName + '\'' +
                 ", 收货方单号:'" + receiverCertify + '\'' +
-                ", 收货方数量:'" + receiverCount + '\'' +
+                ", 收货吨位/方数:'" + company + '\'' +
+                ", 收货方计费数量:'" + receiverCount + '\'' +
                 ", 收货方单价:'" + receiverPrice + '\'' +
                 ", 收货方金额:'" + receiverMoney + '\'' +
-                ", 吨位/方数:'" + company + '\'' +
                 ", 利润:'" + profit + '\'' +
                 ", 备注:'" + memo + '\'' ;
     }

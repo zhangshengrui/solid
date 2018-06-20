@@ -54,6 +54,7 @@
             <dd>
                 <ul>
                     <li><a data-href="order/index" data-title="订单详情" href="javascript:void(0)">订单详情</a></li>
+                    <li><a data-href="order/order-add?id=-1" data-title="添加订单" href="javascript:void(0)">添加订单</a></li>
                     <li><a data-href="order/summary" data-title="汇总订单详情" href="javascript:void(0)">汇总订单详情</a></li>
                 </ul>
             </dd>
