@@ -47,4 +47,14 @@
     <delete id="delete" parameterType="Map">
         UPDATE `order` SET `status` = -1 WHERE id IN ${idstr}
     </delete>
+
+    <select id="queryCount" resultType="Integer" parameterType="String">
+        SELECT count(1) FROM `order` WHERE `date` BETWEEN #{0} AND #{1}
+    </select>
+
+    <select id="today" parameterType="String" resultType="com.zsr.solid.entity.Order">
+      SELECT * ,COUNT(1) AS today_count FROM `order`
+      WHERE `date` BETWEEN #{0} AND #{1}
+      GROUP BY `date`,fleet_number,goods_name
+    </select>
 </mapper>

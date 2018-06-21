@@ -55,4 +55,13 @@ public class OrderController {
     public String delete(@CookieValue("account")String account,String password,String ids){
         return orderBusinessImpl.delete(account,password,ids);
     }
+
+    @RequestMapping("today")
+    @ResponseBody
+    public String today(HttpServletRequest httpServletRequest){
+        HttpSession session = httpServletRequest.getSession();
+        session.setAttribute("todayCount",orderBusinessImpl.todayCount());
+        session.setAttribute("monthCount",orderBusinessImpl.monthCount());
+        return JSON.toJSONString(orderBusinessImpl.today());
+    }
 }

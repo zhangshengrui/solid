@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -158,4 +159,44 @@ public class OrderBusinessImpl implements OrderBusiness{
         }
     }
 
+
+    @Override
+    public Integer todayCount() {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        String startTime = format.format(new Date());
+        return orderDao.queryCount(startTime,startTime);
+    }
+
+    @Override
+    public Integer monthCount() {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
+        Calendar cal_1=Calendar.getInstance();//获取当前日期
+        cal_1.set(Calendar.DAY_OF_MONTH,1);//设置为1号,当前日期既为本月第一天
+        String startTime = format.format(cal_1.getTime());
+
+        String endTime = format.format(new Date());
+
+        return orderDao.queryCount(startTime,endTime);
+    }
+
+    @Override
+    public ResponseTable today() {
+        ResponseTable responseTable = new ResponseTable();
+        try {
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            String endTime = format.format(new Date());
+            List<Order> list = orderDao.today(endTime,endTime);
+            responseTable.setData(list);
+            responseTable.setRecordsFiltered(list.size());
+            responseTable.setRecordsTotal(list.size());
+            return responseTable;
+        }catch (Exception e){
+            e.printStackTrace();
+            responseTable.setData(new ArrayList());
+            responseTable.setRecordsFiltered(0);
+            responseTable.setRecordsTotal(0);
+            return responseTable;
+        }
+    }
 }

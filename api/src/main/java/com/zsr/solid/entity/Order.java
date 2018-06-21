@@ -27,6 +27,7 @@ public class Order {
     //辅助字段
     private String startTime;       //订单日期
     private String endTime;         //结束日期
+    private Integer todayCount;      //今日订单总数
 
     public Integer getId() {
         return id;
@@ -219,6 +220,14 @@ public class Order {
 
     public void setConversion(String conversion) {
         this.conversion = conversion;
+    }
+
+    public Integer getTodayCount() {
+        return todayCount;
+    }
+
+    public void setTodayCount(Integer todayCount) {
+        this.todayCount = todayCount;
     }
 
     @Override
