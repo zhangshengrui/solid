@@ -39,9 +39,6 @@
     })
 
 
-    var rowValue = '';
-    var rowCount = 1;
-    var rowTd = "";
     function initTable(){
         $('.table-sort').dataTable({
                 "ajax":_basePath +"order/today",
@@ -60,7 +57,6 @@
             bDestroy:true,
             "processing": true,
             "initComplete":function(setting,json){
-                console.log(json.data)
             }
 
         });
