@@ -53,7 +53,7 @@
             "processing": true,
             "initComplete":function(setting,json){
                 mergeTable("日期")
-//                mergeTable("货物名称")
+                mergeTable("车队编码")
             }
 
         });
@@ -78,7 +78,7 @@
                 var f = trs.eq(i).find("td").eq(thIndex);  //获取当前列的每一行
                 if(flag){
                     if(count != obj[item].row){
-                        f.remove();
+                        f.hide();
                         count++;
                     }else{
                         flag = false;
