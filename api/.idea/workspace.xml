@@ -18,8 +18,30 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/api$SolidApplication.coverage" NAME="SolidApplication Coverage Results" MODIFIED="1528732333096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf>
+      <file leaf-file-name="welcome.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="127" column="13" lean-forward="true" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,20 +54,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>提交</find>
-      <find>goodsName</find>
-      <find>fleetNumber</find>
-      <find>·</find>
-      <find>tonnage</find>
-      <find>test</find>
-      <find>吨位/方数</find>
-      <find>转换比例</find>
-      <find>货物单价</find>
-      <find>供货单号</find>
-      <find>货物金额</find>
-      <find>顿位/方数</find>
-      <find>计费数量</find>
-      <find>goodsPrice</find>
       <find>收货金额</find>
       <find>570</find>
       <find>isN</find>
@@ -56,12 +64,26 @@
       <find>_basePath</find>
       <find>table-sort</find>
       <find>table table-border table-bordered table-bg table-sort</find>
-      <find>table table-border table-bordered table-bg table-sort</find>
       <find>isPwd</find>
       <find>密码</find>
       <find>login</find>
       <find>queryUserByName</find>
       <find>edit</find>
+      <find>passwordDao</find>
+      <find>String pwd = passwordDao.queryPasswordById(5);//车队</find>
+      <find>String pwd = passwordDao.queryPasswordByI</find>
+      <find>String pwd = passwordDao.queryPasswordById</find>
+      <find>123</find>
+      <find>123456</find>
+      <find>columnDefs</find>
+      <find>DataTable</find>
+      <find>bootstrapTable</find>
+      <find>console.log</find>
+      <find>console.</find>
+      <find>field</find>
+      <find>columnIndex</find>
+      <find>filedVar</find>
+      <find>obj</find>
     </findStrings>
     <replaceStrings>
       <replace>BaseReceiver baseReceiver</replace>
@@ -110,11 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/JournalDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/JournalDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/journal.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/LoginUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/util/CookieUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/LoginUserDao.java" />
@@ -127,21 +144,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-supplier-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseSupplierDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseGoods.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseGoodsDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseReceiver.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-goods-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-receiver-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseReceiverDao.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/JournalController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/OrderBusiness.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/password.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/base-fleet.jsp" />
@@ -156,11 +165,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/AdminUserBusiness.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/AdminUserDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/change.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index1.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index2.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/PasswordDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/PasswordDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/OrderBusiness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" />
       </list>
     </option>
   </component>
@@ -178,7 +200,23 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="solid" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="solid" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="1452" />
     <option name="height" value="876" />
@@ -603,9 +641,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -721,7 +757,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -910,7 +948,8 @@
       <workItem from="1528966770606" duration="2044000" />
       <workItem from="1529026677605" duration="602000" />
       <workItem from="1529027818543" duration="8509000" />
-      <workItem from="1529392755778" duration="36522000" />
+      <workItem from="1529392755778" duration="36925000" />
+      <workItem from="1529551437750" duration="23781000" />
     </task>
     <task id="LOCAL-00001" summary="调整样式">
       <created>1528769967040</created>
@@ -1024,11 +1063,46 @@
       <option name="project" value="LOCAL" />
       <updated>1529489262381</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="查询密码 重置密码">
+      <created>1529560865717</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1529560865717</updated>
+    </task>
+    <task id="LOCAL-00018" summary="登陆首页">
+      <created>1529569531792</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1529569531792</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update">
+      <created>1529570208062</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1529570208063</updated>
+    </task>
+    <task id="LOCAL-00020" summary="合并某一列">
+      <created>1529583265927</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1529583265927</updated>
+    </task>
+    <task id="LOCAL-00021" summary="合并多列">
+      <created>1529584115184</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1529584115184</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138738000" />
+    <option name="totallyTimeSpent" value="162922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1040,30 +1114,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655853" sideWeight="0.5114943" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655853" sideWeight="0.5143678" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655853" sideWeight="0.48850575" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655853" sideWeight="0.48563218" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32722145" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5148096" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26436782" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26436782" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1082,17 +1157,17 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655853" sideWeight="0.5114943" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655853" sideWeight="0.5143678" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655853" sideWeight="0.48850575" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5655853" sideWeight="0.48563218" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32722145" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1100,11 +1175,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5148096" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998392" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26436782" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1147,110 +1222,28 @@
     <MESSAGE value="记录信息" />
     <MESSAGE value="调整样式" />
     <MESSAGE value="更改密码 配置权限" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改密码 配置权限" />
+    <MESSAGE value="查询密码 重置密码" />
+    <MESSAGE value="登陆首页" />
+    <MESSAGE value="update" />
+    <MESSAGE value="合并某一列" />
+    <MESSAGE value="合并多列" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并多列" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="105" />
+      <option name="time" value="112" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/common/common.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="36" column="65" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseFleet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/BaseReceiverBusiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repo/org/apache/tomcat/embed/tomcat-embed-core/7.0.69/tomcat-embed-core-7.0.69.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseSupplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding>
-            <element signature="e#1850#1851#0" expanded="true" />
-            <element signature="e#1880#1881#0" expanded="true" />
-            <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/BaseSupplierDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="30" column="130" lean-forward="false" selection-start-line="30" selection-start-column="130" selection-end-line="30" selection-end-column="130" />
-          <folding>
-            <marker date="1529467726042" expanded="true" signature="1081:1158" ph="SELECT COUNT... supplier" />
-            <marker date="1529467726042" expanded="true" signature="1256:1317" ph="UPDATE `supp... " />
-            <marker date="1529467726042" expanded="true" signature="1421:1691" ph="INSERT INTO `supplier`... " />
-            <marker date="1529467726042" expanded="true" signature="1796:2057" ph="UPDATE `supp... " />
-            <marker date="1529467726042" expanded="true" signature="2126:2182" ph="UPDATE `supp... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseGoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseGoods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
           <folding>
-            <element signature="e#1652#1653#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1652#1653#0" expanded="false" />
+            <element signature="e#1704#1705#0" expanded="false" />
+            <element signature="e#1748#1749#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1259,22 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseSupplierController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1293,49 +1270,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="232" column="23" lean-forward="false" selection-start-line="232" selection-start-column="19" selection-end-line="232" selection-end-column="23" />
-          <folding>
-            <element signature="e#4719#4720#0" expanded="true" />
-            <element signature="e#4749#4750#0" expanded="true" />
-            <element signature="e#4795#4796#0" expanded="true" />
-            <element signature="e#4833#4834#0" expanded="true" />
-            <element signature="e#4956#4957#0" expanded="true" />
-            <element signature="e#5000#5001#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="43" column="101" lean-forward="false" selection-start-line="43" selection-start-column="101" selection-end-line="43" selection-end-column="101" />
-          <folding>
-            <marker date="1529477929742" expanded="true" signature="1645:2227" ph="INSERT INTO `order`... " />
-            <marker date="1529477929742" expanded="true" signature="2325:2884" ph="UPDATE `orde... " />
-            <marker date="1529477929742" expanded="true" signature="2953:3006" ph="UPDATE `orde... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/BaseReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="77" column="30" lean-forward="false" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
           <folding>
-            <element signature="e#1826#1827#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="false" />
+            <element signature="e#1868#1869#0" expanded="false" />
+            <element signature="e#1902#1903#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1352,14 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1407,31 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/OrderBusiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1458,18 +1367,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <marker date="1529486041287" expanded="true" signature="3416:3436" ph="..." />
-            <marker date="1529486041287" expanded="true" signature="3531:3551" ph="..." />
-            <marker date="1529486041287" expanded="true" signature="3701:3709" ph="&amp;##xe6df;" />
-            <marker date="1529486041287" expanded="true" signature="3761:3781" ph="..." />
-            <marker date="1529486041287" expanded="true" signature="3895:3903" ph="&amp;##xe6e2;" />
-            <marker date="1529486041287" expanded="true" signature="4047:4067" ph="..." />
-            <marker date="1529486041287" expanded="true" signature="4161:4181" ph="..." />
-            <marker date="1529486041287" expanded="true" signature="4331:4339" ph="&amp;##xe6df;" />
-            <marker date="1529486041287" expanded="true" signature="4391:4411" ph="..." />
-            <marker date="1529486041287" expanded="true" signature="4525:4533" ph="&amp;##xe6e2;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1519,51 +1417,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/password.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <marker date="1529485925780" expanded="true" signature="1672:1692" ph="..." />
-            <marker date="1529485925780" expanded="true" signature="1793:1801" ph="&amp;##xe6df;" />
-            <marker date="1529485925780" expanded="true" signature="1856:1876" ph="..." />
-            <marker date="1529485925780" expanded="true" signature="1977:1985" ph="&amp;##xe63f;" />
-            <marker date="1529485925780" expanded="true" signature="2129:2149" ph="..." />
-            <marker date="1529485925780" expanded="true" signature="2250:2258" ph="&amp;##xe6df;" />
-            <marker date="1529485925780" expanded="true" signature="2313:2333" ph="..." />
-            <marker date="1529485925780" expanded="true" signature="2434:2442" ph="&amp;##xe63f;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/js/H-ui.admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="184" column="9" lean-forward="false" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="26" column="239" lean-forward="true" selection-start-line="26" selection-start-column="239" selection-end-line="26" selection-end-column="239" />
-          <folding>
-            <marker date="1529486041420" expanded="true" signature="3954:3974" ph="..." />
-            <marker date="1529486041420" expanded="true" signature="4069:4089" ph="..." />
-            <marker date="1529486041420" expanded="true" signature="4239:4247" ph="&amp;##xe6df;" />
-            <marker date="1529486041420" expanded="true" signature="4299:4319" ph="..." />
-            <marker date="1529486041420" expanded="true" signature="4420:4428" ph="&amp;##xe63f;" />
-            <marker date="1529486041420" expanded="true" signature="4483:4503" ph="..." />
-            <marker date="1529486041420" expanded="true" signature="4617:4625" ph="&amp;##xe6e2;" />
-            <marker date="1529486041420" expanded="true" signature="4769:4789" ph="..." />
-            <marker date="1529486041420" expanded="true" signature="4883:4903" ph="..." />
-            <marker date="1529486041420" expanded="true" signature="5053:5061" ph="&amp;##xe6df;" />
-            <marker date="1529486041420" expanded="true" signature="5113:5133" ph="..." />
-            <marker date="1529486041420" expanded="true" signature="5234:5242" ph="&amp;##xe63f;" />
-            <marker date="1529486041420" expanded="true" signature="5297:5317" ph="..." />
-            <marker date="1529486041420" expanded="true" signature="5431:5439" ph="&amp;##xe6e2;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1642,14 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="142" column="66" lean-forward="false" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/change.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1219">
@@ -1686,6 +1535,210 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-426">
           <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/BaseSupplierController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/PasswordDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <marker date="1529560103436" expanded="true" signature="509:562" ph="UPDATE `pass... " />
+            <marker date="1529560103436" expanded="true" signature="657:718" ph="UPDATE `pass... " />
+            <marker date="1529560103436" expanded="true" signature="822:870" ph="SELECT `pass... password" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseFleetBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseGoodsBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="95" column="62" lean-forward="true" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/PasswordDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="115" column="21" lean-forward="false" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseSupplierBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/BaseReceiverBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="98" column="53" lean-forward="true" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/PasswordBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/AdminUserBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="125" column="47" lean-forward="false" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/password.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <marker date="1529485925780" expanded="true" signature="1672:1692" ph="..." />
+            <marker date="1529485925780" expanded="true" signature="1793:1801" ph="&amp;##xe6df;" />
+            <marker date="1529485925780" expanded="true" signature="1856:1876" ph="..." />
+            <marker date="1529485925780" expanded="true" signature="1977:1985" ph="&amp;##xe63f;" />
+            <marker date="1529485925780" expanded="true" signature="2129:2149" ph="..." />
+            <marker date="1529485925780" expanded="true" signature="2250:2258" ph="&amp;##xe6df;" />
+            <marker date="1529485925780" expanded="true" signature="2313:2333" ph="..." />
+            <marker date="1529485925780" expanded="true" signature="2434:2442" ph="&amp;##xe63f;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repo/org/apache/tomcat/embed/tomcat-embed-core/7.0.69/tomcat-embed-core-7.0.69.jar!/javax/servlet/http/HttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="60" column="15" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk 1.7.17/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="965" column="27" lean-forward="false" selection-start-line="965" selection-start-column="27" selection-end-line="965" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/OrderBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin-role.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <marker date="1529486041420" expanded="true" signature="3954:3974" ph="..." />
+            <marker date="1529486041420" expanded="true" signature="4069:4089" ph="..." />
+            <marker date="1529486041420" expanded="true" signature="4239:4247" ph="&amp;##xe6df;" />
+            <marker date="1529486041420" expanded="true" signature="4299:4319" ph="..." />
+            <marker date="1529486041420" expanded="true" signature="4420:4428" ph="&amp;##xe63f;" />
+            <marker date="1529486041420" expanded="true" signature="4483:4503" ph="..." />
+            <marker date="1529486041420" expanded="true" signature="4617:4625" ph="&amp;##xe6e2;" />
+            <marker date="1529486041420" expanded="true" signature="4769:4789" ph="..." />
+            <marker date="1529486041420" expanded="true" signature="4883:4903" ph="..." />
+            <marker date="1529486041420" expanded="true" signature="5053:5061" ph="&amp;##xe6df;" />
+            <marker date="1529486041420" expanded="true" signature="5113:5133" ph="..." />
+            <marker date="1529486041420" expanded="true" signature="5234:5242" ph="&amp;##xe63f;" />
+            <marker date="1529486041420" expanded="true" signature="5297:5317" ph="..." />
+            <marker date="1529486041420" expanded="true" signature="5431:5439" ph="&amp;##xe6e2;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/mapper/OrderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <marker date="1529564917583" expanded="true" signature="1645:2227" ph="INSERT INTO `order`... " />
+            <marker date="1529564917583" expanded="true" signature="2325:2884" ph="UPDATE `orde... " />
+            <marker date="1529564917583" expanded="true" signature="2953:3006" ph="UPDATE `orde... " />
+            <marker date="1529564917583" expanded="true" signature="3103:3166" ph="SELECT * FRO... order" />
+            <marker date="1529564917583" expanded="true" signature="3275:3408" ph="SELECT * ,CO... order" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsr/solid/service/impl/OrderBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="188" column="63" lean-forward="false" selection-start-line="188" selection-start-column="63" selection-end-line="188" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="127" column="13" lean-forward="true" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -12,7 +12,7 @@ https://item.taobao.com/item.htm?spm=a230r.1.14.1.67073b08LsstUn&id=524493063840
 4.超级管理员 admin名称
 9.登陆权限分配
 6.更改密码
-
 2.删除密码校验
 3.我的桌面统计当月 每天有多少订单
+
 7.导出execel
