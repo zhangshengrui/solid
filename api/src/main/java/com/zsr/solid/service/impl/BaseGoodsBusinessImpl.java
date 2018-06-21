@@ -4,11 +4,14 @@ import com.alibaba.fastjson.JSON;
 import com.zsr.solid.entity.BaseGoods;
 import com.zsr.solid.entity.ResponseTable;
 import com.zsr.solid.mapper.BaseGoodsDao;
+import com.zsr.solid.mapper.PasswordDao;
 import com.zsr.solid.service.BaseGoodsBusiness;
+import com.zsr.solid.util.MD5;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import sun.security.krb5.internal.PAData;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -21,6 +24,8 @@ public class BaseGoodsBusinessImpl implements BaseGoodsBusiness{
     @Autowired
     private BaseGoodsDao baseGoodsDao;
 
+    @Autowired
+    private PasswordDao passwordDao;
     @Override
     public ResponseTable querySupplierList(BaseGoods baseGoods) {
         ResponseTable responseTable = new ResponseTable();
@@ -88,7 +93,8 @@ public class BaseGoodsBusinessImpl implements BaseGoodsBusiness{
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){
                 return  "password or ids is null";
             }
-            if(!"123456".equals(password)){
+            String pwd = passwordDao.queryPasswordById(2);//货物
+            if(!pwd.equals(MD5.stringToMD5(password))){
                 return "wrong";
             }
             if(!ids.contains("[") && !ids.contains("]")){

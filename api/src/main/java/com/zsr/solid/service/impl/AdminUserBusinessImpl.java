@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.zsr.solid.entity.ResponseTable;
 import com.zsr.solid.entity.User;
 import com.zsr.solid.mapper.AdminUserDao;
+import com.zsr.solid.mapper.PasswordDao;
 import com.zsr.solid.service.AdminUserBusiness;
 import com.zsr.solid.util.MD5;
 import org.apache.commons.lang3.StringUtils;
@@ -21,6 +22,8 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
     @Autowired
     private AdminUserDao adminUserDao;
 
+    @Autowired
+    private PasswordDao passwordDao;
     @Override
     public ResponseTable querySupplierList(User user) {
         ResponseTable responseTable = new ResponseTable();
@@ -93,7 +96,8 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){
                 return  "password or ids is null";
             }
-            if(!"123456".equals(password)){
+            String pwd = passwordDao.queryPasswordById(6);//用户删除
+            if(!pwd.equals(MD5.stringToMD5(password))){
                 return "wrong";
             }
             if(!ids.contains("[") && !ids.contains("]")){
@@ -115,7 +119,8 @@ public class AdminUserBusinessImpl implements AdminUserBusiness{
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){
                 return  "password or ids is null";
             }
-            if(!"123456".equals(password)){
+            String pwd = passwordDao.queryPasswordById(7);//用户重置
+            if(!pwd.equals(MD5.stringToMD5(password))){
                 return "wrong";
             }
             String md5 = MD5.stringToMD5("admin");

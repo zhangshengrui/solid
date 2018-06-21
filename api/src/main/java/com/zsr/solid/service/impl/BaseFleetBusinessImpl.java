@@ -5,7 +5,9 @@ import com.zsr.solid.entity.BaseFleet;
 import com.zsr.solid.entity.BaseSupplier;
 import com.zsr.solid.entity.ResponseTable;
 import com.zsr.solid.mapper.BaseFleetDao;
+import com.zsr.solid.mapper.PasswordDao;
 import com.zsr.solid.service.BaseFleetBusiness;
+import com.zsr.solid.util.MD5;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +22,9 @@ import java.util.List;
 public class BaseFleetBusinessImpl implements BaseFleetBusiness {
     @Autowired
     private BaseFleetDao baseFleetDao;
+
+    @Autowired
+    private PasswordDao passwordDao;
 
     @Override
     public ResponseTable querySupplierList(BaseFleet baseFleet) {
@@ -90,7 +95,8 @@ public class BaseFleetBusinessImpl implements BaseFleetBusiness {
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){
                 return  "password or ids is null";
             }
-            if(!"123456".equals(password)){
+            String pwd = passwordDao.queryPasswordById(3);//车队
+            if(!pwd.equals(MD5.stringToMD5(password))){
                 return "wrong";
             }
             if(!ids.contains("[") && !ids.contains("]")){

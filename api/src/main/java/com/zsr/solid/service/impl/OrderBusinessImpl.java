@@ -6,7 +6,9 @@ import com.zsr.solid.entity.Order;
 import com.zsr.solid.entity.ResponseTable;
 import com.zsr.solid.mapper.JournalDao;
 import com.zsr.solid.mapper.OrderDao;
+import com.zsr.solid.mapper.PasswordDao;
 import com.zsr.solid.service.OrderBusiness;
+import com.zsr.solid.util.MD5;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +26,10 @@ public class OrderBusinessImpl implements OrderBusiness{
 
     @Autowired
     private JournalDao journalDao;
+
+    @Autowired
+    private PasswordDao passwordDao;
+
     @Override
     public ResponseTable querySupplierList(Order order) {
         ResponseTable responseTable = new ResponseTable();
@@ -120,7 +126,8 @@ public class OrderBusinessImpl implements OrderBusiness{
             if(StringUtils.isBlank(password)||StringUtils.isBlank(ids)){
                 return  "password or ids is null";
             }
-            if(!"123456".equals(password)){
+            String pwd = passwordDao.queryPasswordById(5);//车队
+            if(!pwd.equals(MD5.stringToMD5(password))){
                 return "wrong";
             }
 
