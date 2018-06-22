@@ -16,7 +16,7 @@
         订单日期范围：
             <input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })" id="logmin" class="input-text Wdate" style="width:120px;">
             -
-            <input type="text" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })" id="logmax" class="input-text Wdate" style="width:120px;">&nbsp;&nbsp;
+            <input type="text" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'logmin\')}' })" id="logmax" class="input-text Wdate" style="width:120px;">&nbsp;&nbsp;
             <input type="text" id="s_license" placeholder="车号" style="width:120px" class="input-text">&nbsp;&nbsp;
             <input type="text" id="s_supplier_name" placeholder="供货单位" style="width:120px" class="input-text">&nbsp;&nbsp;
             <input type="text" id="s_supplier_certify"  placeholder="供货单号" style="width:120px" class="input-text">&nbsp;&nbsp;
@@ -141,7 +141,7 @@
 
                 } }
             ],
-            "aaSorting": [[ 1, "desc" ]],//默认第几个排序
+            "order": [[ 1, "desc" ]],//默认第几个排序
             "bStateSave": true,//状态保存
             "columnDefs": [
                 {"orderable":false,"aTargets":[0,19,20]}// 制定列不参与排序

@@ -11,7 +11,7 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单日期：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" onfocus="WdatePicker({ maxDate:'%y-%M-%d' })" id="date" name="date" class="input-text Wdate" style="width:200px;">
+                <input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd' })" id="date" name="date" class="input-text Wdate" style="width:200px;">
             </div>
         </div>
         <div class="row cl">
