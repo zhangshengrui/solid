@@ -114,7 +114,7 @@ public class OrderController {
         }
 
         //创建HSSFWorkbook
-        HSSFWorkbook wb = ExcelUtil.getHSSFWorkbook(sheetName, title, content, null);
+        HSSFWorkbook wb = ExcelUtil.getOrderWorkbook(sheetName, title, content, null);
 
         //响应到客户端
         try {

@@ -5,6 +5,8 @@ import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.util.CellRangeAddress;
+
 
 public class ExcelUtil {
 
@@ -46,6 +48,58 @@ public class ExcelUtil {
         //创建内容
         for(int i=0;i<values.length;i++){
             row = sheet.createRow(i + 1);
+            for(int j=0;j<values[i].length;j++){
+                //将内容按顺序赋给对应的列对象
+                row.createCell(j).setCellValue(values[i][j]);
+            }
+        }
+        return wb;
+    }
+
+    public static HSSFWorkbook getOrderWorkbook(String sheetName,String []title,String [][]values, HSSFWorkbook wb){
+
+        if(wb == null){
+            wb = new HSSFWorkbook();
+        }
+
+        //创建一个sheet对象
+        HSSFSheet sheet = wb.createSheet(sheetName);
+
+        //设置表头居中样式
+        HSSFCellStyle style = wb.createCellStyle();
+        style.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+
+        //设置合并单元格
+        HSSFRow firstRow = sheet.createRow(0);
+        HSSFCell firstCell = null;
+        //创建标题
+        for(int i=0;i<title.length;i++){
+            firstCell = firstRow.createCell(i);
+            firstCell.setCellStyle(style);
+            firstCell.setCellValue("收购明细");
+            if(i<11){
+                firstCell.setCellValue("采购明细");
+            }
+        }
+        sheet.addMergedRegion(new CellRangeAddress(0,0,0,10));
+        sheet.addMergedRegion(new CellRangeAddress(0,0,11,title.length-1));
+
+        //设置正文
+        HSSFRow row = sheet.createRow(1);
+
+        //声明列对象
+        HSSFCell cell = null;
+
+        //创建标题
+        for(int i=0;i<title.length;i++){
+            cell = row.createCell(i);
+            cell.setCellValue(title[i]);
+            cell.setCellStyle(style);
+        }
+
+        //创建内容
+        for(int i=0;i<values.length;i++){
+            row = sheet.createRow(i + 2);
             for(int j=0;j<values[i].length;j++){
                 //将内容按顺序赋给对应的列对象
                 row.createCell(j).setCellValue(values[i][j]);
