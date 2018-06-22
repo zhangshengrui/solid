@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>货物价格：</label>
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>货物价格：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" placeholder="" name="price" id="price">
 			</div>
@@ -119,28 +119,31 @@ $(function(){
 	});
 
     $("#address").change(function(){
-        var address = $('#address').val();
-        $('#address').val('');
-        $.ajax({
-            url:_basePath+"base/supplier/querySupplierList",
-            async:false,
-            data:{supplierName: address},
-            success:function(data){
-                var json = JSON.parse(data).data
-                for(var i in json){
-                    if(json[i].supplierName == address && json[i].status === 0){
-                        $('#conversion').val(json[i].conversion)
-                    }
-                }
-            }
-        });
+        addressChange();
     });
+
 });
 $(function(){
     InitCombobox();
     InitValue();
 })
-
+function addressChange(){
+    var address = $('#address').val();
+    $('#conversion').val('');
+    $.ajax({
+        url:_basePath+"base/supplier/querySupplierList",
+        async:false,
+        data:{supplierName: address},
+        success:function(data){
+            var json = JSON.parse(data).data
+            for(var i in json){
+                if(json[i].supplierName == address && json[i].status === 0){
+                    $('#conversion').val(json[i].conversion)
+                }
+            }
+        }
+    });
+}
 function InitCombobox(){
   $.ajax({
       url:_basePath+"base/supplier/querySupplierList",
@@ -168,6 +171,7 @@ function InitValue(){
     $('#number').val("");
     $("#address").val();
     $('#price').val("");
+    addressChange();
     if(id != -1){
         $.ajax({
             url:_basePath +"base/goods/querySupplierList",

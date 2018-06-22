@@ -52,8 +52,10 @@
             bDestroy:true,
             "processing": true,
             "initComplete":function(setting,json){
-                mergeTable("日期")
-                mergeTable("车队编码")
+                if(json.data.length !=0){
+                    mergeTable("日期")
+                    mergeTable("车队编码")
+                }
             }
 
         });
