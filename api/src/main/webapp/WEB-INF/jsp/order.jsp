@@ -24,7 +24,7 @@
             <input type="text" id="s_receiver_certify"  placeholder="收货单号" style="width:120px" class="input-text">&nbsp;&nbsp;
 			<button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
 		</div>
-		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> </span> </div>
+		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="report()" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 下载表格</a> </span>  </div>
 		<div class="mt-20">
 			<table class="table table-border table-bordered table-bg table-sort table-hover ">
                 <thead>
@@ -40,8 +40,8 @@
                     <th width="5%">车号</th>
                     <th width="5%">品名</th>
                     <th width="5%">供货单位</th>
-                    <th width="5%">转换比例</th>
                     <th width="5%">吨位/方数</th>
+                    <th width="5%">转换比例</th>
                     <th width="5%">计费数量</th>
                     <th width="5%">货物单价</th>
                     <th width="7%">货物金额</th>
@@ -120,8 +120,8 @@
                 { "data": "fleetLicense",defaultContent:''},
                 { "data": "goodsName",defaultContent:''},
                 { "data": "supplierName",defaultContent:''},
-                { "data": "conversion",defaultContent:''},
                 { "data": "tonnage",defaultContent:''},
+                { "data": "conversion",defaultContent:''},
                 { "data": "goodsCount",defaultContent:''},
                 { "data": "goodsPrice",defaultContent:''},
                 { "data": "goodsMoney",defaultContent:''},
@@ -242,6 +242,16 @@
             content: url
         });
         layer.full(index);
+    }
+
+    function report(){
+        window.location.href=_basePath+"order/report?startTime="
+            +$('#logmin').val()+"&endTime="+$('#logmax').val()
+            +"&fleetLicense="+$('#s_license').val()
+            +"&supplierName="+$('#s_supplier_name').val()
+            +"&supplierCertify="+$('#s_supplier_certify').val()
+            +"&receiverName="+$('#s_receiver_name').val()
+            +"&receiverCertify="+$('#s_receiver_certify').val()
     }
 </script>
 </body>
