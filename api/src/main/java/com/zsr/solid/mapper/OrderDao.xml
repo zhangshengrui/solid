@@ -28,6 +28,7 @@
         <if test="receiverCertify != null and receiverCertify !=''" >
             <![CDATA[ AND receiver_certify like CONCAT('%','${receiverCertify}','%' )   ]]>
         </if>
+        order by `date` DESC
     </select>
 
     <insert id="addSupplier" parameterType="com.zsr.solid.entity.Order">
