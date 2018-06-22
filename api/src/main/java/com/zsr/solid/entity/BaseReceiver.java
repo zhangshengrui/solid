@@ -4,6 +4,7 @@ public class BaseReceiver {
     private Integer id;                 //主键ID
     private String supplierName;        //收货商名称
     private String price;        //收货商名称
+    private String conversion;          //转换比例
     private String supplierAddress;     //收货商地址
     private String supplierOfficial;    //收应商负责人
     private String telephone;           //收应商电话
@@ -81,5 +82,13 @@ public class BaseReceiver {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getConversion() {
+        return conversion;
+    }
+
+    public void setConversion(String conversion) {
+        this.conversion = conversion;
     }
 }

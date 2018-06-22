@@ -18,20 +18,20 @@
 			<input type="text" id="s_add"  placeholder="收货方地址" style="width:250px" class="input-text">
 			<button  class="btn btn-success" type="button" onclick="initTable()"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
 		</div>
-		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加收货方','base-receiver-add?id=-1','','590')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加收货方</a></span> </div>
+		<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="deleteSupplier()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="layer_show('添加收货方','base-receiver-add?id=-1','','630')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加收货方</a></span> </div>
 		<div class="mt-20">
 			<table class="table table-border table-bordered table-bg table-sort table-hover ">
 				<thead>
 				<tr class="text-c">
 					<th width="1%"><input type="checkbox"></th>
 					<th width="5%">ID</th>
-					<th width="7%">收货方名称</th>
-					<th width="5%">收货方负责人</th>
+					<th width="10%">收货方名称</th>
+					<th width="7%">负责人</th>
+					<th width="7%">转换比例</th>
 					<th width="7%">收货单价</th>
 					<th width="10%">收货方电话</th>
 					<th width="15%">收货方地址</th>
 					<th width="20%">备注信息</th>
-					<th width="10%">添加日期</th>
 					<th width="10%">当前状态</th>
 					<th width="10%">操作</th>
 				</tr>
@@ -60,11 +60,11 @@
                 { "data": "id",defaultContent:''},
                 { "data": "supplierName",defaultContent:''},
                 { "data": "supplierOfficial",defaultContent:''},
+                { "data": "conversion",defaultContent:''},
                 { "data": "price",defaultContent:''},
                 { "data": "telephone",defaultContent:''},
                 { "data": "supplierAddress",defaultContent:''},
                 { "data": "memo",defaultContent:''},
-                { "data": "indate" ,defaultContent:''},
                 { "data": "status" ,defaultContent:'',"render":function (data,type,full,collback) {
                     if(data == '1'){
                         return '<span class="label label-danger radius">已关闭</span>';
@@ -76,12 +76,12 @@
                     if(data == '1'){
                         return '<td class="f-14 td-manage">' +
                             '<a style="text-decoration:none" onClick="operate('+full.id+',0)" href="#" >开启</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改收货方信息\',\'base-receiver-add?id='+full.id+'\',\'\',\'590\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改收货方信息\',\'base-receiver-add?id='+full.id+'\',\'\',\'630\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="base_supplier_delete('+full.id+')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }else{
                         return '<td class="f-14 td-manage">' +
                             '<a style="text-decoration:none" onClick="operate('+full.id+',1)" href="#">关闭</a> ' +
-                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改收货方信息\',\'base-receiver-add?id='+full.id+'\',\'\',\'590\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
+                            '<a style="text-decoration:none" class="ml-5" onClick="layer_show(\'修改收货方信息\',\'base-receiver-add?id='+full.id+'\',\'\',\'630\')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> ' +
                             '<a style="text-decoration:none" class="ml-5" onClick="base_supplier_delete('+full.id+')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>'
                     }
 

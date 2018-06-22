@@ -34,6 +34,12 @@
 			</div>
 		</div>
 		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>转换比例：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" placeholder="" name="conversion" id="conversion">
+			</div>
+		</div>
+		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>收货单价：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" placeholder="" name="price" id="price">
@@ -96,6 +102,10 @@ $(function(){
             price:{
                 required:true,
                 isFloat:true
+            },
+            conversion:{
+                required:true,
+                isFloatGtZero:true
             }
 		},
 		focusCleanup:true,
@@ -123,7 +133,7 @@ $(function(){
         $("#memo").val("");
         $('#supplierName').val("");
         $('#supplierOfficial').val("");
-        $("#supplierAddress").val()
+        $("#supplierAddress").val();
         $('#telephone').val("");
         $("#sex-1").attr("checked","checked");
         if(id != -1){
@@ -132,13 +142,14 @@ $(function(){
                 data:{id:id},
                 success:function(data){
                     var json = JSON.parse(data).data[0];
-                    $('#f_id').val(json.id)
-                    $("#memo").val(json.memo)
-                    $('#supplierName').val(json.supplierName)
-                    $('#supplierOfficial').val(json.supplierOfficial)
-                    $('#telephone').val(json.telephone)
-                    $('#supplierAddress').val(json.supplierAddress)
-                    $('#price').val(json.price)
+                    $('#f_id').val(json.id);
+                    $("#memo").val(json.memo);
+                    $('#supplierName').val(json.supplierName);
+                    $('#supplierOfficial').val(json.supplierOfficial);
+                    $('#telephone').val(json.telephone);
+                    $('#supplierAddress').val(json.supplierAddress);
+                    $('#price').val(json.price);
+                    $('#conversion').val(json.conversion);
                     if(json.status == 1){
                         $("#sex-2").attr("checked","checked");
                     }
