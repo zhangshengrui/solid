@@ -70,7 +70,6 @@ public class BaseSupplierBusinessImpl implements BaseSupplierBusiness{
                     return "false";
             }
             baseSupplier.setConversion(new Double(baseSupplier.getConversion()).toString());
-            baseSupplier.setTonnage(new Double(baseSupplier.getTonnage()).toString());
             String result;
             if(baseSupplier.getId() == -1){ //新增
                Integer count =  baseSupplierDao.querySupplierListByName(baseSupplier.getSupplierName()); //判断是否有重复的

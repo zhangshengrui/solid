@@ -28,12 +28,6 @@
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>吨位/方数：</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" placeholder="" name="tonnage" id="tonnage">
-			</div>
-		</div>
-		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>换算单位：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" placeholder="" name="conversion" id="conversion">
@@ -99,10 +93,6 @@ $(function(){
 				required:false,
 				isMobile:true,
 			},
-            tonnage:{
-                required:true,
-                isFloat:true,
-            },
             conversion:{
                 required:true,
                 isFloatGtZero:true
@@ -148,7 +138,6 @@ $(function(){
                     $('#supplierOfficial').val(json.supplierOfficial)
                     $('#telephone').val(json.telephone)
                     $('#conversion').val(json.conversion)
-                    $('#tonnage').val(json.tonnage)
                     $('#supplierAddress').val(json.supplierAddress)
                     if(json.status == 1){
                         $("#sex-2").attr("checked","checked");
