@@ -101,6 +101,12 @@
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>转换比例：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="" id="receiverConversion" name="receiverConversion">
+            </div>
+        </div>
+        <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>计费数量：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="receiverCount" name="receiverCount">
@@ -145,39 +151,15 @@ $(function(){
 	});
 
     $("#fleetNumber").change(function(){
-        var fleetNumber = $('#fleetNumber').val();
-        $('#fleetLicense').val('');
-        $.ajax({
-            url:_basePath+"base/fleet/querySupplierList",
-            async:false,
-            data:{number: fleetNumber},
-            success:function(data){
-                var json = JSON.parse(data).data
-                for(var i in json){
-                    if(json[i].number == fleetNumber){
-                       $('#fleetLicense').val(json[i].license)
-                    }
-                }
-            }
-        });
+        fleetNumberChange();
     });
 
     $("#receiverName").change(function(){
-        var receiverName = $('#receiverName').val();
-        $('#receiverPrice').val('');
-        $.ajax({
-            url:_basePath+"base/receiver/querySupplierList",
-            async:false,
-            data:{supplierName: receiverName},
-            success:function(data){
-                var json = JSON.parse(data).data
-                for(var i in json){
-                    if(json[i].supplierName == receiverName){
-                       $('#receiverPrice').val(json[i].price)
-                    }
-                }
-            }
-        });
+        receiverNameChange();
+    });
+
+    $("#goodsName").change(function(){
+        goodsNameChange();
     });
 
     $('#tonnage').blur(function(){
@@ -211,11 +193,11 @@ $(function(){
         var money = goodsPrice * count;
         console.log("money"+money)
         $('#goodsMoney').val(money.toFixed(2))
-    })
+    });
 
     $('#company').blur(function(){
         var company = $('#company').val();  //单位
-        var conversion =$('#conversion').val();//换算单位
+        var conversion =$('#receiverConversion').val();//换算单位
         var reg = /^[0-9]+([.]{1}[0-9]+){0,1}$/;
         if(!reg.test(company)  || !reg.test(conversion)){ //校验
             console.log("is wrong number")
@@ -257,30 +239,8 @@ $(function(){
         var profit = (money - a).toFixed(2);
         console.log(profit)
         $('#profit').val(profit);
-    })
-
-    $("#goodsName").change(function(){
-        var name = $('#goodsName').val();
-        $('#supplierName').val('');
-        $('#conversion').val('');
-        $('#goodsPrice').val('');
-        $.ajax({
-            url:_basePath+"base/goods/querySupplierList",
-            async:false,
-            data:{name: name},
-            success:function(data){
-                var json = JSON.parse(data).data
-                for(var i in json){
-                    if(json[i].name == name){
-                        $('#supplierName').val(json[i].address)
-                        $('#conversion').val(json[i].conversion)
-                        $('#goodsPrice').val(json[i].price)
-                    }
-                }
-            }
-        });
     });
-	
+
 	$("#form-member-add").validate({
 		rules:{
             date:{
@@ -347,6 +307,9 @@ $(function(){
             },profit:{
                 required:true,
                 isFloat:true
+            },receiverConversion:{
+                required:true,
+                isFloatGtZero:true
             }
 		},
 		focusCleanup:true,
@@ -365,7 +328,65 @@ $(function(){
 	$(function(){
 	    initCombobox();
         initTable();
-    })
+    });
+
+	function goodsNameChange(){
+        var name = $('#goodsName').val();
+        $('#supplierName').val('');
+        $('#conversion').val('');
+        $('#goodsPrice').val('');
+        $.ajax({
+            url:_basePath+"base/goods/querySupplierList",
+            async:false,
+            data:{name: name},
+            success:function(data){
+                var json = JSON.parse(data).data
+                for(var i in json){
+                    if(json[i].name == name){
+                        $('#supplierName').val(json[i].address)
+                        $('#conversion').val(json[i].conversion)
+                        $('#goodsPrice').val(json[i].price)
+                    }
+                }
+            }
+        });
+    }
+	function receiverNameChange() {
+        var receiverName = $('#receiverName').val();
+        $('#receiverPrice').val('');
+        $.ajax({
+            url:_basePath+"base/receiver/querySupplierList",
+            async:false,
+            data:{supplierName: receiverName},
+            success:function(data){
+                var json = JSON.parse(data).data
+                for(var i in json){
+                    if(json[i].supplierName == receiverName){
+                        $('#receiverPrice').val(json[i].price);
+                        $('#receiverConversion').val(json[i].conversion);
+                    }
+                }
+            }
+        });
+    }
+
+	function fleetNumberChange(){
+        var fleetNumber = $('#fleetNumber').val();
+        $('#fleetLicense').val('');
+        $.ajax({
+            url:_basePath+"base/fleet/querySupplierList",
+            async:false,
+            data:{number: fleetNumber},
+            success:function(data){
+                var json = JSON.parse(data).data
+                for(var i in json){
+                    if(json[i].number == fleetNumber){
+                        $('#fleetLicense').val(json[i].license)
+                    }
+                }
+            }
+        });
+    }
 
     function initCombobox(){
 	    //车队编码初始化
@@ -430,55 +451,60 @@ $(function(){
         if(check(id)){
             id = -1
         }
-        $('#f_id').val(-1)
-        $('#date').val("")
-        $('#fleetNumber').val("")
-        $('#fleetLicense').val("")
-        $('#goodsName').val("")
-        $('#supplierName').val("")
-        $('#supplierCertify').val("")
-        $('#goodsCount').val("")
-        $('#goodsPrice').val("")
-        $('#goodsMoney').val("")
-        $('#receiverName').val("")
-        $('#receiverCertify').val("")
-        $('#receiverCount').val("")
-        $('#receiverPrice').val("")
-        $('#receiverMoney').val("")
-        $('#profit').val("")
-        $('#company').val("")
-        $('#memo').val("")
+        $('#f_id').val(-1);
+        $('#date').val("");
+        $('#fleetNumber').val("");
+        $('#fleetLicense').val("");
+        $('#goodsName').val("");
+        $('#supplierName').val("");
+        $('#supplierCertify').val("");
+        $('#goodsCount').val("");
+        $('#goodsPrice').val("");
+        $('#goodsMoney').val("");
+        $('#receiverName').val("");
+        $('#receiverCertify').val("");
+        $('#receiverCount').val("");
+        $('#receiverPrice').val("");
+        $('#receiverMoney').val("");
+        $('#profit').val("");
+        $('#company').val("");
+        $('#memo').val("");
         if(id != -1){
             $.ajax({
                 url:_basePath +"order/querySupplierList",
                 data:{id:id},
                 success:function(data){
                     var json = JSON.parse(data).data[0];
-                    $('#f_id').val(json.id)
-                    $('#date').val(json.date)
-                    $('#fleetNumber').val(json.fleetNumber)
-                    $('#fleetLicense').val(json.fleetLicense)
-                    $('#goodsName').val(json.goodsName)
-                    $('#supplierName').val(json.supplierName)
-                    $('#supplierCertify').val(json.supplierCertify)
-                    $('#goodsCount').val(json.goodsCount)
-                    $('#goodsPrice').val(json.goodsPrice)
-                    $('#goodsMoney').val(json.goodsMoney)
-                    $('#receiverName').val(json.receiverName)
-                    $('#receiverCertify').val(json.receiverCertify)
-                    $('#company').val(json.company)
-                    $('#receiverCount').val(json.receiverCount)
-                    $('#receiverPrice').val(json.receiverPrice)
-                    $('#receiverMoney').val(json.receiverMoney)
-                    $('#conversion').val(json.conversion)
-                    $('#tonnage').val(json.tonnage)
-                    $('#profit').val(json.profit)
-                    $('#memo').val(json.memo)
+                    $('#f_id').val(json.id);
+                    $('#date').val(json.date);
+                    $('#fleetNumber').val(json.fleetNumber);
+                    $('#fleetLicense').val(json.fleetLicense);
+                    $('#goodsName').val(json.goodsName);
+                    $('#supplierName').val(json.supplierName);
+                    $('#supplierCertify').val(json.supplierCertify);
+                    $('#goodsCount').val(json.goodsCount);
+                    $('#goodsPrice').val(json.goodsPrice);
+                    $('#goodsMoney').val(json.goodsMoney);
+                    $('#receiverName').val(json.receiverName);
+                    $('#receiverCertify').val(json.receiverCertify);
+                    $('#company').val(json.company);
+                    $('#receiverCount').val(json.receiverCount);
+                    $('#receiverPrice').val(json.receiverPrice);
+                    $('#receiverMoney').val(json.receiverMoney);
+                    $('#conversion').val(json.conversion);
+                    $('#tonnage').val(json.tonnage);
+                    $('#profit').val(json.profit);
+                    $('#memo').val(json.memo);
+                    $('#receiverConversion').val(json.receiverConversion);
                 },
                 error:function () {
                     layer.msg('系统异常!',{icon:2,time:1000});
                 }
             })
+        }else{
+            fleetNumberChange();
+            receiverNameChange();
+            goodsNameChange();
         }
     }
 });

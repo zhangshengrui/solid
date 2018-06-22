@@ -34,14 +34,14 @@
         INSERT INTO `order` SET `date` =#{date},fleet_number=#{fleetNumber},fleet_license=#{fleetLicense},goods_name=#{goodsName},supplier_name=#{supplierName},
         supplier_certify=#{supplierCertify},goods_count=#{goodsCount},goods_price=#{goodsPrice},goods_money=#{goodsMoney},receiver_name=#{receiverName},
         receiver_certify=#{receiverCertify},receiver_count=#{receiverCount},receiver_price=#{receiverPrice},receiver_money=#{receiverMoney},
-        profit=#{profit},memo=#{memo},indate=#{indate},status=#{status},company =#{company},conversion=#{conversion},tonnage=#{tonnage}
+        profit=#{profit},memo=#{memo},indate=#{indate},status=#{status},company =#{company},conversion=#{conversion},tonnage=#{tonnage},receiver_conversion=#{receiverConversion}
     </insert>
 
     <update id="editSupplier" parameterType="com.zsr.solid.entity.Order">
         UPDATE `order` SET `date` =#{date},fleet_number=#{fleetNumber},fleet_license=#{fleetLicense},goods_name=#{goodsName},supplier_name=#{supplierName},
         supplier_certify=#{supplierCertify},goods_count=#{goodsCount},goods_price=#{goodsPrice},goods_money=#{goodsMoney},receiver_name=#{receiverName},
         receiver_certify=#{receiverCertify},receiver_count=#{receiverCount},receiver_price=#{receiverPrice},receiver_money=#{receiverMoney},
-        profit=#{profit},memo=#{memo},company =#{company},conversion=#{conversion},tonnage=#{tonnage} WHERE  id=#{id}
+        profit=#{profit},memo=#{memo},company =#{company},conversion=#{conversion},tonnage=#{tonnage},receiver_conversion=#{receiverConversion} WHERE  id=#{id}
     </update>
 
     <delete id="delete" parameterType="Map">

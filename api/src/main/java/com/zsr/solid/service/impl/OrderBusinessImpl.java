@@ -86,6 +86,7 @@ public class OrderBusinessImpl implements OrderBusiness{
             order.setCompany(new Float(order.getCompany()).toString());
             order.setTonnage(new Float(order.getTonnage()).toString());
             order.setConversion(new Float(order.getConversion()).toString());
+            order.setReceiverConversion(new Float(order.getReceiverConversion()).toString());
             if(order.getId() == -1){ //新增
                order.setIndate(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
                order.setStatus(0);

@@ -30,7 +30,7 @@
                 <thead>
                 <tr>
                     <th style="text-align: center" colspan="12">采购明细</th>
-                    <th style="text-align: center"  colspan="9">销售明细</th>
+                    <th style="text-align: center"  colspan="10">销售明细</th>
                 </tr>
                 <tr class="text-c">
                     <th width="1%"><input type="checkbox"></th>
@@ -48,6 +48,7 @@
                     <th width="5%">收货单位</th>
                     <th width="7%">收货方单号</th>
                     <th width="5%">吨位/方数</th>
+                    <th width="5%">转换比例</th>
                     <th width="5%">计费数量</th>
                     <th width="5%">收货方单价</th>
                     <th width="5%">收货方金额</th>
@@ -127,6 +128,7 @@
                 { "data": "receiverName",defaultContent:''},
                 { "data": "receiverCertify",defaultContent:''},
                 { "data": "company",defaultContent:''},
+                { "data": "receiverConversion",defaultContent:''},
                 { "data": "receiverCount",defaultContent:''},
                 { "data": "receiverPrice",defaultContent:''},
                 { "data": "receiverMoney",defaultContent:''},

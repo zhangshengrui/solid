@@ -19,6 +19,7 @@ public class Order {
     private String receiverPrice;   //收货方单价
     private String receiverMoney;   //收货方金额
     private String company;         //吨位/方数
+    private String receiverConversion;//收货方转换比例
     private String profit;          //利润
     private String memo;            //备注
     private String indate;          //增加日期
@@ -230,24 +231,33 @@ public class Order {
         this.todayCount = todayCount;
     }
 
+    public String getReceiverConversion() {
+        return receiverConversion;
+    }
+
+    public void setReceiverConversion(String receiverConversion) {
+        this.receiverConversion = receiverConversion;
+    }
+
     @Override
     public String toString() {
         return
                 "订单ID:" + id +
                 ", 订单日期:'" + date + '\'' +
+                ", 供货单号:'" + supplierCertify + '\'' +
                 ", 车队编码:'" + fleetNumber + '\'' +
                 ", 车队车牌号:'" + fleetLicense + '\'' +
                 ", 货物名称:'" + goodsName + '\'' +
                 ", 供货单位名称:'" + supplierName + '\'' +
-                ", 供货单号:'" + supplierCertify + '\'' +
-                ", 供货吨位/方数:"+ tonnage+'\''+
                 ", 换算单位:"+ conversion+'\''+
+                ", 供货吨位/方数:"+ tonnage+'\''+
                 ", 计费数量:'" + goodsCount + '\'' +
                 ", 货物单价:'" + goodsPrice + '\'' +
                 ", 货物金额:'" + goodsMoney + '\'' +
                 ", 收货单位:'" + receiverName + '\'' +
                 ", 收货方单号:'" + receiverCertify + '\'' +
                 ", 收货吨位/方数:'" + company + '\'' +
+                ", 收货转换比例:'" + receiverConversion + '\'' +
                 ", 收货方计费数量:'" + receiverCount + '\'' +
                 ", 收货方单价:'" + receiverPrice + '\'' +
                 ", 收货方金额:'" + receiverMoney + '\'' +
