@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zsr.solid.mapper.CalculationDao" >
+
+    <select id="queryCalculationList" parameterType="com.zsr.solid.entity.Calculation" resultType="com.zsr.solid.entity.Calculation">
+        SELECT `date`,receiver_name,fleet_number ,goods_name,
+        COUNT(1) AS `count` ,#订单总数
+        SUM(tonnage) AS goods_tonnage,#发货方总重量
+        SUM(goods_count) AS goods_total ,#发货方计费总数
+        SUM(goods_money) AS goods_bid,#发货方总价格
+        SUM(company)AS receiver_tonnage,#收货方总重量
+        SUM(receiver_count) AS receiver_total,#收货方计费总数
+        SUM(receiver_money) AS receiver_bid,#收货方总价格
+        SUM(profit) AS account ,#总利润
+        <![CDATA[
+            CASE WHEN 1=1
+            THEN (SELECT SUM(goods_money)AS month_from FROM `order` WHERE `status`=0 AND `date`>= #{startTime} AND `date` <= #{endTime})
+            ELSE 0 END AS month_from,#本月总发货金额
+            CASE WHEN 1=1
+            THEN (SELECT SUM(receiver_money)AS month_to FROM `order` WHERE `status`=0 AND `date`>= #{startTime} AND `date` <= #{endTime})
+            ELSE 0 END AS month_to,#本月总收货金额
+            CASE WHEN 1=1
+            THEN (SELECT SUM(profit)AS month_profit FROM `order` WHERE `status`=0 AND `date`>= #{startTime} AND `date` <= #{endTime})
+            ELSE 0 END AS month_profit #本月总利润
+        ]]>
+        FROM `order`
+        WHERE `status` = 0
+        <![CDATA[
+           AND `date`>= #{startTime} and `date` <= #{endTime}
+        ]]>
+        GROUP BY  `date`,receiver_name,fleet_number,goods_name
+        ORDER BY `date`,receiver_name,fleet_number,goods_name
+    </select>
+
+</mapper>
