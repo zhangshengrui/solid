@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-    <%@ include file="../../static/common/common.jsp" %>
+    <%@ include file="common.jsp" %>
     <title>GOVERNOR v1.1</title>
 </head>
 <body>

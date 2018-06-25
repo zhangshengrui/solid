@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  import="java.util.*" pageEncoding="UTF-8"%>
 <html>
 <head>
-	<%@ include file="/static/common/common.jsp" %>
+	<%@ include file="common.jsp" %>
     <style>
         .table td{
             text-align: center;
