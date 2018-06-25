@@ -107,4 +107,67 @@ public class ExcelUtil {
         }
         return wb;
     }
+
+    public static HSSFWorkbook getCalculationWorkbook(String sheetName,String []title,String [][]values, HSSFWorkbook wb){
+
+        // 第一步，创建一个HSSFWorkbook，对应一个Excel文件
+        if(wb == null){
+            wb = new HSSFWorkbook();
+        }
+
+        // 第二步，在workbook中添加一个sheet,对应Excel文件中的sheet
+        HSSFSheet sheet = wb.createSheet(sheetName);
+
+        // 第三步，在sheet中添加表头第0行,注意老版本poi对Excel的行数列数有限制
+        HSSFRow row = sheet.createRow(0);
+
+        // 第四步，创建单元格，并设置值表头 设置表头居中
+        HSSFCellStyle style = wb.createCellStyle();
+        style.setAlignment(HSSFCellStyle.ALIGN_CENTER); // 创建一个居中格式
+        style.setVerticalAlignment(HSSFCellStyle.VERTICAL_CENTER);
+
+        //声明列对象
+        HSSFCell cell = null;
+
+        //创建标题
+        for(int i=0;i<title.length;i++){
+            cell = row.createCell(i);
+            cell.setCellValue(title[i]);
+            cell.setCellStyle(style);
+        }
+
+        //创建内容
+        for(int i=0;i<values.length;i++){
+            row = sheet.createRow(i + 1);
+            for(int j=0;j<values[i].length;j++){
+                HSSFCell contentCell = row.createCell(j);
+                //将内容按顺序赋给对应的列对象
+                contentCell.setCellStyle(style);
+                contentCell.setCellValue(values[i][j]);
+            }
+        }
+
+        Integer rowIndexList[] = {0,12,13,14};
+
+        for(Integer rowIndex:rowIndexList){
+            String content ="";
+            int merge = 0;
+            for(int i=0;i<values.length;i++){
+                if(content.equals(values[i][rowIndex])){ //需要合并的列
+                    merge++;
+                }else{
+                    sheet.addMergedRegion(new CellRangeAddress(i-merge,i,rowIndex,rowIndex));
+                    content = values[i][rowIndex];
+                    merge = 0;
+                }
+                if(i == values.length-1){
+                    if(content.equals(values[i][rowIndex])){
+                        sheet.addMergedRegion(new CellRangeAddress(i-merge+1,i+1,rowIndex,rowIndex));
+                    }
+                }
+            }
+        }
+
+        return wb;
+    }
 }

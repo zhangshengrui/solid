@@ -208,13 +208,8 @@
     }
 
     function report(){
-        window.location.href=_basePath+"order/report?startTime="
+        window.location.href=_basePath+"calculation/report?startTime="
             +$('#logmin').val()+"&endTime="+$('#logmax').val()
-            +"&fleetLicense="+$('#s_license').val()
-            +"&supplierName="+$('#s_supplier_name').val()
-            +"&supplierCertify="+$('#s_supplier_certify').val()
-            +"&receiverName="+$('#s_receiver_name').val()
-            +"&receiverCertify="+$('#s_receiver_certify').val()
     }
 </script>
 </body>

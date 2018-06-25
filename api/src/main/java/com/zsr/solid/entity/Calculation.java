@@ -5,7 +5,7 @@ public class Calculation {
     private String fleetNumber;//车队编码
     private String goodsName;//货物名称
     private String receiverName;//收货方名称
-    private Float count;  //订单总数
+    private Integer count;  //订单总数
     private Float goodsTonnage;//发货方总重量
     private Float goodsTotal; //发货方计费总数
     private Float goodsBid; //发货方总价格
@@ -53,11 +53,11 @@ public class Calculation {
         this.receiverName = receiverName;
     }
 
-    public Float getCount() {
+    public Integer getCount() {
         return count;
     }
 
-    public void setCount(Float count) {
+    public void setCount(Integer count) {
         this.count = count;
     }
 
