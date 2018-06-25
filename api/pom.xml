@@ -163,7 +163,6 @@
 				<version>1.4.2.RELEASE</version>
 				<configuration>
 					<mainClass>com.zsr.solid.SolidApplication</mainClass>
-					<addClasspath>true</addClasspath>
 				</configuration>
 				<executions>
 					<execution>
