@@ -182,9 +182,9 @@
         });
     }
 
-    function layerResult(m,index){
+    function layerResult(index){
         initTable();
-        layer.msg(m+'操作成功!',{icon:1,time:1500});
+        layer.msg('修改操作成功!',{icon:1,time:1500});
         layer.close(index);
     }
 

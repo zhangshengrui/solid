@@ -53,31 +53,31 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>吨位/方数：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="tonnage" name="tonnage" >
+                <input type="text" class="input-text" value="" placeholder="" id="tonnage" name="tonnage">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>转换比例：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="conversion" name="conversion">
+                <input type="text" class="input-text" value="" placeholder="" id="conversion" name="conversion" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>计费数量：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="goodsCount" name="goodsCount">
+                <input type="text" class="input-text" value="" placeholder="" id="goodsCount" name="goodsCount" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>货物单价：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="goodsPrice" name="goodsPrice">
+                <input type="text" class="input-text" value="" placeholder="" id="goodsPrice" name="goodsPrice" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>货物金额：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="goodsMoney" name="goodsMoney">
+                <input type="text" class="input-text" value="" placeholder="" id="goodsMoney" name="goodsMoney" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <br>
@@ -103,31 +103,31 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>转换比例：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="receiverConversion" name="receiverConversion">
+                <input type="text" class="input-text" value="" placeholder="" id="receiverConversion" name="receiverConversion" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>计费数量：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="receiverCount" name="receiverCount">
+                <input type="text" class="input-text" value="" placeholder="" id="receiverCount" name="receiverCount" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>收货单价：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="receiverPrice" name="receiverPrice">
+                <input type="text" class="input-text" value="" placeholder="" id="receiverPrice" name="receiverPrice" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>收货金额：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="receiverMoney" name="receiverMoney">
+                <input type="text" class="input-text" value="" placeholder="" id="receiverMoney" name="receiverMoney" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>利润：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="profit" name="profit">
+                <input type="text" class="input-text" value="" placeholder="" id="profit" name="profit" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
 		<div class="row cl">
@@ -137,7 +137,6 @@
 			</div>
 		</div>
         <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2" style="padding-top: 10px">
-            <input class="btn btn-warning radius" type="reset" value="&nbsp;&nbsp;清空&nbsp;&nbsp;">
             <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
         </div>
 	</form>
@@ -163,82 +162,13 @@ $(function(){
     });
 
     $('#tonnage').blur(function(){
-        var tonnage = $('#tonnage').val();  //单位
-        var conversion =$('#conversion').val();//换算单位
-        var reg = /^[0-9]+([.]{1}[0-9]+){0,1}$/;
-        if(!reg.test(tonnage)  || !reg.test(conversion)){ //校验
-            console.log("is wrong number")
-            return;
-        }
-        tonnage = parseFloat(tonnage);
-        conversion = parseFloat(conversion);
-        if(isNaN(tonnage) ||isNaN(conversion)||conversion===0||conversion==0){
-            console.log("is NaN")
-            return
-        }
-
-        var num = tonnage / conversion;
-        var count = num.toFixed(2);
-        console.log("count"+count)
-        $('#goodsCount').val(count)
-
-        var goodsPrice= $('#goodsPrice').val(); //单价
-        if(!reg.test(goodsPrice) || !reg.test(count)){
-            return;
-        }
-        goodsPrice = parseFloat(goodsPrice);
-        if(isNaN(goodsPrice) || isNaN(count)){
-            return;
-        }
-        var money = goodsPrice * count;
-        console.log("money"+money)
-        $('#goodsMoney').val(money.toFixed(2))
+        money1();
+        money2();
     });
 
     $('#company').blur(function(){
-        var company = $('#company').val();  //单位
-        var conversion =$('#receiverConversion').val();//换算单位
-        var reg = /^[0-9]+([.]{1}[0-9]+){0,1}$/;
-        if(!reg.test(company)  || !reg.test(conversion)){ //校验
-            console.log("is wrong number")
-            return;
-        }
-        company = parseFloat(company);
-        conversion = parseFloat(conversion);
-        if(isNaN(company) ||isNaN(conversion)||conversion===0||conversion==0){
-            console.log("is NaN")
-            return
-        }
-
-        var num = company / conversion;
-        var count = num.toFixed(2);
-        console.log("count"+count)
-        $('#receiverCount').val(count)
-
-        var receiverPrice= $('#receiverPrice').val(); //收获单价
-        if(!reg.test(receiverPrice) || !reg.test(count)){
-            return;
-        }
-        receiverPrice = parseFloat(receiverPrice);
-        if(isNaN(receiverPrice) || isNaN(count)){
-            return;
-        }
-        var money = receiverPrice * count;
-        console.log("money"+money)
-        money = money.toFixed(2)
-        $('#receiverMoney').val(money)
-
-        var a = $('#goodsMoney').val()
-        if(!reg.test(a) ){
-            return;
-        }
-        a = parseFloat(a);
-        if(isNaN(a)){
-            return
-        }
-        var profit = (money - a).toFixed(2);
-        console.log(profit)
-        $('#profit').val(profit);
+        money1();
+        money2();
     });
 
 	$("#form-member-add").validate({
@@ -317,9 +247,24 @@ $(function(){
 		success:"valid",
 		submitHandler:function(form){
 			$(form).ajaxSubmit(function(data){
-                if(data == "新增" || data == "修改" ){
-                    layer.msg(data+'操作成功!',{icon:1,time:2500});
-                } else{
+                if(data == "新增"){
+                    $('#supplierCertify').val('');
+                    $('#tonnage').val('');
+                    $('#company').val('');
+                    $('#goodsCount').val("");
+                    $('#goodsMoney').val("");
+                    $('#receiverName').val("");
+                    $('#receiverCertify').val("");
+                    $('#receiverCount').val("");
+                    $('#receiverMoney').val("");
+                    $('#profit').val("");
+                    $('#memo').val("");
+                    layer.msg('新增操作成功!',{icon:1,time:2500});
+                }else if(data == '修改'){
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layerResult(index);
+                }
+                else{
                     layer.msg('操作失败!',{icon:2,time:2000});
                 }
             });
@@ -330,6 +275,85 @@ $(function(){
 	    initCombobox();
         initTable();
     });
+
+	function money1(){
+        var tonnage = $('#tonnage').val();  //单位
+        var conversion =$('#conversion').val();//换算单位
+        var reg = /^[0-9]+([.]{1}[0-9]+){0,1}$/;
+        if(!reg.test(tonnage)  || !reg.test(conversion)){ //校验
+            console.log("is wrong number")
+            return;
+        }
+        tonnage = parseFloat(tonnage);
+        conversion = parseFloat(conversion);
+        if(isNaN(tonnage) ||isNaN(conversion)||conversion===0||conversion==0){
+            console.log("is NaN")
+            return
+        }
+
+        var num = tonnage / conversion;
+        var count = num.toFixed(2);
+        console.log("count"+count)
+        $('#goodsCount').val(count)
+
+        var goodsPrice= $('#goodsPrice').val(); //单价
+        if(!reg.test(goodsPrice) || !reg.test(count)){
+            return;
+        }
+        goodsPrice = parseFloat(goodsPrice);
+        if(isNaN(goodsPrice) || isNaN(count)){
+            return;
+        }
+        var money = goodsPrice * count;
+        console.log("money"+money)
+        $('#goodsMoney').val(money.toFixed(2))
+    }
+
+    function money2(){
+        var company = $('#company').val();  //单位
+        var conversion =$('#receiverConversion').val();//换算单位
+        var reg = /^[0-9]+([.]{1}[0-9]+){0,1}$/;
+        if(!reg.test(company)  || !reg.test(conversion)){ //校验
+            console.log("is wrong number")
+            return;
+        }
+        company = parseFloat(company);
+        conversion = parseFloat(conversion);
+        if(isNaN(company) ||isNaN(conversion)||conversion===0||conversion==0){
+            console.log("is NaN")
+            return
+        }
+
+        var num = company / conversion;
+        var count = num.toFixed(2);
+        console.log("count"+count)
+        $('#receiverCount').val(count)
+
+        var receiverPrice= $('#receiverPrice').val(); //收获单价
+        if(!reg.test(receiverPrice) || !reg.test(count)){
+            return;
+        }
+        receiverPrice = parseFloat(receiverPrice);
+        if(isNaN(receiverPrice) || isNaN(count)){
+            return;
+        }
+        var money = receiverPrice * count;
+        console.log("money"+money)
+        money = money.toFixed(2)
+        $('#receiverMoney').val(money)
+
+        var a = $('#goodsMoney').val()
+        if(!reg.test(a) ){
+            return;
+        }
+        a = parseFloat(a);
+        if(isNaN(a)){
+            return
+        }
+        var profit = (money - a).toFixed(2);
+        console.log(profit)
+        $('#profit').val(profit);
+    }
 
 	function goodsNameChange(){
         var name = $('#goodsName').val();
