@@ -56,8 +56,8 @@
                     mergeTable("日期")
                     mergeTable("车队编码")
                 }
-                document.getElementById("todayCount").innerHTML = '<%=session.getAttribute("monthCount")%>';
-                document.getElementById("monthCount").innerHTML = '<%=session.getAttribute("todayCount")%>';
+                document.getElementById("todayCount").innerHTML = '<%=session.getAttribute("todayCount")%>';
+                document.getElementById("monthCount").innerHTML = '<%=session.getAttribute("monthCount")%>';
 
                 var inToday = document.getElementById("todayCount").innerHTML;
                 var inMonth = document.getElementById("monthCount").innerHTML;
