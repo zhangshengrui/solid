@@ -56,6 +56,9 @@
                     mergeTable("日期")
                     mergeTable("车队编码")
                 }
+                document.getElementById("todayCount").innerHTML = '<%=session.getAttribute("monthCount")%>';
+                document.getElementById("monthCount").innerHTML = '<%=session.getAttribute("todayCount")%>';
+
                 var inToday = document.getElementById("todayCount").innerHTML;
                 var inMonth = document.getElementById("monthCount").innerHTML;
                 if(inToday == 'null'|| inToday=='' || inToday==null || inToday== undefined){
