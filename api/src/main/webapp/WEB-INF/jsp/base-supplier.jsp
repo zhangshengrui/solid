@@ -56,7 +56,7 @@
                         return '<input type="checkbox"  value='+full.id+' name="data_checkbox"/>';
                     }
                 },
-                { "data": "id",defaultContent:''},
+                { "data": "num",defaultContent:''},
                 { "data": "supplierName",defaultContent:''},
                 { "data": "conversion",defaultContent:''},
                 { "data": "supplierOfficial",defaultContent:''},
@@ -106,6 +106,11 @@
                         value: $('#s_add').val()
                     }
                 );
+            },
+            fnDrawCallback : function () {
+                this.api().column(1).nodes().each(function(cell, i) {
+                    cell.innerHTML = i + 1;
+                });
             }
         });
     }

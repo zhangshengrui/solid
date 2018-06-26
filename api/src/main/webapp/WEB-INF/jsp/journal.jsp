@@ -48,7 +48,7 @@
         $('.table-sort').dataTable({
             "ajax":_basePath +"journal/querySupplierList",
             "columns": [
-                { "data": "id",defaultContent:''},
+                { "data": "num",defaultContent:''},
                 { "data": "person",defaultContent:''},
                 { "data": "time",defaultContent:'',
                     "render":function(data, type, full, callback){
@@ -84,6 +84,11 @@
                         value: $('#s_type').val()
                     }
                 );
+            },
+            fnDrawCallback : function () {
+                this.api().column(0).nodes().each(function(cell, i) {
+                    cell.innerHTML = i + 1;
+                });
             }
         });
     }

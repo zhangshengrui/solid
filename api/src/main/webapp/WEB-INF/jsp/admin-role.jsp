@@ -59,7 +59,7 @@
                         return '<input type="checkbox"  value='+full.id+' name="data_checkbox"/>';
                     }
                 },
-                { "data": "id",defaultContent:''},
+                { "data": "num",defaultContent:''},
                 { "data": "name",defaultContent:''},
                 { "data": "account",defaultContent:''},
                 { "data": "role",defaultContent:'',"render":function (data,type,full,collback) {
@@ -114,6 +114,11 @@
                         value: $('#s_role').val()
                     }
                 );
+            },
+            fnDrawCallback : function () {
+                this.api().column(1).nodes().each(function(cell, i) {
+                    cell.innerHTML = i + 1;
+                });
             }
         });
     }

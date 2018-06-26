@@ -37,7 +37,7 @@
         $('.table-sort').dataTable({
             "ajax":_basePath +"password/querySupplierList",
             "columns": [
-                { "data": "id",defaultContent:''},
+                { "data": "num",defaultContent:''},
                 { "data": "node",defaultContent:''},
                 { "data": "memo",defaultContent:''},
                 { "data": "status","render":function(data,type,full,collback){
@@ -62,7 +62,11 @@
             paging:false,
             bDestroy:true,
             "processing": true,
-
+            fnDrawCallback : function () {
+                this.api().column(0).nodes().each(function(cell, i) {
+                    cell.innerHTML = i + 1;
+                });
+            }
         });
     }
 
