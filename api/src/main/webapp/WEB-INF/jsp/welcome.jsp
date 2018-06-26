@@ -13,8 +13,8 @@
 <div class="page-container">
 	<p class="f-20 text-success">欢迎使用GOVERNOR <span class="f-14">v1.1</span></p>
 	<div class="page-container">
-        <p class="f-15 text-success">本月订单数: <span class="f-18"><%=session.getAttribute("monthCount")%></span></p>
-        <p class="f-15 text-success">今日订单数: <span class="f-18"><%=session.getAttribute("todayCount")%></span></p>
+        <p class="f-15 text-success">本月订单数: <span class="f-18" id="monthCount"><%=session.getAttribute("monthCount")%></span></p>
+        <p class="f-15 text-success">今日订单数: <span class="f-18" id="todayCount"><%=session.getAttribute("todayCount")%></span></p>
         <table class="table table-border table-bordered table-hover table-bg table-sort">
 			<thead>
 			<tr class="text-c">
@@ -55,6 +55,14 @@
                 if(json.data.length !=0){
                     mergeTable("日期")
                     mergeTable("车队编码")
+                }
+                var inToday = document.getElementById("todayCount").innerHTML;
+                var inMonth = document.getElementById("monthCount").innerHTML;
+                if(inToday == 'null'|| inToday=='' || inToday==null || inToday== undefined){
+                    document.getElementById("todayCount").innerHTML = '0'
+                }
+                if(inMonth == 'null'|| inMonth=='' || inMonth==null || inMonth== undefined){
+                    document.getElementById("monthCount").innerHTML = '0'
                 }
             }
 
