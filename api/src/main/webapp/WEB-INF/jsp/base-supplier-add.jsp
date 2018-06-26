@@ -95,7 +95,8 @@ $(function(){
 			},
             conversion:{
                 required:true,
-                isFloatGtZero:true
+                isFloatGtZero:true,
+                isFloat:true
             }
 		},
 		focusCleanup:true,

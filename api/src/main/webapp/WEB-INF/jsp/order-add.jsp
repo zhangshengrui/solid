@@ -275,7 +275,7 @@ $(function(){
                 isFloat:true
             },conversion:{
                 required:true,
-                isFloatGtZero:true
+                isFloatGtZero:true,isFloat:true
             },goodsPrice:{
                 required:true,
                 isFloat:true
@@ -309,7 +309,8 @@ $(function(){
                 isFloat:true
             },receiverConversion:{
                 required:true,
-                isFloatGtZero:true
+                isFloatGtZero:true,
+                isFloat:true
             }
 		},
 		focusCleanup:true,
