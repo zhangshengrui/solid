@@ -147,7 +147,9 @@
             "columnDefs": [
                 {"orderable":false,"aTargets":[0,19,20]}// 制定列不参与排序
             ],
-            "scrollX": true,
+            "sScrollX": "100%",
+            "sScrollXInner": "110%",
+            "bScrollCollapse": true,
             bDestroy:true,
             "bProcessing": true,
             "fnServerParams": function (aoData) {
