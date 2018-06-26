@@ -13,8 +13,8 @@
 <div class="page-container">
 	<p class="f-20 text-success">欢迎使用GOVERNOR <span class="f-14">v1.1</span></p>
 	<div class="page-container">
-        <p class="f-15 text-success">本月订单数: <span class="f-18" id="monthCount"><%=session.getAttribute("monthCount")%></span></p>
-        <p class="f-15 text-success">今日订单数: <span class="f-18" id="todayCount"><%=session.getAttribute("todayCount")%></span></p>
+        <p class="f-15 text-success">本月订单数: <span class="f-18" id="monthCount">0</span></p>
+        <p class="f-15 text-success">今日订单数: <span class="f-18" id="todayCount">0</span></p>
         <table class="table table-border table-bordered table-hover table-bg table-sort">
 			<thead>
 			<tr class="text-c">
@@ -30,13 +30,17 @@
 	</div>
 </div>
 <script type="text/javascript">
+    var ini = 0;
+    var ino = 0;
     $(function(){
-        window.setInterval(initTable,5000);
         initTable();
+        initTitle();
+        ini = window.setInterval(initTable,10000);
+        ino = window.setInterval(initTitle,10000);
     })
     function initTable(){
         $('.table-sort').dataTable({
-                "ajax":_basePath +"order/today",
+            "ajax":_basePath +"order/today",
             "columns": [
                 { "data": "date",defaultContent:''},
                 { "data": "fleetNumber",defaultContent:''},
@@ -53,23 +57,28 @@
             "processing": true,
             "initComplete":function(setting,json){
                 if(json.data.length !=0){
-                    mergeTable("日期")
-                    mergeTable("车队编码")
-                }
-                document.getElementById("todayCount").innerHTML = '<%=session.getAttribute("todayCount")%>';
-                document.getElementById("monthCount").innerHTML = '<%=session.getAttribute("monthCount")%>';
-
-                var inToday = document.getElementById("todayCount").innerHTML;
-                var inMonth = document.getElementById("monthCount").innerHTML;
-                if(inToday == 'null'|| inToday=='' || inToday==null || inToday== undefined){
-                    document.getElementById("todayCount").innerHTML = '0'
-                }
-                if(inMonth == 'null'|| inMonth=='' || inMonth==null || inMonth== undefined){
-                    document.getElementById("monthCount").innerHTML = '0'
+                    mergeTable("日期");
+                    mergeTable("车队编码");
                 }
             }
 
         });
+
+    }
+    function initTitle(){
+        $.ajax({
+            url:_basePath+"order/initTitle",
+            success:function(data){
+                var json = JSON.parse(data);
+                document.getElementById("todayCount").innerHTML = json.todayCount;
+                document.getElementById("monthCount").innerHTML = json.monthCount;
+            },
+            error:function(){
+                window.clearInterval(ini);
+                window.clearInterval(ino);
+            }
+
+        })
     }
 
     function mergeTable(field){

@@ -6,6 +6,7 @@
         .table td{
             text-align: center;
         }
+        th, td { white-space: nowrap; }
     </style>
 </head>
 <body>
@@ -146,6 +147,7 @@
             "columnDefs": [
                 {"orderable":false,"aTargets":[0,19,20]}// 制定列不参与排序
             ],
+            "scrollX": true,
             bDestroy:true,
             "bProcessing": true,
             "fnServerParams": function (aoData) {

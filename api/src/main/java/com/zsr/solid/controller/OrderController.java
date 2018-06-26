@@ -16,7 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("order")
@@ -70,6 +72,16 @@ public class OrderController {
         session.setAttribute("monthCount",orderBusinessImpl.monthCount());
         return JSON.toJSONString(orderBusinessImpl.today());
     }
+
+    @RequestMapping("initTitle")
+    @ResponseBody
+    public String initTitle(){
+        Map<String,Integer> map = new HashMap<>();
+        map.put("todayCount",orderBusinessImpl.todayCount());
+        map.put("monthCount",orderBusinessImpl.monthCount());
+        return JSON.toJSONString(map);
+    }
+
 
     @RequestMapping("report")
     @ResponseBody
