@@ -155,10 +155,12 @@ $(function(){
 
     $("#receiverName").change(function(){
         receiverNameChange();
+        money1();money2();
     });
 
     $("#goodsName").change(function(){
         goodsNameChange();
+        money1();money2();
     });
 
     $('#tonnage').blur(function(){
