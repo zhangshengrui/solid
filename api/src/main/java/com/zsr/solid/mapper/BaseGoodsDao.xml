@@ -16,6 +16,7 @@
         <if test="address != null and address != ''" >
             AND address like CONCAT('%','${address}','%' )
         </if>
+        ORDER BY `name`
     </select>
 
     <select id="querySupplierListByName" parameterType="com.zsr.solid.entity.BaseGoods" resultType="Integer">

@@ -16,6 +16,7 @@
         <if test="number != null and number != ''" >
             AND number like CONCAT('%','${number}','%' )
         </if>
+        ORDER BY number
     </select>
 
     <select id="querySupplierListByName" parameterType="com.zsr.solid.entity.BaseFleet" resultType="Integer">
