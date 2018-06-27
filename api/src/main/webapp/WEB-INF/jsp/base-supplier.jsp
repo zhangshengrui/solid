@@ -26,7 +26,7 @@
                     <th width="1%"><input type="checkbox"></th>
                     <th width="5%">ID</th>
                     <th width="12%">供货商名称</th>
-                    <th width="7%">换算单位</th>
+                    <th width="7%">转换比例</th>
                     <th width="7%">负责人</th>
                     <th width="10%">电话</th>
                     <th width="15%">地址</th>

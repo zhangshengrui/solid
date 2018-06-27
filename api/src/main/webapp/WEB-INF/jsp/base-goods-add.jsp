@@ -49,9 +49,9 @@
 			</div>
 		</div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>换算价格：</label>
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>换算单位：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" placeholder="" name="conversion" id="conversion">
+                <input type="text" class="input-text" placeholder="" name="conversion" id="conversion" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
 		<div class="row cl">

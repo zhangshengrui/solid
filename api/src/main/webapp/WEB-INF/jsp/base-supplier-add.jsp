@@ -28,7 +28,7 @@
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>换算单位：</label>
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>转换比例：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" placeholder="" name="conversion" id="conversion">
 			</div>
