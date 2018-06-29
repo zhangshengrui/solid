@@ -54,6 +54,7 @@
             ],
             searching:false,
             bDestroy:true,
+            ordering:false,
             "processing": true,
             "initComplete":function(setting,json){
                 if(json.data.length !=0){

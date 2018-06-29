@@ -106,7 +106,8 @@
                 { "data": "monthTo",defaultContent:''},
                 { "data": "monthProfit",defaultContent:'0'},
             ],
-            "order": [[ 1, "asc" ]],//默认第几个排序
+//            "order": [[ 1, "asc" ]],//默认第几个排序
+            ordering:false,
             "bStateSave": true,//状态保存
 //            "columnDefs": [
 //                {"orderable":false,"aTargets":[0,19,20]}// 制定列不参与排序

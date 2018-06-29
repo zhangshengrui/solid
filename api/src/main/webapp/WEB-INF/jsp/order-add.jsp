@@ -9,19 +9,19 @@
 	<form action="editSupplier" method="post" class="form form-horizontal" id="form-member-add">
         <input hidden="hidden" id="f_id" name="id" value="-1">
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单日期：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>订单日期：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd' })" id="date" name="date" class="input-text Wdate" style="width:200px;">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>供货单号：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>供货单号：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="supplierCertify" name="supplierCertify">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>车队编码：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>车队编码：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select class="select" name="fleetNumber" id="fleetNumber">
 				</select>
@@ -29,13 +29,13 @@
             </div>
         </div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>车队车牌号：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>车队车牌号：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="fleetLicense" name="fleetLicense" readonly="readonly" style="background: #eae8e8">
 			</div>
 		</div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>货物名称：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>货物名称：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select class="select" name="goodsName" id="goodsName">
 				</select>
@@ -51,31 +51,31 @@
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>吨位/方数：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>吨位/方数：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="tonnage" name="tonnage">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>转换比例：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>转换比例：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="conversion" name="conversion" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>计费数量：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>计费数量：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="goodsCount" name="goodsCount" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>货物单价：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>货物单价：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="goodsPrice" name="goodsPrice" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>货物金额：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>货物金额：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="goodsMoney" name="goodsMoney" readonly="readonly" style="background: #eae8e8">
             </div>
@@ -89,43 +89,43 @@
 				</span> </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>收货方单号：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>收货方单号：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="receiverCertify" name="receiverCertify">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>吨位/方数：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>吨位/方数：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="company" name="company">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>转换比例：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>转换比例：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="receiverConversion" name="receiverConversion" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>计费数量：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>计费数量：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="receiverCount" name="receiverCount" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>收货单价：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>收货单价：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="receiverPrice" name="receiverPrice" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>收货金额：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>收货金额：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="receiverMoney" name="receiverMoney" readonly="readonly" style="background: #eae8e8">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>利润：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>利润：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="profit" name="profit" readonly="readonly" style="background: #eae8e8">
             </div>
@@ -176,19 +176,19 @@ $(function(){
 	$("#form-member-add").validate({
 		rules:{
             date:{
-				required:true,
+//				required:true,
 			},
             fleetNumber:{
-                required:true,
+//                required:true,
                 minlength:0,
                 maxlength:50
             },
             fleetLicense:{
-                required:true,
+//                required:true,
                 minlength:0,
                 maxlength:50
             }, goodsName:{
-                required:true,
+//                required:true,
                 minlength:0,
                 maxlength:50
             },supplierName:{
@@ -196,51 +196,51 @@ $(function(){
                 minlength:0,
                 maxlength:50
             },supplierCertify:{
-                required:true,
+//                required:true,
                 minlength:0,
                 maxlength:50
             },goodsCount:{
-                required:true,
+//                required:true,
                 isFloat:true
             },tonnage:{
-                required:true,
+//                required:true,
                 isFloat:true
             },conversion:{
-                required:true,
+//                required:true,
                 isFloatGtZero:true,isFloat:true
             },goodsPrice:{
-                required:true,
+//                required:true,
                 isFloat:true
             },goodsMoney:{
-                required:true,
+//                required:true,
                 isFloat:true
             },receiverName:{
                 required:true,
                 minlength:0,
                 maxlength:50
             },receiverCertify:{
-                required:true,
+//                required:true,
                 minlength:0,
                 maxlength:50
             },company:{
-                required:true,
+//                required:true,
                 minlength:0,
                 maxlength:50
             },
             receiverCount:{
-                required:true,
+//                required:true,
                 isFloat:true
             },receiverPrice:{
-                required:true,
+//                required:true,
                 isFloat:true
             },receiverMoney:{
-                required:true,
+//                required:true,
                 isFloat:true
             },profit:{
-                required:true,
+//                required:true,
                 isFloat:true
             },receiverConversion:{
-                required:true,
+//                required:true,
                 isFloatGtZero:true,
                 isFloat:true
             }

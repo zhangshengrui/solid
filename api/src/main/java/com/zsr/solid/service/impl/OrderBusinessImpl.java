@@ -76,17 +76,18 @@ public class OrderBusinessImpl implements OrderBusiness{
                     return "false";
             }
             String result;
-            order.setGoodsCount(new Float(order.getGoodsCount()).toString());
-            order.setGoodsPrice(new Float(order.getGoodsPrice()).toString());
-            order.setGoodsMoney(new Float(order.getGoodsMoney()).toString());
-            order.setReceiverCount(new Float(order.getReceiverCount()).toString());
-            order.setReceiverPrice(new Float(order.getReceiverPrice()).toString());
-            order.setReceiverMoney(new Float(order.getReceiverMoney()).toString());
-            order.setProfit(new Float(order.getProfit()).toString());
-            order.setCompany(new Float(order.getCompany()).toString());
-            order.setTonnage(new Float(order.getTonnage()).toString());
-            order.setConversion(new Float(order.getConversion()).toString());
-            order.setReceiverConversion(new Float(order.getReceiverConversion()).toString());
+            order.setDate(StringUtils.isBlank(order.getDate())?new SimpleDateFormat("yyyy-MM-dd").format(new Date()):order.getDate());
+            order.setGoodsCount(new Float(tranString(order.getGoodsCount())).toString());
+            order.setGoodsPrice(new Float(tranString(order.getGoodsPrice())).toString());
+            order.setGoodsMoney(new Float(tranString(order.getGoodsMoney())).toString());
+            order.setReceiverCount(new Float(tranString(order.getReceiverCount())).toString());
+            order.setReceiverPrice(new Float(tranString(order.getReceiverPrice())).toString());
+            order.setReceiverMoney(new Float(tranString(order.getReceiverMoney())).toString());
+            order.setProfit(new Float(tranString(order.getProfit())).toString());
+            order.setCompany(new Float(tranString(order.getCompany())).toString());
+            order.setTonnage(new Float(tranString(order.getTonnage())).toString());
+            order.setConversion(new Float(tranString(order.getConversion())).toString());
+            order.setReceiverConversion(new Float(tranString(order.getReceiverConversion())).toString());
             if(order.getId() == -1){ //新增
                order.setIndate(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
                order.setStatus(0);
@@ -199,5 +200,9 @@ public class OrderBusinessImpl implements OrderBusiness{
             responseTable.setRecordsTotal(0);
             return responseTable;
         }
+    }
+
+    public static String tranString(String str){
+            return StringUtils.isEmpty(str)?"0":str;
     }
 }
